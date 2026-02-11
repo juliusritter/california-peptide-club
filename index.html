@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>California Peptide Club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #090A0B;
+      --white: #FFFFFF;
+      --gold: #C9A84C;
+      --gold-dim: rgba(201, 168, 76, 0.3);
+      --text-dim: rgba(255, 255, 255, 0.6);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--white);
+      font-family: 'EB Garamond', serif;
+      font-size: 18px;
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* -- UTILITY -- */
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    .divider {
+      border: none;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      margin: 64px auto;
+      max-width: 480px;
+    }
+
+    .divider-sm {
+      border: none;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold-dim), transparent);
+      margin: 40px auto;
+      max-width: 280px;
+    }
+
+    .section-label {
+      font-size: 11px;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--gold);
+      text-align: center;
+      margin-bottom: 12px;
+    }
+
+    /* -- HERO -- */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 32px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(ellipse at 50% 40%, rgba(201, 168, 76, 0.04) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-image {
+      width: 280px;
+      height: auto;
+      margin-bottom: 48px;
+      opacity: 0.9;
+      filter: brightness(1.05);
+    }
+
+    .hero h1 {
+      font-size: clamp(32px, 6vw, 56px);
+      font-weight: 500;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      line-height: 1.2;
+      margin-bottom: 24px;
+    }
+
+    .hero .subtitle {
+      font-style: italic;
+      font-size: 20px;
+      color: var(--text-dim);
+      max-width: 520px;
+      line-height: 1.6;
+    }
+
+    /* -- ABOUT -- */
+    .about {
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .about p {
+      font-size: 19px;
+      color: rgba(255, 255, 255, 0.85);
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    /* -- ETHOS -- */
+    .ethos {
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .ethos-quote {
+      font-size: 24px;
+      font-style: italic;
+      color: var(--white);
+      max-width: 580px;
+      margin: 0 auto 32px;
+      line-height: 1.6;
+    }
+
+    .ethos-detail {
+      font-size: 17px;
+      color: var(--text-dim);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* -- PILLARS -- */
+    .pillars {
+      padding: 80px 0;
+    }
+
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 48px;
+      text-align: center;
+    }
+
+    .pillar h3 {
+      font-size: 13px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+      font-weight: 500;
+    }
+
+    .pillar p {
+      font-size: 16px;
+      color: var(--text-dim);
+      line-height: 1.7;
+    }
+
+    /* -- IMAGE BREAK -- */
+    .image-break {
+      padding: 48px 0;
+      text-align: center;
+    }
+
+    .image-break img {
+      max-width: 220px;
+      height: auto;
+      opacity: 0.75;
+      filter: brightness(1.1);
+    }
+
+    /* -- LANDSCAPE -- */
+    .landscape {
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .landscape h2 {
+      font-size: 13px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 28px;
+      font-weight: 500;
+    }
+
+    .landscape p {
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.8);
+      max-width: 620px;
+      margin: 0 auto 20px;
+    }
+
+    /* -- VOICES / PANELS -- */
+    .voices {
+      padding: 80px 0;
+    }
+
+    .voices-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px 48px;
+      margin-top: 40px;
+    }
+
+    .voice h3 {
+      font-size: 13px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+
+    .voice p {
+      font-size: 16px;
+      color: var(--text-dim);
+      line-height: 1.7;
+    }
+
+    /* -- MEMBERSHIP -- */
+    .membership {
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .membership p {
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.8);
+      max-width: 540px;
+      margin: 0 auto 40px;
+    }
+
+    .form-row {
+      display: flex;
+      gap: 12px;
+      max-width: 440px;
+      margin: 0 auto;
+      justify-content: center;
+    }
+
+    .form-row input {
+      flex: 1;
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      padding: 14px 20px;
+      color: var(--white);
+      font-family: 'EB Garamond', serif;
+      font-size: 16px;
+      outline: none;
+      transition: border-color 0.3s;
+    }
+
+    .form-row input::placeholder {
+      color: rgba(255, 255, 255, 0.3);
+      font-style: italic;
+    }
+
+    .form-row input:focus {
+      border-color: var(--gold);
+    }
+
+    .form-row button {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      color: var(--white);
+      font-family: 'EB Garamond', serif;
+      font-size: 11px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      padding: 14px 28px;
+      cursor: pointer;
+      transition: all 0.3s;
+      white-space: nowrap;
+    }
+
+    .form-row button:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
+    /* -- MEMBERS & ATTENDEES (toggleable) -- */
+    /* To hide this section, add class "hidden" to the section element, or set display:none */
+    .members-section {
+      padding: 80px 0;
+      /* display: none; */  /* UNCOMMENT THIS LINE TO HIDE THE SECTION */
+    }
+
+    .members-section.hidden {
+      display: none;
+    }
+
+    .members-section .section-title {
+      font-size: 13px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold);
+      text-align: center;
+      margin-bottom: 40px;
+      font-weight: 500;
+    }
+
+    .members-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 24px;
+      margin-bottom: 48px;
+    }
+
+    .member-card {
+      text-align: center;
+      padding: 28px 16px;
+      border: 1px solid rgba(201, 168, 76, 0.12);
+    }
+
+    .member-card .name {
+      font-size: 17px;
+      font-weight: 500;
+      margin-bottom: 4px;
+    }
+
+    .member-card .role {
+      font-size: 14px;
+      color: var(--text-dim);
+      font-style: italic;
+    }
+
+    .attendees-list {
+      text-align: center;
+      margin-top: 48px;
+    }
+
+    .attendees-list .section-title {
+      margin-bottom: 24px;
+    }
+
+    .attendees-tags {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .attendee-tag {
+      font-size: 14px;
+      color: var(--text-dim);
+      padding: 6px 16px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    /* -- FOOTER -- */
+    .footer {
+      padding: 80px 0 48px;
+      text-align: center;
+    }
+
+    .footer .copy {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.35);
+      margin-bottom: 12px;
+    }
+
+    .footer .greek {
+      font-style: italic;
+      font-size: 16px;
+      color: rgba(201, 168, 76, 0.5);
+    }
+
+    /* -- RESPONSIVE -- */
+    @media (max-width: 680px) {
+      .pillars-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+
+      .voices-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .form-row {
+        flex-direction: column;
+      }
+
+      .hero-image {
+        width: 200px;
+      }
+    }
+
+    /* -- FADE-IN ANIMATION -- */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <img src="assets/images/statue-hero.png" alt="Greek statue with ethereal light" class="hero-image">
+    <h1>California<br>Peptide Club</h1>
+    <p class="subtitle">Where science meets the ancient pursuit of human optimization.</p>
+  </section>
+
+  <div class="container">
+    <hr class="divider">
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about fade-in">
+    <div class="container">
+      <p class="section-label">About</p>
+      <p>The California Peptide Club is a private collective of physicians, researchers, entrepreneurs, and biohackers exploring the frontier of peptide science. We gather to share protocols, review emerging data, and push the boundaries of human performance and longevity&mdash;with the rigor of scholars and the curiosity of gods.</p>
+    </div>
+  </section>
+
+  <div class="container">
+    <hr class="divider">
+  </div>
+
+  <!-- ETHOS -->
+  <section class="ethos fade-in">
+    <div class="container">
+      <p class="section-label">Ethos</p>
+      <p class="ethos-quote">&ldquo;No subtle selling. No dogma. Just transparency, real science, and a shared commitment to access and knowledge.&rdquo;</p>
+      <p class="ethos-detail">This is not another panel where sponsors pitch from the stage. We are an industry-facing community built on radical honesty. Every voice at the table earns its place through expertise, not affiliation. We believe peptide science should be accessible, quality-controlled, and driven by people who actually understand synthesis from the root up.</p>
+    </div>
+  </section>
+
+  <div class="container">
+    <hr class="divider">
+  </div>
+
+  <!-- PILLARS -->
+  <section class="pillars fade-in">
+    <div class="container">
+      <p class="section-label">Pillars</p>
+      <div class="pillars-grid">
+        <div class="pillar">
+          <h3>Knowledge</h3>
+          <p>Peer-reviewed research. Real-world protocols. Shelf stability studies, HPLC, and supply chain transparency&mdash;not hearsay.</p>
+        </div>
+        <div class="pillar">
+          <h3>Community</h3>
+          <p>A vetted circle of concierge longevity physicians, high-performance founders, and elite athletes. No tourists.</p>
+        </div>
+        <div class="pillar">
+          <h3>Optimization</h3>
+          <p>Longevity. Recovery. Cognition. Performance. The full spectrum of what peptides can unlock for human potential.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <hr class="divider-sm">
+  </div>
+
+  <!-- IMAGE BREAK -->
+  <section class="image-break fade-in">
+    <img src="assets/images/statue-dark.png" alt="Dark marble figure">
+  </section>
+
+  <div class="container">
+    <hr class="divider-sm">
+  </div>
+
+  <!-- LANDSCAPE -->
+  <section class="landscape fade-in">
+    <div class="container">
+      <h2>The Landscape</h2>
+      <p>The peptide industry is at an inflection point. Legislative meetings with RFK and key figures in the Trump administration are reshaping the regulatory terrain weekly. Compounding pharmacies, research hubs, and telehealth platforms all operate in shifting gray areas.</p>
+      <p>Mastercard has pulled out of peptide processing. Compliance frameworks change by the month. The difference between operating safely and recklessly has never been thinner&mdash;or more consequential.</p>
+      <p style="color: var(--text-dim); font-style: italic; margin-top: 8px;">We exist to make sense of the chaos together.</p>
+    </div>
+  </section>
+
+  <div class="container">
+    <hr class="divider">
+  </div>
+
+  <!-- VOICES / PANELS -->
+  <section class="voices fade-in">
+    <div class="container">
+      <p class="section-label">Voices at the Table</p>
+      <p style="text-align: center; color: var(--text-dim); max-width: 520px; margin: 0 auto; font-size: 17px;">Our events bring together the intersectional perspectives that actually move the industry forward.</p>
+
+      <div class="voices-grid">
+        <div class="voice">
+          <h3>The Physician</h3>
+          <p>Board-certified doctors and longevity specialists who see the space from the clinical frontline&mdash;where it&rsquo;s headed and what the science actually supports.</p>
+        </div>
+        <div class="voice">
+          <h3>The Legal Mind</h3>
+          <p>Regulatory experts with ties to government, navigating the shifting compliance landscape from the FDA to the current administration.</p>
+        </div>
+        <div class="voice">
+          <h3>The Entrepreneur</h3>
+          <p>Founders building companies in the space&mdash;from telehealth platforms prescribing through compounding pharmacies to direct-to-consumer peptide brands.</p>
+        </div>
+        <div class="voice">
+          <h3>The Manufacturer</h3>
+          <p>Domestic and international producers who can speak to what CGMP actually means, what synthesis looks like from the root up, and where quality fails.</p>
+        </div>
+        <div class="voice">
+          <h3>The Scientist</h3>
+          <p>CSOs, CROs, and lab directors with deep supply chain and QC expertise&mdash;HPLC, stability studies, and the hard truth about what&rsquo;s in the vial.</p>
+        </div>
+        <div class="voice">
+          <h3>The Athlete</h3>
+          <p>Elite performers using peptides for recovery, cognition, and peak output&mdash;the real-world signal that validates the science.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <hr class="divider">
+  </div>
+
+  <!-- MEMBERSHIP -->
+  <section class="membership fade-in">
+    <div class="container">
+      <p class="section-label">Membership</p>
+      <p>Membership is by invitation only. If you have been referred by an existing member or are an active participant in the peptide industry, submit your inquiry below.</p>
+      <div class="form-row">
+        <input type="email" placeholder="Your email address">
+        <button type="button">Request Access</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <hr class="divider">
+  </div>
+
+  <!-- MEMBERS & ATTENDEES (TOGGLEABLE) -->
+  <!-- To hide: add class "hidden" to this section, e.g. class="members-section hidden" -->
+  <section class="members-section fade-in" id="members">
+    <div class="container">
+      <p class="section-title">Members</p>
+      <div class="members-grid">
+        <div class="member-card">
+          <p class="name">Dr. Melissa Peterson</p>
+          <p class="role">Physician</p>
+        </div>
+        <div class="member-card">
+          <p class="name">Jeff Weegers</p>
+          <p class="role">Biochemistry &amp; Supply Chain</p>
+        </div>
+        <!-- ADD MORE MEMBERS HERE -->
+        <!--
+        <div class="member-card">
+          <p class="name">Name Here</p>
+          <p class="role">Role Here</p>
+        </div>
+        -->
+      </div>
+
+      <div class="attendees-list">
+        <p class="section-title">Event Attendees</p>
+        <div class="attendees-tags">
+          <!-- ADD ATTENDEE NAMES HERE AS TAGS -->
+          <span class="attendee-tag">Invite list pending</span>
+          <!--
+          <span class="attendee-tag">Name Here</span>
+          -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <hr class="divider">
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p class="copy">&copy; 2025 California Peptide Club &middot; Los Angeles, CA</p>
+      <p class="greek">&gamma;&nu;&omicron;&thetasym;&iota; &sigma;&epsilon;&alpha;&upsilon;&tau;&#972;&nu; &mdash; Know thyself.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Fade-in on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // Toggle members section visibility (call from console or button)
+    // Usage: toggleMembers() to show/hide
+    window.toggleMembers = function() {
+      document.getElementById('members').classList.toggle('hidden');
+    };
+  </script>
+
+</body>
+</html>
