@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>California Peptide Club — Peptide Topology</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&family=Linux+Libertine:wght@400;700&family=Source+Serif+Pro:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+</head>
+<body data-mode="topology">
+
+<!-- TOPOLOGY MODE: dark futuristic -->
+<div class="bg-grid"></div>
+<div class="bg-glow"></div>
+
+<header class="topbar">
+  <div class="brand">
+    <div class="brand-mark">CPC</div>
+    <div class="brand-text">
+      <div class="brand-line1">California Peptide Club</div>
+      <div class="brand-line2"><span class="title-topology">PEPTIDE&nbsp;TOPOLOGY</span><span class="title-pedia">PEPTIDE&nbsp;PEDIA</span></div>
+    </div>
+  </div>
+  <div class="mode-toggle">
+    <button class="mode-btn active" data-mode="topology" title="Interactive map">▼ Topology</button>
+    <button class="mode-btn" data-mode="pedia" title="Wikipedia-style entries">📖 Peptide Pedia</button>
+    <button class="mode-btn" data-mode="talk" title="Presentation mode">▶ Talk</button>
+  </div>
+  <nav class="tabs topology-only">
+    <button class="tab active" data-view="topology">Map</button>
+    <button class="tab" data-view="map">Vector</button>
+    <button class="tab" data-view="stacks">Stacks</button>
+    <button class="tab" data-view="history">History</button>
+    <button class="tab" data-view="protocol">Protocol</button>
+  </nav>
+</header>
+
+<!-- LEGEND / KEY (top of topology mode) -->
+<section class="legend-panel topology-only" id="legend-panel">
+  <button class="legend-toggle" id="legend-toggle" aria-expanded="true">
+    <span class="lt-icon">▾</span> About this map
+  </button>
+  <div class="legend-body" id="legend-body">
+    <div class="legend-cols">
+      <div class="legend-col">
+        <h4>What you're looking at</h4>
+        <p>An interactive topology of the peptides being discussed in 2026. Each colored island is a category. Each vial is one peptide — click any vial to open a profile.</p>
+      </div>
+      <div class="legend-col">
+        <h4>Sources</h4>
+        <p><b>Alec Tatem</b> defined the four scientific groupings used here (GH/IGF-1, Tissue Repair, Longevity/Nootropic, Immune/GU/α-MSH). The fifth class — GLP-1 / Metabolic — is a modern carve-out. Per-peptide content is drawn from Tatem, <b>Dr. Ashley Froese</b>, transcript notes, and clinical references.</p>
+      </div>
+      <div class="legend-col">
+        <h4>Tier</h4>
+        <ul class="legend-list">
+          <li><span class="tier-badge tier-S">S</span> FDA-approved or Tatem's "must-have"</li>
+          <li><span class="tier-badge tier-A">A</span> Strong evidence</li>
+          <li><span class="tier-badge tier-B">B</span> Promising</li>
+          <li><span class="tier-badge tier-C">C</span> Emerging / mostly anecdotal</li>
+          <li><span class="tier-badge tier-D">D</span> Skeptical</li>
+          <li><span class="tier-badge tier-F">F</span> Likely doesn't work</li>
+        </ul>
+      </div>
+      <div class="legend-col">
+        <h4>Symbols & scores</h4>
+        <ul class="legend-list">
+          <li><span class="cycled-icon">↻</span> Commonly cycled (on/off)</li>
+          <li>Vial fill height = strength of human research</li>
+          <li>Scores 1–10. <em>Empty</em> bars = no transcript-backed data; we don't guess.</li>
+        </ul>
+      </div>
+      <div class="legend-col">
+        <h4>Categories</h4>
+        <div id="legend-cats"></div>
+      </div>
+    </div>
+    <div class="legend-disclaimer">
+      Educational only. Not medical advice. Many peptides on this map are research compounds — not approved for the use cases discussed.
+    </div>
+  </div>
+</section>
+
+<div class="marquee topology-only" id="marquee"></div>
+
+<main>
+  <!-- TOPOLOGY MODE VIEWS -->
+  <section class="view active topology-only" id="view-topology">
+    <div class="view-header">
+      <h2>The Peptide Map</h2>
+      <p class="lede">Five islands. Thirty-one peptides. Click a vial to dig in, or drag the islands around.</p>
+    </div>
+    <div id="bubble-map-wrap"><svg id="bubble-map" preserveAspectRatio="xMidYMid meet"></svg></div>
+    <div class="categories" id="categories"></div>
+  </section>
+
+  <section class="view topology-only" id="view-map">
+    <div class="view-header">
+      <h2>2D Vector Space</h2>
+      <p class="lede">Pick two axes. See where every peptide lands.</p>
+      <div class="axis-controls">
+        <label>X axis<select id="axis-x"></select></label>
+        <label>Y axis<select id="axis-y"></select></label>
+      </div>
+    </div>
+    <div class="map-wrap"><svg id="vector-map" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid meet"></svg></div>
+  </section>
+
+  <section class="view topology-only" id="view-stacks">
+    <div class="view-header">
+      <h2>Famous Stacks</h2>
+      <p class="lede">The combinations everyone is actually running.</p>
+    </div>
+    <div class="stacks-grid" id="stacks-grid"></div>
+  </section>
+
+  <section class="view topology-only" id="view-history">
+    <div class="view-header">
+      <h2>A Brief History of Peptides</h2>
+      <p class="lede">Insulin to retatrutide. A century of molecules.</p>
+    </div>
+    <div class="timeline" id="timeline"></div>
+  </section>
+
+  <section class="view topology-only" id="view-protocol">
+    <div class="view-header">
+      <h2>Peptide Protocol Builder</h2>
+      <p class="lede">Tell us your goals and risk tolerance. We'll suggest a stack.</p>
+    </div>
+    <div class="protocol-wrap">
+      <form id="protocol-form" class="protocol-form">
+        <fieldset>
+          <legend>1. What are your goals? <span class="hint">(pick all that apply)</span></legend>
+          <div class="chips">
+            <label class="chip"><input type="checkbox" name="goal" value="weightloss"><span>Fat loss</span></label>
+            <label class="chip"><input type="checkbox" name="goal" value="muscle"><span>Muscle growth</span></label>
+            <label class="chip"><input type="checkbox" name="goal" value="recovery"><span>Recovery / injury</span></label>
+            <label class="chip"><input type="checkbox" name="goal" value="sleep"><span>Sleep</span></label>
+            <label class="chip"><input type="checkbox" name="goal" value="cognitive"><span>Cognition / focus</span></label>
+            <label class="chip"><input type="checkbox" name="goal" value="hairSkin"><span>Hair / skin</span></label>
+            <label class="chip"><input type="checkbox" name="goal" value="longevity"><span>Longevity</span></label>
+            <label class="chip"><input type="checkbox" name="goal" value="libido"><span>Libido</span></label>
+            <label class="chip"><input type="checkbox" name="goal" value="immune"><span>Immune / gut</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>2. Risk preference</legend>
+          <div class="radios">
+            <label class="radio"><input type="radio" name="risk" value="conservative" checked><span><b>Conservative.</b> FDA‑approved or strong human RCTs only.</span></label>
+            <label class="radio"><input type="radio" name="risk" value="moderate"><span><b>Moderate.</b> Some human data is fine. No tier D/F.</span></label>
+            <label class="radio"><input type="radio" name="risk" value="adventurous"><span><b>Adventurous.</b> Anecdote and rodent data acceptable.</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>3. Cycling tolerance</legend>
+          <div class="radios">
+            <label class="radio"><input type="radio" name="cycle" value="any" checked><span>Either is fine</span></label>
+            <label class="radio"><input type="radio" name="cycle" value="no"><span>I'd rather not cycle</span></label>
+          </div>
+        </fieldset>
+        <button type="submit" class="cta">Build my protocol</button>
+      </form>
+      <div id="protocol-result" class="protocol-result"></div>
+    </div>
+  </section>
+
+  <!-- TALK MODE: fullscreen slide deck -->
+  <section class="talk-shell talk-only" id="talk-shell">
+    <div class="talk-progress" id="talk-progress"><div class="talk-progress-fill" id="talk-progress-fill"></div></div>
+    <div class="talk-slide" id="talk-slide"></div>
+    <div class="talk-controls">
+      <button class="talk-btn" id="talk-prev" title="Previous (←)">←</button>
+      <div class="talk-counter" id="talk-counter"></div>
+      <button class="talk-btn" id="talk-next" title="Next (→)">→</button>
+      <button class="talk-btn talk-fs" id="talk-fs" title="Fullscreen (F)">⛶</button>
+    </div>
+  </section>
+
+  <!-- PEDIA MODE -->
+  <section class="pedia-shell pedia-only" id="pedia-shell">
+    <aside class="pedia-sidebar">
+      <div class="pedia-search">
+        <input type="search" id="pedia-search" placeholder="Search peptides..." autocomplete="off" />
+      </div>
+      <nav class="pedia-nav" id="pedia-nav"></nav>
+    </aside>
+    <article class="pedia-article" id="pedia-article"></article>
+  </section>
+</main>
+
+<!-- DETAIL MODAL (topology mode) -->
+<div class="modal-backdrop" id="modal-backdrop">
+  <div class="modal" id="modal">
+    <button class="modal-close" id="modal-close" aria-label="Close">×</button>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<footer class="foot">
+  <div>California Peptide Club — Peptide Topology · Educational use only · Not medical advice</div>
+  <div class="foot-meta" id="foot-meta"></div>
+</footer>
+
+<script src="peptides.js"></script>
+<script src="slides.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
