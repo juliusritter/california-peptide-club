@@ -563,6 +563,31 @@ body[data-mode="pedia"] .topbar { padding: 14px 24px; }
 .pedia-references li { margin-bottom: 6px; }
 .pedia-references li a { color: #36c; }
 
+/* Viral posts (X / Morelli) */
+.pedia-viral {
+  margin-top: 28px; padding-top: 16px; border-top: 1px solid #c8ccd1;
+  font-size: 14px; line-height: 1.6;
+}
+.pedia-viral h2 { margin-top: 0; }
+.pedia-viral ul { padding-left: 22px; margin: 0; }
+.pedia-viral li { margin-bottom: 8px; }
+.pedia-viral li a { color: #36c; font-weight: 600; }
+.pedia-viral-eng { color: #72777d; font-size: 12px; }
+
+/* Non-peptide (small molecule) marker — small orange dot */
+.nonpeptide-dot {
+  display: inline-block; width: 8px; height: 8px; border-radius: 50%;
+  background: #FF7A00; box-shadow: 0 0 4px rgba(255,122,0,0.7);
+  margin-left: 5px; vertical-align: middle;
+}
+.nonpeptide-note { color: #b35600; font-size: 13px; font-style: italic; }
+.pedia-nav-legend {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 11px; color: #72777d; padding: 0 4px 10px; margin-bottom: 6px;
+  border-bottom: 1px solid #e3e3e3;
+}
+.pedia-nav-legend .nonpeptide-dot { margin-left: 0; }
+
 .pedia-stub {
   background: #fef6e7; border-left: 4px solid #fc3; padding: 12px 16px;
   margin-bottom: 16px; font-size: 14px; font-family: 'Source Sans Pro', sans-serif;

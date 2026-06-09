@@ -222,7 +222,14 @@ window.PEPTIDE_DATA = {
       "safetyProfile": "Across rodent toxicity studies and a decade of gray-market human use, no serious adverse events have surfaced. Long-term human safety remains unknown.",
       "recommendedVendors": [],
       "news": [],
-      "viralPosts": [],
+      "viralPosts": [
+        {
+          "url": "https://x.com/morellifit/status/2056409530821468627",
+          "author": "Michael Morelli (@morellifit)",
+          "text": "BPC-157 is the healing peptide. It comes from a fragment of a protein in stomach acid. No one fully understands what it does, but it speeds up healing of basically every kind of tissue. I've heard hundreds of stories of people who suffered with chronic pain for years, but after taking BPC-157, the pain vanished.",
+          "engagement": "562,939 views, 649 likes/bookmarks"
+        }
+      ],
       "informativeVideos": [
         {
           "url": "https://www.youtube.com/watch?v=i7BN8ZHv_u0",
@@ -272,6 +279,11 @@ window.PEPTIDE_DATA = {
             "id": "stacks",
             "title": "Common stacks",
             "body": "BPC-157 is most often paired with TB-500 in the Wolverine stack for soft-tissue injury, with GHK-Cu added to form the Glow stack for combined healing and skin benefit, and with KPV added to make the so-called Close stack for full-spectrum repair [9][10]."
+          },
+          {
+            "id": "morelli-notes",
+            "title": "Morelli's notes",
+            "body": "Michael Morelli, who reports testing peptides on himself and more than 500 clients over seven years, describes BPC-157 as 'the healing peptide' and concedes that 'no one fully understands what it does,' while maintaining that it speeds healing of essentially every kind of tissue [11]. He cites an observational pattern rather than trial data, saying he has heard hundreds of accounts of people with years of chronic pain whose pain vanished after taking BPC-157 [11]. In his usage framework, he positions BPC-157 with TB-500 as the first intervention for anyone who has 'beaten up' their body, ahead of any other compound, and calls the BPC-157 plus TB-500 combination the best recovery stack he has tested [11]. For lean individuals optimizing rather than recovering from injury, he pairs BPC-157 for recovery with CJC-1295 and ipamorelin for the growth-hormone axis [11]."
           },
           {
             "id": "see-also",
@@ -339,9 +351,16 @@ window.PEPTIDE_DATA = {
             "label": "Tatem - Ultimate Peptide Tier List",
             "source": "alex_tatem_2.txt",
             "url": "https://www.youtube.com/watch?v=3k9pBu27LcM"
+          },
+          {
+            "id": 11,
+            "label": "Morelli - Everything you need to know about peptides (X)",
+            "source": "morelli_x",
+            "url": "https://x.com/morellifit/status/2056409530821468627"
           }
         ]
-      }
+      },
+      "isPeptide": true
     },
     {
       "id": "tb-500",
@@ -485,7 +504,8 @@ window.PEPTIDE_DATA = {
             "url": "https://www.youtube.com/watch?v=jcO1yJ1bHvo"
           }
         ]
-      }
+      },
+      "isPeptide": true
     },
     {
       "id": "ghk-cu",
@@ -624,7 +644,8 @@ window.PEPTIDE_DATA = {
             "url": "https://www.youtube.com/watch?v=jcO1yJ1bHvo"
           }
         ]
-      }
+      },
+      "isPeptide": true
     },
     {
       "id": "kpv",
@@ -749,7 +770,8 @@ window.PEPTIDE_DATA = {
             "url": "https://www.youtube.com/watch?v=jcO1yJ1bHvo"
           }
         ]
-      }
+      },
+      "isPeptide": true
     },
     {
       "id": "cjc-1295",
@@ -789,7 +811,14 @@ window.PEPTIDE_DATA = {
       "safetyProfile": "Common acute effect is a vasodilation flush/head rush. Risks include water retention, tingling, transient insulin resistance, occasional hives. No evidence the peptide causes cancer but excessive GH/IGF-1 can feed existing tumors.",
       "recommendedVendors": [],
       "news": [],
-      "viralPosts": [],
+      "viralPosts": [
+        {
+          "url": "https://x.com/morellifit/status/2056409530821468627",
+          "author": "Michael Morelli (@morellifit)",
+          "text": "CJC-1295 and Ipamorelin usually go together. The results aren't dramatic, but you get better sleep, faster recovery, and body composition improves slowly. It's a maintenance protocol.",
+          "engagement": "562,938 views"
+        }
+      ],
       "informativeVideos": [
         {
           "url": "https://www.youtube.com/watch?v=kdQ83_Je_qs",
@@ -841,6 +870,11 @@ window.PEPTIDE_DATA = {
             "body": "CJC-1295 is most commonly paired with ipamorelin in the classic peptide stack for recovery and body composition; it is also stacked with tesamorelin or sermorelin for varying durations of GH stimulation [1][2]."
           },
           {
+            "id": "morelli-notes",
+            "title": "Morelli's notes",
+            "body": "Michael Morelli frames CJC-1295 (no DAC) plus ipamorelin as a low-key \"maintenance protocol\" rather than a dramatic intervention, characterizing the realistic returns as better sleep, faster recovery, and slowly improving body composition rather than rapid change [7]. He positions this pairing not for people with significant weight to lose but for those who are already lean and trying to optimize, where he suggests CJC-1295 with ipamorelin for the growth-hormone side alongside [[bpc-157|BPC-157]] for recovery [7]. Consistent with his general advice against stacking five peptides at once, he recommends introducing CJC-1295 on its own, observing its effect, and only then adding the next compound [7]."
+          },
+          {
             "id": "see-also",
             "title": "See also",
             "body": "[[ipamorelin|Ipamorelin]], [[sermorelin|Sermorelin]], [[tesamorelin|Tesamorelin]], [[mk-677|MK-677]]."
@@ -882,9 +916,16 @@ window.PEPTIDE_DATA = {
             "label": "Froese - Cancer Risk From Popular Peptides",
             "source": "froese_cancer_risk.txt",
             "url": "https://www.youtube.com/watch?v=M3TWSopJ8Pk"
+          },
+          {
+            "id": 7,
+            "label": "Morelli - Everything you need to know about peptides (X)",
+            "source": "morelli_x",
+            "url": "https://x.com/morellifit/status/2056409530821468627"
           }
         ]
-      }
+      },
+      "isPeptide": true
     },
     {
       "id": "ipamorelin",
@@ -925,7 +966,14 @@ window.PEPTIDE_DATA = {
       "safetyProfile": "Phase 2 study found no real safety concerns. In practice users report water retention, tingling in the hands, transient insulin resistance, and occasional hives. Excessive long-term GH/IGF-1 elevation could theoretically accelerate existing tumors; no evidence it causes cancer.",
       "recommendedVendors": [],
       "news": [],
-      "viralPosts": [],
+      "viralPosts": [
+        {
+          "url": "https://x.com/morellifit/status/2056409530821468627",
+          "author": "Michael Morelli (@morellifit)",
+          "text": "CJC-1295 and Ipamorelin usually go together. The results aren't dramatic, but you get better sleep, faster recovery, and body composition improves slowly. It's a maintenance protocol.",
+          "engagement": ""
+        }
+      ],
       "informativeVideos": [
         {
           "url": "https://www.youtube.com/watch?v=kdQ83_Je_qs",
@@ -982,6 +1030,11 @@ window.PEPTIDE_DATA = {
             "body": "The CJC-1295 + ipamorelin stack is the most widely used GH-axis peptide combination; ipamorelin is also paired with sermorelin or tesamorelin in alternative protocols [1][3]."
           },
           {
+            "id": "morelli-notes",
+            "title": "Morelli's notes",
+            "body": "Morelli frames ipamorelin as the amplitude half of the growth-hormone axis: where CJC-1295 (no DAC) tells the pituitary when to fire a pulse, ipamorelin amplifies that pulse, and unlike older secretagogues it does so without raising cortisol or driving hunger [8]. He characterizes the CJC-1295 + ipamorelin pairing as a slow maintenance protocol rather than a dramatic intervention, with the realistic payoff being better sleep, faster recovery, and gradually improving body composition over time [8]. He notes that GHRP-2 is stronger than ipamorelin but raises cortisol, which is the trade-off that keeps ipamorelin the cleaner default [8]. For someone who is already lean and optimizing rather than losing weight, Morelli recommends CJC-1295 with ipamorelin for the growth-hormone side stacked with BPC-157 for recovery, and advises adding peptides one at a time rather than stacking several at once [8]."
+          },
+          {
             "id": "see-also",
             "title": "See also",
             "body": "[[cjc-1295|CJC-1295]], [[sermorelin|Sermorelin]], [[tesamorelin|Tesamorelin]], [[mk-677|MK-677]]."
@@ -1029,9 +1082,16 @@ window.PEPTIDE_DATA = {
             "label": "Froese - Cancer Risk From Popular Peptides",
             "source": "froese_cancer_risk.txt",
             "url": "https://www.youtube.com/watch?v=M3TWSopJ8Pk"
+          },
+          {
+            "id": 8,
+            "label": "Morelli - Everything you need to know about peptides (X)",
+            "source": "morelli_x",
+            "url": "https://x.com/morellifit/status/2056409530821468627"
           }
         ]
-      }
+      },
+      "isPeptide": true
     },
     {
       "id": "mk-677",
@@ -1158,7 +1218,8 @@ window.PEPTIDE_DATA = {
             "url": "https://www.youtube.com/watch?v=Xi77xSdVmic"
           }
         ]
-      }
+      },
+      "isPeptide": false
     },
     {
       "id": "tesamorelin",
@@ -1284,7 +1345,8 @@ window.PEPTIDE_DATA = {
             "url": "https://www.youtube.com/watch?v=M3TWSopJ8Pk"
           }
         ]
-      }
+      },
+      "isPeptide": true
     },
     {
       "id": "sermorelin",
@@ -1421,7 +1483,8 @@ window.PEPTIDE_DATA = {
             "url": "https://www.youtube.com/watch?v=M3TWSopJ8Pk"
           }
         ]
-      }
+      },
+      "isPeptide": true
     },
     {
       "id": "igf-1-lr3",
@@ -1532,7 +1595,8 @@ window.PEPTIDE_DATA = {
             "url": "https://www.youtube.com/watch?v=M3TWSopJ8Pk"
           }
         ]
-      }
+      },
+      "isPeptide": true
     },
     {
       "id": "growth-hormone",
@@ -1663,7 +1727,8 @@ window.PEPTIDE_DATA = {
             "url": "https://www.youtube.com/watch?v=M3TWSopJ8Pk"
           }
         ]
-      }
+      },
+      "isPeptide": true
     },
     {
       "id": "aod-9604",
@@ -1704,7 +1769,14 @@ window.PEPTIDE_DATA = {
       "safetyProfile": null,
       "recommendedVendors": [],
       "news": [],
-      "viralPosts": [],
+      "viralPosts": [
+        {
+          "url": "https://x.com/morellifit/status/2056409530821468627",
+          "author": "Michael Morelli (@morellifit)",
+          "text": "AOD-9604 is a fragment of growth hormone with just the fat-burning part kept in... Over 900 people have tried it in trials. The results were solid, about 1.8 kg more weight lost than placebo over 12 weeks. It's also one of the safest peptides ever studied.",
+          "engagement": ""
+        }
+      ],
       "informativeVideos": [
         {
           "url": "https://www.youtube.com/watch?v=jt5hHb6kzYM",
@@ -1751,6 +1823,11 @@ window.PEPTIDE_DATA = {
             "body": "AOD-9604 is sometimes combined with GHRH-analog peptides or GLP-1 receptor agonists, although there is no clinical evidence supporting any specific stack [2]."
           },
           {
+            "id": "morelli-notes",
+            "title": "Morelli's notes",
+            "body": "Morelli groups AOD-9604 among the original \"fat-burning\" peptides and gives the human data a more favorable reading than other reviewers, describing the trial results as \"solid\" rather than mixed [6]. He cites a pooled experience of over 900 people across trials and reports roughly 1.8 kg of additional weight loss versus placebo over 12 weeks [6]. He also characterizes it as \"one of the safest peptides ever studied,\" consistent with its lack of effect on blood sugar and bone growth [6]."
+          },
+          {
             "id": "see-also",
             "title": "See also",
             "body": "[[growth-hormone|Growth Hormone (HGH)]], [[tesamorelin|Tesamorelin]], [[semaglutide|Semaglutide]], [[tirzepatide|Tirzepatide]]."
@@ -1786,9 +1863,16 @@ window.PEPTIDE_DATA = {
             "label": "Tatem - GHK-Cu Deep Dive",
             "source": "ghk_cu.txt",
             "url": "https://www.youtube.com/watch?v=52sPkAe7xFc"
+          },
+          {
+            "id": 6,
+            "label": "Morelli - Everything you need to know about peptides (X)",
+            "source": "morelli_x",
+            "url": "https://x.com/morellifit/status/2056409530821468627"
           }
         ]
-      }
+      },
+      "isPeptide": true
     },
     {
       "id": "peg-mgf",
@@ -1899,7 +1983,8 @@ window.PEPTIDE_DATA = {
             "url": "https://www.youtube.com/watch?v=M3TWSopJ8Pk"
           }
         ]
-      }
+      },
+      "isPeptide": true
     },
     {
       "id": "epitalon",
@@ -2035,7 +2120,8 @@ window.PEPTIDE_DATA = {
             "url": "https://www.youtube.com/watch?v=s-Bf12PUgZ4"
           }
         ]
-      }
+      },
+      "isPeptide": true
     },
     {
       "id": "mots-c",
@@ -2195,7 +2281,8 @@ window.PEPTIDE_DATA = {
             "url": "https://www.youtube.com/watch?v=2_omTjwHR_Y"
           }
         ]
-      }
+      },
+      "isPeptide": true
     },
     {
       "id": "ss-31",
@@ -2356,7 +2443,8 @@ window.PEPTIDE_DATA = {
             "url": "https://www.youtube.com/watch?v=txTdyhX3Pkw"
           }
         ]
-      }
+      },
+      "isPeptide": true
     },
     {
       "id": "dsip",
@@ -2480,7 +2568,8 @@ window.PEPTIDE_DATA = {
             "url": "https://www.youtube.com/watch?v=ZPHfz-3pkQ0"
           }
         ]
-      }
+      },
+      "isPeptide": true
     },
     {
       "id": "cerebrolysin",
@@ -2587,7 +2676,8 @@ window.PEPTIDE_DATA = {
             "url": "https://www.youtube.com/watch?v=s-Bf12PUgZ4"
           }
         ]
-      }
+      },
+      "isPeptide": true
     },
     {
       "id": "selank",
@@ -2627,7 +2717,13 @@ window.PEPTIDE_DATA = {
       "safetyProfile": null,
       "recommendedVendors": [],
       "news": [],
-      "viralPosts": [],
+      "viralPosts": [
+        {
+          "url": "https://x.com/morellifit/status/2056409530821468627",
+          "author": "Michael Morelli (@morellifit)",
+          "text": "Selank is the other Russian one. It reduces anxiety without sedation of anti-anxiety drugs. Stress raises cortisol, cortisol stores belly fat, so keeping stress down matters more than people think. Low cortisol living is the way, and Selank makes it easier."
+        }
+      ],
       "informativeVideos": [
         {
           "url": "https://www.youtube.com/watch?v=jt5hHb6kzYM",
@@ -2674,6 +2770,11 @@ window.PEPTIDE_DATA = {
             "body": "Selank is sometimes combined with Semax and nootropic supplements such as Bacopa, lion's mane, or methylene blue in focus and anxiety stacks [2][6]."
           },
           {
+            "id": "morelli-notes",
+            "title": "Morelli's notes",
+            "body": "Morelli places Selank in a \"support group\" of peptides that do not burn fat directly but maintain the systems that allow fat loss to proceed [7]. He frames it primarily as a cortisol-management tool rather than a standalone anxiolytic, arguing that because stress raises cortisol and cortisol promotes abdominal fat storage, lowering daily stress is more consequential for body composition than most people assume [7]. On this reasoning he treats Selank's non-sedating anxiety reduction as an indirect lever for fat loss and pairs it conceptually with Semax, which he uses to preserve cognition during caloric restriction [7]."
+          },
+          {
             "id": "see-also",
             "title": "See also",
             "body": "[[semax|Semax]], [[dihexa|Dihexa]], [[cerebrolysin|Cerebrolysin]], [[methylene-blue|Methylene Blue]]."
@@ -2715,9 +2816,16 @@ window.PEPTIDE_DATA = {
             "label": "Froese - Nootropics Explained",
             "source": "froese_nootropics.txt",
             "url": "https://www.youtube.com/watch?v=0_LZFSXmqAo"
+          },
+          {
+            "id": 7,
+            "label": "Morelli - Everything you need to know about peptides (X)",
+            "source": "morelli_x",
+            "url": "https://x.com/morellifit/status/2056409530821468627"
           }
         ]
-      }
+      },
+      "isPeptide": true
     },
     {
       "id": "semax",
@@ -2756,7 +2864,14 @@ window.PEPTIDE_DATA = {
       "safetyProfile": null,
       "recommendedVendors": [],
       "news": [],
-      "viralPosts": [],
+      "viralPosts": [
+        {
+          "url": "https://x.com/morellifit/status/2051362103500615851",
+          "author": "Michael Morelli (@morellifit)",
+          "text": "Semax is the most underrated nootropic peptide on the market. It has 40 years of safe Russian clinical use behind it. I've been using it for a few months and the cognitive benefits are insane. I use intranasal Semax almost daily for deep work and high cognitive output. Within minutes, the room feels quieter, and there's less friction between my thoughts and my work.",
+          "engagement": "35-tweet thread"
+        }
+      ],
       "informativeVideos": [
         {
           "url": "https://www.youtube.com/watch?v=jt5hHb6kzYM",
@@ -2803,6 +2918,11 @@ window.PEPTIDE_DATA = {
             "body": "Semax is sometimes combined with Selank, Dihexa, and methylene blue in nootropic stacks [2][1]."
           },
           {
+            "id": "morelli-notes",
+            "title": "Morelli's notes",
+            "body": "Michael Morelli calls Semax 'the most underrated nootropic peptide on the market' and reports using intranasal Semax almost daily for deep work, describing a subjective effect in which 'the room feels quieter' with less friction between thought and execution and no stimulant-style spike or crash [6]. He outlines the Russian medical dosing he references, 0.1% nasal drops twice daily for cognition and a 1% solution several times daily for up to ten days after stroke, and notes that performance users often run 14-day cycles followed by a long break [6]. He highlights pharmacokinetic claims that Semax crosses the blood-brain barrier within about four minutes, reaches cerebrospinal fluid in under fifteen, and stays active for roughly twenty-four hours per dose, and cites a 110-patient stroke study in which 6000 mcg daily tracked faster functional recovery alongside rising plasma BDNF [6]. For stacking he pairs Semax with caffeine, amphetamines, or modafinil, stating it adds clean focus and 'blunts the bad, accelerates the good' rather than amplifying jitters [6]."
+          },
+          {
             "id": "see-also",
             "title": "See also",
             "body": "[[selank|Selank]], [[dihexa|Dihexa]], [[cerebrolysin|Cerebrolysin]], [[methylene-blue|Methylene Blue]]."
@@ -2838,9 +2958,16 @@ window.PEPTIDE_DATA = {
             "label": "Tatem - Peptide Regulatory History",
             "source": "peptide_history.txt",
             "url": "https://www.youtube.com/watch?v=ZPHfz-3pkQ0"
+          },
+          {
+            "id": 6,
+            "label": "Morelli - Semax thread (X)",
+            "source": "morelli_x",
+            "url": "https://x.com/morellifit/status/2051362103500615851"
           }
         ]
-      }
+      },
+      "isPeptide": true
     },
     {
       "id": "dihexa",
@@ -2957,7 +3084,8 @@ window.PEPTIDE_DATA = {
             "url": "https://www.youtube.com/watch?v=ZPHfz-3pkQ0"
           }
         ]
-      }
+      },
+      "isPeptide": false
     },
     {
       "id": "thymosin-alpha-1",
@@ -3084,7 +3212,8 @@ window.PEPTIDE_DATA = {
             "url": "https://www.youtube.com/watch?v=52sPkAe7xFc"
           }
         ]
-      }
+      },
+      "isPeptide": true
     },
     {
       "id": "kisspeptin-10",
@@ -3196,7 +3325,8 @@ window.PEPTIDE_DATA = {
             "url": "https://www.youtube.com/watch?v=ZPHfz-3pkQ0"
           }
         ]
-      }
+      },
+      "isPeptide": true
     },
     {
       "id": "melanotan-ii",
@@ -3325,7 +3455,8 @@ window.PEPTIDE_DATA = {
             "url": "https://www.youtube.com/watch?v=spOpffLj9Oo"
           }
         ]
-      }
+      },
+      "isPeptide": true
     },
     {
       "id": "melanotan-i",
@@ -3419,7 +3550,8 @@ window.PEPTIDE_DATA = {
             "url": "https://www.youtube.com/watch?v=jt5hHb6kzYM"
           }
         ]
-      }
+      },
+      "isPeptide": true
     },
     {
       "id": "pt-141",
@@ -3461,7 +3593,14 @@ window.PEPTIDE_DATA = {
       "safetyProfile": null,
       "recommendedVendors": [],
       "news": [],
-      "viralPosts": [],
+      "viralPosts": [
+        {
+          "url": "https://x.com/morellifit/status/2056409530821468627",
+          "author": "Michael Morelli (@morellifit)",
+          "text": "PT-141 is a cleaner version of Melanotan. It's FDA-approved for low libido, but it works on the same brain reward system that drives food cravings. Research on direct weight loss is still early.",
+          "engagement": "562,939 views, 649 likes/bookmarks"
+        }
+      ],
       "informativeVideos": [
         {
           "url": "https://www.youtube.com/watch?v=jt5hHb6kzYM",
@@ -3508,6 +3647,11 @@ window.PEPTIDE_DATA = {
             "body": ""
           },
           {
+            "id": "morelli-notes",
+            "title": "Morelli's notes",
+            "body": "Morelli places PT-141 in the \"brain group\" of peptides and describes it as \"a cleaner version of Melanotan,\" reflecting its derivation from Melanotan II with greater selectivity for the central melanocortin receptors [5]. Although he acknowledges it is FDA-approved for low libido, his interest is metabolic: he argues that PT-141 acts on the same brain reward system that drives food cravings, framing it as a potential lever for emotional or craving-driven eating rather than purely a sexual-function agent [5]. He qualifies this explicitly, noting that research on PT-141 for direct weight loss is still early [5]."
+          },
+          {
             "id": "see-also",
             "title": "See also",
             "body": "[[melanotan-ii|Melanotan II]], [[melanotan-i|Melanotan I]], [[kisspeptin-10|Kisspeptin-10]]."
@@ -3537,9 +3681,16 @@ window.PEPTIDE_DATA = {
             "label": "Froese - 11 Peptides Greenlit by FDA",
             "source": "froese_11_fda_peptides.txt",
             "url": "https://www.youtube.com/watch?v=s-Bf12PUgZ4"
+          },
+          {
+            "id": 5,
+            "label": "Morelli - Everything you need to know about peptides (X)",
+            "source": "morelli_x",
+            "url": "https://x.com/morellifit/status/2056409530821468627"
           }
         ]
-      }
+      },
+      "isPeptide": true
     },
     {
       "id": "ll-37",
@@ -3657,7 +3808,8 @@ window.PEPTIDE_DATA = {
             "url": "https://www.youtube.com/watch?v=s-Bf12PUgZ4"
           }
         ]
-      }
+      },
+      "isPeptide": true
     },
     {
       "id": "semaglutide",
@@ -3704,7 +3856,14 @@ window.PEPTIDE_DATA = {
       "safetyProfile": "GI side effects (nausea, vomiting, constipation) are the main acute issue at titration. Boxed warning for thyroid C-cell tumors in rodents (not confirmed in humans). Pancreatitis risk is the most serious clinical concern.",
       "recommendedVendors": [],
       "news": [],
-      "viralPosts": [],
+      "viralPosts": [
+        {
+          "url": "https://x.com/morellifit/status/2056409530821468627",
+          "author": "Michael Morelli (@morellifit)",
+          "text": "Semaglutide, better known under the brand Ozempic, lasts about a week per injection. People lose around 15% of their weight over a year. It's the most studied weight loss drug in history. It's FDA approved. If GLP-1 fits your goal, this is the safest peptide to start.",
+          "engagement": ""
+        }
+      ],
       "informativeVideos": [
         {
           "url": "https://www.youtube.com/watch?v=3k9pBu27LcM",
@@ -3756,6 +3915,11 @@ window.PEPTIDE_DATA = {
             "body": "Semaglutide is being studied combined with the amylin analog cagrilintide as the investigational fixed-dose product CagriSema, which adds an additional satiety mechanism [3][6]."
           },
           {
+            "id": "morelli-notes",
+            "title": "Morelli's notes",
+            "body": "Morelli frames semaglutide as the molecule that \"started the peptide revolution\" and as \"the most studied weight loss drug in history,\" recommending it as the default entry point for anyone with substantial weight to lose: \"If GLP-1 fits your goal, this is the safest peptide to start\" [7]. He describes its effect experientially, noting that people on it \"just aren't hungry anymore\" because the hunger signal itself has been suppressed [7]. For tapering off, Morelli reports that he personally uses tesofensine to cycle off GLP-1s, treating it as a transition tool rather than running semaglutide indefinitely [7]. He also points to the cagrilintide combination (CagriSema) as a way to push results toward roughly 16% weight loss by adding an amylin-driven satiety mechanism [7]."
+          },
+          {
             "id": "see-also",
             "title": "See also",
             "body": "[[tirzepatide|Tirzepatide]], [[retatrutide|Retatrutide]], [[insulin|Insulin]], [[mots-c|MOTS-c]]."
@@ -3797,9 +3961,16 @@ window.PEPTIDE_DATA = {
             "label": "Froese - 10 Most Fascinating Peptides",
             "source": "froese_10_fascinating.txt",
             "url": "https://www.youtube.com/watch?v=LA5KduDabRM"
+          },
+          {
+            "id": 7,
+            "label": "Morelli - Everything you need to know about peptides (X)",
+            "source": "morelli_x",
+            "url": "https://x.com/morellifit/status/2056409530821468627"
           }
         ]
-      }
+      },
+      "isPeptide": true
     },
     {
       "id": "tirzepatide",
@@ -3843,7 +4014,14 @@ window.PEPTIDE_DATA = {
       "safetyProfile": "Same GI side-effect profile as semaglutide at titration (nausea, vomiting, constipation). Same C-cell tumor warning carried over from the GLP-1 class. Pancreatitis risk.",
       "recommendedVendors": [],
       "news": [],
-      "viralPosts": [],
+      "viralPosts": [
+        {
+          "url": "https://x.com/morellifit/status/2056409530821468627",
+          "author": "Michael Morelli (@morellifit)",
+          "text": "Tirzepatide is semaglutide's stronger version because of the two receptors: GLP-1 plus GIP. These two together work better than alone. People lose about 22% of their weight, and about a third of patients lose 25% or more. It's sold as Mounjaro or Zepbound. It's also FDA approved.",
+          "engagement": "562,939 views, 649 likes/bookmarks"
+        }
+      ],
       "informativeVideos": [
         {
           "url": "https://www.youtube.com/watch?v=3k9pBu27LcM",
@@ -3895,6 +4073,11 @@ window.PEPTIDE_DATA = {
             "body": "Tirzepatide is sometimes co-administered with MK-677 in advanced bodybuilding bulking protocols to mitigate the hunger and insulin-resistance side effects of MK-677 [7]."
           },
           {
+            "id": "morelli-notes",
+            "title": "Morelli's notes",
+            "body": "Michael Morelli, who reports testing peptides on himself and more than 500 clients over seven years, frames tirzepatide as 'semaglutide's stronger version' owing to its dual GLP-1 plus GIP receptor activity, citing roughly 22% body-weight loss with about a third of patients losing 25% or more [8]. In his usage framework he names a GLP-1 such as semaglutide or tirzepatide as the safest and most-researched starting point for someone with substantial weight to lose, and suggests adding MOTS-c to amplify the cellular side of the protocol [8]. Morelli also treats tirzepatide as something he runs in defined cycles rather than continuously, describing tesofensine as the oral compound he uses to cycle off GLP-1s and saying he stacks tesofensine while on a tirzepatide or retatrutide cycle, with his current routine pairing tirzepatide with MOTS-c [8]. These are his personal protocol observations rather than controlled trial data."
+          },
+          {
             "id": "see-also",
             "title": "See also",
             "body": "[[semaglutide|Semaglutide]], [[retatrutide|Retatrutide]], [[mk-677|MK-677]], [[insulin|Insulin]]."
@@ -3942,9 +4125,16 @@ window.PEPTIDE_DATA = {
             "label": "Dr. Mike (RP Strength) - MK-677",
             "source": "mk677_b.txt",
             "url": "https://www.youtube.com/watch?v=Xi77xSdVmic"
+          },
+          {
+            "id": 8,
+            "label": "Morelli - Everything you need to know about peptides (X)",
+            "source": "morelli_x",
+            "url": "https://x.com/morellifit/status/2056409530821468627"
           }
         ]
-      }
+      },
+      "isPeptide": true
     },
     {
       "id": "retatrutide",
@@ -3984,7 +4174,14 @@ window.PEPTIDE_DATA = {
       "safetyProfile": "Same incretin-class GI side-effect profile (nausea, vomiting, constipation). Glucagon arm raises additional theoretical concerns at the highest doses but trial data so far appears comparable to other incretin-class drugs.",
       "recommendedVendors": [],
       "news": [],
-      "viralPosts": [],
+      "viralPosts": [
+        {
+          "url": "https://x.com/morellifit/status/2054366377637732367",
+          "author": "Michael Morelli (@morellifit)",
+          "text": "In practice, I've found SLU-PP-332 most useful as a bridge compound when I'm cycling off GLP-1s like retatrutide. I run it at 1mg/day alongside 5-amino-1MQ. I usually rotate it with tesofensine (one or the other, not both).",
+          "engagement": ""
+        }
+      ],
       "informativeVideos": [
         {
           "url": "https://www.youtube.com/watch?v=3k9pBu27LcM",
@@ -4036,6 +4233,11 @@ window.PEPTIDE_DATA = {
             "body": "Some users combine retatrutide with the amylin analog cagrilintide (a 'quadruple-receptor' approach), although Froese flags theoretical hypoglycemia risk because retatrutide adds glucagon agonism while cagrilintide blunts glucagon spikes [5][6]."
           },
           {
+            "id": "morelli-notes",
+            "title": "Morelli's notes",
+            "body": "Michael Morelli treats retatrutide as a cycled compound rather than a continuous therapy, and describes a specific off-cycle bridge protocol for the period after coming off a GLP-1 like retatrutide [7]. During that off-cycle he runs SLU-PP-332 at 1 mg/day alongside 5-amino-1MQ to sustain fat oxidation without the appetite suppression of an incretin drug [7]. He rotates tesofensine into this scheme as an either-or alternative to SLU-PP-332, and separately stacks tesofensine while he is actively on a tirzepatide or retatrutide cycle [7]. He characterizes retatrutide as the strongest of the GLP-1 class and the hottest peptide in the world, citing late-stage trials in which subjects lost nearly 29% of body weight along with clearing of liver fat [7]."
+          },
+          {
             "id": "see-also",
             "title": "See also",
             "body": "[[semaglutide|Semaglutide]], [[tirzepatide|Tirzepatide]], [[insulin|Insulin]], [[tesamorelin|Tesamorelin]]."
@@ -4077,9 +4279,16 @@ window.PEPTIDE_DATA = {
             "label": "Froese - 10 Most Fascinating Peptides",
             "source": "froese_10_fascinating.txt",
             "url": "https://www.youtube.com/watch?v=LA5KduDabRM"
+          },
+          {
+            "id": 7,
+            "label": "Morelli - SLU-PP-332 thread (X)",
+            "source": "morelli_x",
+            "url": "https://x.com/morellifit/status/2054366377637732367"
           }
         ]
-      }
+      },
+      "isPeptide": true
     },
     {
       "id": "insulin",
@@ -4200,7 +4409,8 @@ window.PEPTIDE_DATA = {
             "url": "https://www.youtube.com/watch?v=3k9pBu27LcM"
           }
         ]
-      }
+      },
+      "isPeptide": true
     },
     {
       "id": "methylene-blue",
@@ -4318,6 +4528,1686 @@ window.PEPTIDE_DATA = {
             "label": "Froese - Longevity Compounds",
             "source": "froese_longevity_compounds.txt",
             "url": "https://www.youtube.com/watch?v=6BKQqQkhLq4"
+          }
+        ]
+      },
+      "isPeptide": false
+    },
+    {
+      "id": "tesofensine",
+      "name": "Tesofensine",
+      "aliases": [
+        "NS2330",
+        "TE",
+        "Tesofensine (as Tesomet when combined with metoprolol)"
+      ],
+      "category": "glp1",
+      "isPeptide": false,
+      "whatItDoes": "Orally active small-molecule triple monoamine reuptake inhibitor that blocks reuptake of dopamine, norepinephrine, and serotonin. Originally developed for Parkinson's and Alzheimer's disease, it failed those indications but produced marked weight loss as a side effect, redirecting development toward obesity. Acts on the brain's reward and appetite circuits rather than the gut, and also raises BDNF, giving it mood- and focus-enhancing effects alongside appetite suppression.",
+      "scores": {
+        "humanResearch": 5,
+        "weightLoss": 8,
+        "muscleGrowth": null,
+        "sleep": null,
+        "recovery": null,
+        "hairSkin": null,
+        "cognitive": 7,
+        "sideEffectSeverity": 5
+      },
+      "cycled": true,
+      "notableQuote": {
+        "text": "Tesofensine is the most underrated fat loss and cognitive compound I've tested. I've run it on and off to cycle off GLP-1s, and the mood lift hits harder than the fat loss.",
+        "transcript": "morelli_x"
+      },
+      "halfLifeOrDose": "Long elimination half-life of roughly 9 days, supporting once-daily oral dosing. Clinical doses studied were 0.25 mg, 0.5 mg, and 1 mg once daily; 0.5 mg was the lead obesity dose. Morelli describes tolerating 250 mcg but being 'wrecked' at 500 mcg.",
+      "transcripts": [],
+      "tier": "B",
+      "regulatoryStatus": "Not approved by the FDA or EMA for any indication after more than 15 years of development. Investigational; the main regulatory obstacle has been a dose-dependent rise in heart rate and blood pressure. A fixed combination with the beta-blocker metoprolol (Tesomet) was developed to offset the cardiovascular effects.",
+      "moleculeWeight": 408.7,
+      "brandNames": [
+        "Tesomet (tesofensine + metoprolol combination)"
+      ],
+      "molecularStructure": "Small-molecule phenyltropane derivative (not a peptide). Triple monoamine reuptake inhibitor of the dopamine, norepinephrine, and serotonin transporters.",
+      "history": "Developed by NeuroSearch (originally as NS2330) in the late 1990s and early 2000s as a candidate for Parkinson's and Alzheimer's disease. It failed to show meaningful benefit in those neurological indications, but trial participants lost substantial weight, prompting a pivot to obesity. A 24-week Phase 2B obesity trial reported large, dose-dependent weight loss. In 2013 The Lancet issued an expression of concern about the original trial data; later development moved abroad, and a Phase 3 program in Mexico reported similar efficacy. Saniona has continued development of tesofensine and the Tesomet combination.",
+      "administration": "Oral capsule, once daily. Unlike most peptides, the small-molecule structure gives it good oral bioavailability, so it does not require injection.",
+      "legalStatus": "Not an FDA-approved drug; sold on the gray market and by research-chemical vendors labeled 'research use only, not for human consumption.' It has not been approved for obesity in any major jurisdiction as of writing.",
+      "safetyProfile": "Dose-dependent increase in heart rate (about 7 bpm at 0.5 mg) and blood pressure is the dominant safety concern, drawing comparisons to sibutramine (Meridia), which was withdrawn in 2010 for cardiovascular risk. Depressed mood was reported in roughly 6% of subjects at both 0.5 mg and 1 mg. Contraindicated in people with heart disease, hypertension, or arrhythmias, and should not be combined with MAOIs, SSRIs, or stimulants. Long-term human safety data are limited.",
+      "recommendedVendors": [],
+      "news": [],
+      "viralPosts": [
+        {
+          "url": "https://x.com/morellifit/status/2054989018769854762",
+          "author": "Michael Morelli (@morellifit)",
+          "text": "Tesofensine is the most underrated fat loss and cognitive compound I've tested. I've run it on and off to cycle off GLP-1s, and the mood lift hits harder than the fat loss. Tesofensine, explained: (1/18)",
+          "engagement": ""
+        }
+      ],
+      "informativeVideos": [],
+      "wiki": {
+        "lede": "Tesofensine (development code NS2330) is an orally active small-molecule triple monoamine reuptake inhibitor that blocks the reuptake of dopamine, norepinephrine, and serotonin. It is not a peptide [1]. Originally developed by NeuroSearch for Parkinson's and Alzheimer's disease, it failed those indications but produced pronounced weight loss as a side effect, redirecting it toward obesity [1]. Unlike GLP-1 drugs such as semaglutide and tirzepatide, which act on gut hormones and slow digestion, tesofensine works on the brain's reward and appetite circuits [1]. It remains unapproved by the FDA after more than fifteen years of development, primarily because of a dose-dependent rise in heart rate and blood pressure [1]. Michael Morelli describes it as 'the most underrated fat loss and cognitive compound' he has tested and uses it mainly to cycle off GLP-1 agonists [1].",
+        "sections": [
+          {
+            "id": "mechanism",
+            "title": "Mechanism of action",
+            "body": "Tesofensine is a triple monoamine reuptake inhibitor: it blocks the transporters that reabsorb dopamine, norepinephrine, and serotonin, keeping all three neurotransmitters active in the synapse for longer [1]. The result is increased central dopamine and noradrenergic signaling, which is thought to suppress appetite and food reward while improving focus and motivation. PET imaging has shown tesofensine occupying roughly 18% to 77% of brain dopamine transporters depending on dose, with significant transporter occupancy at standard clinical doses [1]. Morelli notes that the compound also raises brain-derived neurotrophic factor (BDNF), the same neuroplasticity- and mood-supporting protein triggered by exercise or by the peptide Semax, which he credits for the cognitive lift [1]. He characterizes the subjective effect as 'a clean version of Adderall' without the crash [1]. This mechanism is distinct from GLP-1 receptor agonists, which target gut hormones and gastric emptying rather than central monoamine signaling [1]."
+          },
+          {
+            "id": "history",
+            "title": "History",
+            "body": "Tesofensine was developed by NeuroSearch (as NS2330) in the late 1990s and early 2000s as a candidate treatment for Parkinson's and Alzheimer's disease [1]. It did not demonstrate meaningful efficacy in those neurological indications, but trial participants consistently lost weight, prompting a pivot to obesity research [1]. Morelli summarizes this arc directly: the drug 'was created for Parkinson's and Alzheimer's, but it didn't work for those,' and 'patients lost a lot of weight as a side effect, so they started focusing on obesity' [1]. Development later continued through Saniona and a Mexican clinical program."
+          },
+          {
+            "id": "clinical-evidence",
+            "title": "Clinical evidence",
+            "body": "The Phase 2B obesity data are the most cited. According to Morelli, a 24-week study of 203 patients found that the 1 mg group lost an average of 12.8 kg, about 10.6 percentage points more than placebo, with the 0.5 mg group beating placebo by roughly 9.2% and the 0.25 mg group by about 4.5% [1]. An important caveat is that The Lancet issued a 2013 expression of concern regarding the original trial data [1]. Morelli reports that a subsequent Phase 3 study in Mexico with 372 patients showed similar results, with weight loss around 10% over 24 weeks [1]. These figures are reported as Morelli presents them; independent verification of the exact numbers is advised, and no peer-reviewed approval-grade efficacy claim should be inferred from them."
+          },
+          {
+            "id": "dosing",
+            "title": "Dosing and administration",
+            "body": "Tesofensine is taken as an oral capsule rather than by injection; as a small molecule it is absorbed through the gut without the poor oral bioavailability that limits most peptides [1]. The doses studied clinically were 0.25 mg, 0.5 mg, and 1 mg once daily, with 0.5 mg as the lead obesity dose [1]. It has a long elimination half-life (on the order of a week), which supports once-daily dosing. Morelli reports being 'fine at 250mcg' but 'wrecked at 500mcg,' and notes that he breaks capsules in half to titrate [1]. There is no FDA-approved human dosing regimen."
+          },
+          {
+            "id": "regulatory",
+            "title": "Regulatory status",
+            "body": "After more than fifteen years of development, tesofensine has not been approved by the FDA [1]. The principal obstacle is a dose-dependent increase in heart rate, reported by Morelli as about 7 bpm at the 0.5 mg dose, along with raised blood pressure [1]. Regulators have been cautious in part because of sibutramine (Meridia), an earlier appetite suppressant withdrawn in 2010 over cardiovascular risk [1]. To address this, a combination product called Tesomet, pairing tesofensine with the beta-blocker metoprolol, was developed to counteract the heart-rate increase [1]. In the gray market, tesofensine is sold by research-chemical vendors labeled 'research use only, not for human consumption' [1]."
+          },
+          {
+            "id": "safety",
+            "title": "Safety profile",
+            "body": "The dominant safety concerns are cardiovascular. Tesofensine raises heart rate (about 7 bpm at 0.5 mg) and blood pressure in a dose-dependent fashion [1]. Mood effects are also notable: depressed mood was reported in roughly 6% of subjects, and Morelli emphasizes that this appeared at both 0.5 mg and 1 mg rather than only at the highest dose [1]. He states plainly that 'this isn't for everyone' and that people with heart disease, high blood pressure, or arrhythmias should avoid it [1]. Because of its monoaminergic action, it should not be combined with MAOIs, SSRIs, or stimulants, all of which risk excessive serotonergic or adrenergic stimulation [1]. Long-term human safety data remain limited, and gray-market sourcing carries the usual purity and contamination risks."
+          },
+          {
+            "id": "morelli-protocol",
+            "title": "Morelli's protocol notes",
+            "body": "Morelli calls tesofensine 'the most underrated fat loss and cognitive compound' he has tested and says the mood lift 'hits harder than the fat loss' [1]. His primary use case is cycling off GLP-1 agonists: he runs it on and off to bridge between GLP-1 cycles [1]. For his current routine, he stacks it while on a cycle of tirzepatide or retatrutide; when off-cycle, he rotates it with 5-Amino-1MQ and SLU-PP-332, and at the time of writing he was pairing it with MOTS-c and tirzepatide [1]. On dosing, he reports tolerating 250 mcg well but feeling 'wrecked at 500mcg,' and breaks capsules in half to titrate [1]. He keeps returning to the compound because, in his words, it is 'the only oral option that combines weight loss with a mood and cognitive boost' [1]. (Morelli's source thread also includes a vendor discount code, which is intentionally omitted here.)"
+          },
+          {
+            "id": "see-also",
+            "title": "See also",
+            "body": "[[semaglutide|Semaglutide]], [[tirzepatide|Tirzepatide]], [[retatrutide|Retatrutide]], [[aod-9604|AOD-9604]], [[mots-c|MOTS-c]], [[semax|Semax]]."
+          }
+        ],
+        "references": [
+          {
+            "id": 1,
+            "label": "Morelli - Tesofensine thread (18 tweets)",
+            "source": "morelli_x",
+            "url": "https://x.com/morellifit/status/2054989018769854762"
+          },
+          {
+            "id": 2,
+            "label": "Morelli - Everything you need to know about peptides",
+            "source": "morelli_x",
+            "url": "https://x.com/morellifit/status/2056409530821468627"
+          }
+        ]
+      }
+    },
+    {
+      "id": "slu-pp-332",
+      "name": "SLU-PP-332",
+      "isPeptide": false,
+      "aliases": [
+        "SLU PP 332",
+        "ERR pan-agonist SLU-PP-332"
+      ],
+      "category": "glp1",
+      "whatItDoes": "Orally active small-molecule pan-agonist of the estrogen-related receptors (ERRalpha, ERRbeta, ERRgamma). In rodents it switches on the same gene program as endurance exercise, shifting skeletal-muscle metabolism toward fatty-acid oxidation and increasing running endurance without changing appetite or food intake. Often marketed online alongside peptides, but it is a small molecule, not a peptide.",
+      "scores": {
+        "humanResearch": 1,
+        "weightLoss": 5,
+        "muscleGrowth": null,
+        "sleep": null,
+        "recovery": null,
+        "hairSkin": null,
+        "cognitive": null,
+        "sideEffectSeverity": null
+      },
+      "cycled": true,
+      "notableQuote": {
+        "text": "SLU-PP-332 peptide is the closest thing currently available to an exercise pill. It works by activating the same nuclear receptors (specifically ERR\u03b1, \u03b2, and \u03b3) that endurance training does.",
+        "transcript": "morelli_x"
+      },
+      "halfLifeOrDose": "No established human dose; SLU-PP-332 has poor oral bioavailability and a short plasma half-life in rodents, and was dosed by injection in the published mouse studies. Morelli reports self-administering 1 mg/day [1].",
+      "transcripts": [],
+      "tier": "D",
+      "regulatoryStatus": "Not approved by any regulator for any indication. A research chemical with no human trials; sold gray-market as a 'research compound.'",
+      "moleculeWeight": 419,
+      "brandNames": [],
+      "molecularStructure": "Small-molecule synthetic ERR agonist (not a peptide). A substituted heterocyclic compound developed from a Saint Louis University medicinal-chemistry program.",
+      "history": "SLU-PP-332 was developed by a medicinal-chemistry group at Saint Louis University as a tool compound to probe the estrogen-related receptors. It drew wide attention in 2023 after a study in mice reported that it reprogrammed muscle metabolism and markedly increased running endurance, leading the popular press to dub it an 'exercise in a pill.' All published evidence is pre-clinical; there have been no human trials [1].",
+      "administration": "In published rodent studies SLU-PP-332 was given by injection because of its poor oral bioavailability. Gray-market human use is oral or by injection; Morelli describes running it at 1 mg/day [1].",
+      "legalStatus": "Not an approved drug and not a dietary supplement. Sold only as a 'research chemical' / 'not for human consumption' product; no established legal pathway for human use.",
+      "safetyProfile": "Human safety is entirely unknown. No human trials have been conducted, so there is no safety, toxicology, or dosing data in people. ERR receptors are expressed in the heart and other tissues, so off-target metabolic and cardiac effects are a theoretical concern that has not been characterized clinically. As with all gray-market compounds, sourcing, purity, and identity are additional risks.",
+      "recommendedVendors": [],
+      "news": [],
+      "viralPosts": [
+        {
+          "url": "https://x.com/morellifit/status/2054366377637732367",
+          "author": "Michael Morelli (@morellifit)",
+          "text": "SLU-PP-332 peptide is the closest thing currently available to an exercise pill. It works by activating the same nuclear receptors (specifically ERR\u03b1, \u03b2, and \u03b3) that endurance training does... In mouse studies, a single daily dose increased running time by about 70%. In obese mice, it led to a 12% loss in body weight over 28 days. These results happened without any changes to appetite or food intake.",
+          "engagement": null
+        }
+      ],
+      "informativeVideos": [],
+      "wiki": {
+        "lede": "SLU-PP-332 is an orally studied small-molecule pan-agonist of the estrogen-related receptors ERRalpha, ERRbeta, and ERRgamma. In rodents it activates the same transcriptional program triggered by endurance training, pushing skeletal muscle toward fatty-acid oxidation and increasing running endurance without changing appetite or food intake, which is why it is popularly called an 'exercise pill' [1]. Despite frequently being grouped with peptides in online discussion, SLU-PP-332 is a small molecule, not a peptide, and Michael Morelli flags this explicitly [1]. All published evidence is pre-clinical animal data; there have been no human trials, and the compound is not approved for any use [1].",
+        "sections": [
+          {
+            "id": "mechanism",
+            "title": "Mechanism of action",
+            "body": "SLU-PP-332 acts as an agonist of the estrogen-related receptors (ERRalpha, ERRbeta, and ERRgamma), a family of orphan nuclear receptors that govern mitochondrial biogenesis and oxidative metabolism. By switching these receptors on, the compound is reported to drive the same gene-expression program induced by endurance exercise, telling skeletal muscle to behave as if it has been performing sustained cardiovascular work and shifting the body toward burning fatty acids, as it does during fasting or intense training [1]. Morelli summarizes this as activating 'the same nuclear receptors (ERRalpha, beta, and gamma) that endurance training does' [1]. Because the effect is on metabolic gene transcription rather than on hunger pathways, the reported weight effects in animals occurred without changes in appetite or food intake [1]."
+          },
+          {
+            "id": "history",
+            "title": "History",
+            "body": "SLU-PP-332 emerged from a medicinal-chemistry effort at Saint Louis University aimed at producing selective agonists of the estrogen-related receptors as research tools. It gained broad attention in 2023 after a mouse study reported large gains in running endurance and favorable metabolic shifts, prompting press coverage describing an 'exercise in a pill.' Morelli calls it 'the newest one' among the metabolic compounds he tracks and labels it the 'exercise pill,' while cautioning that it is still early [1]."
+          },
+          {
+            "id": "clinical-evidence",
+            "title": "Clinical evidence",
+            "body": "There is no clinical evidence in humans. All reported results come from rodent studies. Morelli cites that in mouse studies a single daily dose increased running time by about 70%, and that in obese mice the compound produced roughly a 12% loss in body weight over 28 days, with these effects occurring without any change in appetite or food intake [1]. In his longer article he gives a comparable figure of mice running about 50% farther [2]. These animal results are striking but have not been replicated or tested in people, and Morelli stresses that 'all of these results come from animal data' and 'there have been no human trials yet' [1]."
+          },
+          {
+            "id": "dosing",
+            "title": "Dosing and administration",
+            "body": "No human dose has been established. In the published mouse work SLU-PP-332 was administered by injection because of poor oral bioavailability and a short plasma half-life. In gray-market use the compound is taken orally or by injection. Morelli reports running it at 1 mg/day as part of a stack [1]. Any human dosing is extrapolated from animal studies and is not supported by clinical data."
+          },
+          {
+            "id": "regulatory",
+            "title": "Regulatory status",
+            "body": "SLU-PP-332 is not approved by the U.S. Food and Drug Administration or any other regulator, and it is not a recognized dietary supplement. It exists only as a research chemical, typically sold under 'not for human consumption' labeling. Because it is a small molecule rather than a peptide, it sits outside the peptide-compounding debate that governs compounds such as BPC-157, but it likewise has no legal pathway for human therapeutic use [1]."
+          },
+          {
+            "id": "safety",
+            "title": "Safety profile",
+            "body": "Human safety is unknown. With no human trials, there is no clinical safety, toxicology, or long-term data in people. The estrogen-related receptors are broadly expressed, including in cardiac tissue, so off-target metabolic and cardiovascular effects are a plausible but uncharacterized concern. As with any gray-market research chemical, identity, purity, and contamination are additional unquantified risks. Morelli himself frames the compound as interesting but early-stage and emphasizes keeping the animal-only evidence base in perspective [1]."
+          },
+          {
+            "id": "morelli-notes",
+            "title": "Morelli's protocol notes",
+            "body": "Morelli describes SLU-PP-332 as 'the most interesting fat loss compound I've come across in a while,' while stressing it is a small molecule and not a peptide [1]. In practice he says he finds it most useful as a bridge compound when cycling off GLP-1 receptor agonists such as retatrutide [1]. His reported protocol is 1 mg/day alongside 5-amino-1MQ, and he typically rotates SLU-PP-332 with tesofensine rather than running both at once, though he states he plans to stack SLU-PP-332 with tesofensine together on a future off-cycle 'to see what happens' [1]. These are his personal, self-experimental protocols and are not derived from any clinical trial."
+          },
+          {
+            "id": "see-also",
+            "title": "See also",
+            "body": "[[mots-c|MOTS-c]], [[ss-31|SS-31]], [[retatrutide|Retatrutide]], [[semaglutide|Semaglutide]], [[tirzepatide|Tirzepatide]]."
+          }
+        ],
+        "references": [
+          {
+            "id": 1,
+            "label": "Morelli - SLU-PP-332 thread",
+            "source": "morelli_x",
+            "url": "https://x.com/morellifit/status/2054366377637732367"
+          },
+          {
+            "id": 2,
+            "label": "Morelli - Everything you need to know about peptides",
+            "source": "morelli_x",
+            "url": "https://x.com/morellifit/status/2056409530821468627"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5-amino-1mq",
+      "name": "5-Amino-1MQ",
+      "isPeptide": false,
+      "aliases": [
+        "5-Amino-1-methylquinolinium",
+        "5A1MQ"
+      ],
+      "category": "glp1",
+      "whatItDoes": "Orally active small-molecule inhibitor of the enzyme nicotinamide N-methyltransferase (NNMT). By blocking NNMT it is thought to raise cellular NAD+ and SAM levels and shift adipocyte metabolism toward fat oxidation rather than storage. In obese rodent models it reduced fat mass without changing appetite or food intake.",
+      "scores": {
+        "humanResearch": 1,
+        "weightLoss": 4,
+        "muscleGrowth": null,
+        "sleep": null,
+        "recovery": null,
+        "hairSkin": null,
+        "cognitive": null,
+        "sideEffectSeverity": 3
+      },
+      "cycled": true,
+      "notableQuote": {
+        "text": "5-Amino-1MQ is one of my favourites, although it isn't technically a peptide, but small molecule that blocks an enzyme called NNMT. When you block it, your cells get their fuel back. They start burning fat instead of storing it.",
+        "transcript": "morelli_x"
+      },
+      "halfLifeOrDose": "No established human dose; sold as an oral compound, commonly taken at roughly 50-150 mg/day in the gray market. Human pharmacokinetics and half-life are unpublished.",
+      "transcripts": [],
+      "tier": "C",
+      "regulatoryStatus": "Not FDA-approved for any indication; investigational small molecule with no completed human trials. Not a compounded drug under Section 503A.",
+      "moleculeWeight": 159,
+      "brandNames": [],
+      "molecularStructure": "Small-molecule quinolinium derivative (5-amino-1-methylquinolinium), not an amino-acid chain. It is a substrate-mimetic NNMT inhibitor.",
+      "history": "5-Amino-1MQ emerged from academic work in the 2010s on NNMT as a metabolic drug target. NNMT was identified as being overexpressed in the adipose tissue of obese and metabolically impaired individuals, and 5-amino-1-methylquinolinium was characterized as a cell-permeable small-molecule inhibitor that increased energy expenditure in fat cells in preclinical work. It has remained an investigational research compound and has not advanced through registered human clinical trials.",
+      "administration": "Oral (capsules); no injectable form is in common use.",
+      "legalStatus": "Sold as a research chemical / gray-market supplement; not approved as a drug and not formally scheduled. Quality and identity of gray-market product are unverified.",
+      "safetyProfile": "Human safety data are essentially absent; nearly all evidence is from rodent and in-vitro studies, which have not reported overt toxicity at the doses studied. Long-term effects of chronically inhibiting NNMT in humans are unknown.",
+      "recommendedVendors": [],
+      "news": [],
+      "viralPosts": [
+        {
+          "url": "https://x.com/morellifit/status/2056409530821468627",
+          "author": "Michael Morelli (@morellifit)",
+          "text": "5-Amino-1MQ is one of my favourites... a small molecule that blocks an enzyme called NNMT. In overweight people, NNMT goes into overdrive... When you block it, your cells get their fuel back. They start burning fat instead of storing it. What's interesting is that it doesn't touch appetite. Mice on it eat the same amount of food and lose weight anyway.",
+          "engagement": "562,939 views"
+        }
+      ],
+      "informativeVideos": [],
+      "wiki": {
+        "lede": "5-Amino-1MQ (5-amino-1-methylquinolinium) is an orally active small molecule that inhibits the enzyme nicotinamide N-methyltransferase (NNMT). It is grouped with fat-loss 'peptides' in online discussion but is not a peptide; it is a quinolinium derivative [1]. NNMT is overexpressed in the fat tissue of obese and metabolically impaired people, and inhibiting it is hypothesized to raise cellular NAD+ and shift adipocytes toward burning fat rather than storing it. In rodent studies it reduced fat mass without changing appetite or food intake [1]. 5-Amino-1MQ is not approved by the U.S. Food and Drug Administration for any indication, and there are no completed human clinical trials; essentially all evidence is preclinical.",
+        "sections": [
+          {
+            "id": "mechanism",
+            "title": "Mechanism of action",
+            "body": "5-Amino-1MQ is a small-molecule inhibitor of nicotinamide N-methyltransferase (NNMT), an enzyme that methylates nicotinamide using S-adenosylmethionine (SAM) as the methyl donor. NNMT is markedly upregulated in the white adipose tissue of obese and insulin-resistant individuals. The leading hypothesis is that excess NNMT activity consumes nicotinamide and SAM, depleting the precursors cells use to regenerate NAD+, a coenzyme central to energy metabolism. By inhibiting NNMT, 5-Amino-1MQ is proposed to restore NAD+ and SAM pools, increase adipocyte energy expenditure, and shift metabolism toward fat oxidation. Morelli summarizes this as overactive NNMT 'burning through molecules your cells need to make energy,' with inhibition giving 'your cells their fuel back' so they 'start burning fat instead of storing it' [1]. A notable feature in animal work is that the effect appears independent of appetite: treated mice ate the same amount of food yet still lost fat [1]."
+          },
+          {
+            "id": "history",
+            "title": "History",
+            "body": "Interest in NNMT as a metabolic drug target grew in the 2010s after the enzyme was found to be overexpressed in obese, metabolically dysfunctional adipose tissue and linked to energy balance. 5-Amino-1-methylquinolinium was developed and studied as a cell-permeable small-molecule NNMT inhibitor in this research context. It has remained an investigational tool compound rather than a registered drug, and has not progressed through formal human clinical development. It later entered gray-market sale, where it is marketed alongside fat-loss peptides despite not being a peptide [1]."
+          },
+          {
+            "id": "clinical-evidence",
+            "title": "Clinical evidence",
+            "body": "The evidence base for 5-Amino-1MQ is preclinical. Cell and rodent studies report increased fat-cell energy expenditure, reduced adiposity, and improved metabolic parameters, with the distinctive observation that weight loss occurred without suppressing appetite or reducing food intake [1]. No completed, peer-reviewed human clinical trials demonstrate efficacy or establish a safe dose. Claims about human fat loss are extrapolated from animal data and anecdote, and should be treated with caution."
+          },
+          {
+            "id": "dosing",
+            "title": "Dosing and administration",
+            "body": "5-Amino-1MQ is taken orally, typically as capsules. There is no established human dose; gray-market protocols commonly fall in the range of roughly 50-150 mg per day, but these figures are not validated by clinical trials and human pharmacokinetics and half-life are unpublished. Morelli runs it as part of an off-cycle fat-loss stack rather than continuously (see protocol notes) [2]."
+          },
+          {
+            "id": "regulatory",
+            "title": "Regulatory status",
+            "body": "5-Amino-1MQ is not FDA-approved for any indication and is not a recognized compounded drug under Section 503A. It is sold as a research chemical or gray-market supplement and is not formally scheduled. Because it is distributed outside the regulated drug supply, the identity, purity, and dose accuracy of available product are unverified."
+          },
+          {
+            "id": "safety",
+            "title": "Safety profile",
+            "body": "Human safety data are essentially absent. Preclinical studies have not reported overt toxicity at the doses examined, but the long-term consequences of chronically inhibiting NNMT in humans, an enzyme involved in NAD+ and methylation metabolism, are unknown. As with all gray-market compounds, contamination, mislabeling, and inaccurate dosing are practical risks because the product is not subject to pharmaceutical quality control."
+          },
+          {
+            "id": "morelli-protocol-notes",
+            "title": "Morelli's protocol notes",
+            "body": "Michael Morelli (@morellifit) calls 5-Amino-1MQ 'one of my favourites' among the fat-burning compounds and highlights that, unlike appetite-acting agents, it works by changing how the body uses food rather than by suppressing hunger [1]. He uses it primarily as an off-cycle compound when transitioning off GLP-1 drugs such as retatrutide or tirzepatide. In his SLU-PP-332 thread he writes that he runs SLU-PP-332 at 1 mg/day alongside 5-Amino-1MQ, and that he rotates this pairing with tesofensine, using one or the other rather than both [2]. In his Tesofensine thread he similarly notes that when off-cycle he 'rotates it with 5-Amino-1MQ and SLU-PP-332' [3]. He does not publish a specific 5-Amino-1MQ dose or quantified personal results; the appeal he cites is appetite-independent fat loss that complements his stimulant-free off-cycle approach [1][2][3]."
+          },
+          {
+            "id": "see-also",
+            "title": "See also",
+            "body": "[[aod-9604|AOD-9604]], [[tesamorelin|Tesamorelin]], [[semaglutide|Semaglutide]], [[tirzepatide|Tirzepatide]], [[retatrutide|Retatrutide]], [[mots-c|MOTS-c]]."
+          }
+        ],
+        "references": [
+          {
+            "id": 1,
+            "label": "Morelli - Everything you need to know about peptides",
+            "source": "morelli_x",
+            "url": "https://x.com/morellifit/status/2056409530821468627"
+          },
+          {
+            "id": 2,
+            "label": "Morelli - SLU-PP-332 thread",
+            "source": "morelli_x",
+            "url": "https://x.com/morellifit/status/2054366377637732367"
+          },
+          {
+            "id": 3,
+            "label": "Morelli - Tesofensine thread",
+            "source": "morelli_x",
+            "url": "https://x.com/morellifit/status/2054989018769854762"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cagrilintide",
+      "name": "Cagrilintide",
+      "aliases": [
+        "AM833",
+        "NNC0174-0833",
+        "Cagri"
+      ],
+      "category": "glp1",
+      "isPeptide": true,
+      "whatItDoes": "Long-acting synthetic analog of the pancreatic hormone amylin. Acylated for once-weekly dosing, it slows gastric emptying and signals satiety in the brain, reducing food intake. Its main development path is the combination drug CagriSema (cagrilintide plus semaglutide), which is approaching roughly 16% weight loss in trials.",
+      "scores": {
+        "humanResearch": 6,
+        "weightLoss": 7,
+        "muscleGrowth": null,
+        "sleep": null,
+        "recovery": null,
+        "hairSkin": null,
+        "cognitive": null,
+        "sideEffectSeverity": 5
+      },
+      "cycled": false,
+      "notableQuote": {
+        "text": "Cagrilintide mimics amylin. This is a hormone your pancreas releases alongside insulin. Amylin tells your stomach to empty slowly and tells your brain that you're full. It's okay on its own. Combined with semaglutide (in a drug called CagriSema), it's approaching 16% weight loss. I had a terrible experience with cagrilintide.",
+        "transcript": "morelli_x"
+      },
+      "halfLifeOrDose": "Half-life roughly 7-8 days, supporting once-weekly subcutaneous injection. Trial doses are titrated upward over several weeks to limit gastrointestinal side effects. No FDA-approved dose; not approved as a standalone product.",
+      "transcripts": [],
+      "tier": "B",
+      "regulatoryStatus": "Investigational. Not FDA-approved as a standalone drug. Developed by Novo Nordisk; the CagriSema combination has been the subject of Phase 3 obesity and type 2 diabetes programs.",
+      "moleculeWeight": null,
+      "brandNames": [
+        "CagriSema (in combination with semaglutide)"
+      ],
+      "molecularStructure": "Synthetic long-acting amylin analog: a cyclic peptide based on the amylin and calcitonin sequence, lipidated (acylated with a fatty-acid side chain) to extend half-life for once-weekly dosing.",
+      "history": "Developed by Novo Nordisk as a once-weekly amylin analog (code AM833). After standalone Phase 1/2 weight-loss studies, its main path forward became CagriSema, a fixed-dose combination with the GLP-1 agonist semaglutide, advanced through Phase 3 obesity and diabetes trials in the mid-2020s.",
+      "administration": "Subcutaneous injection, once weekly. In CagriSema it is co-formulated with semaglutide in a single weekly injection.",
+      "legalStatus": "Investigational research compound in the United States; not approved for human use as a standalone product. Available on the gray market for research use only.",
+      "safetyProfile": "Most common adverse effects are gastrointestinal (nausea, vomiting), consistent with amylin and GLP-1 mechanisms, and tend to be dose-dependent and worse during titration. Long-term standalone human safety data are limited because development focused on the CagriSema combination. Morelli reports a personally poor tolerability experience.",
+      "recommendedVendors": [],
+      "news": [],
+      "viralPosts": [
+        {
+          "url": "https://x.com/morellifit/status/2056409530821468627",
+          "author": "Michael Morelli (@morellifit)",
+          "text": "Cagrilintide mimics amylin... Combined with semaglutide (in a drug called CagriSema), it's approaching 16% weight loss. I had a terrible experience with cagrilintide which I wrote about here.",
+          "engagement": "~563K views, 649 likes"
+        }
+      ],
+      "informativeVideos": [],
+      "wiki": {
+        "lede": "Cagrilintide (development code AM833) is a synthetic, long-acting analog of amylin, a hormone the pancreas secretes alongside insulin that slows gastric emptying and promotes satiety [1]. It is acylated to support once-weekly subcutaneous dosing and is being developed by Novo Nordisk primarily as half of CagriSema, a fixed-dose combination with the GLP-1 agonist semaglutide. In Morelli's framing, cagrilintide is one of the original 'fat-burning group' peptides, and he notes that CagriSema is approaching roughly 16% weight loss while reporting that he personally 'had a terrible experience' with the compound [1]. Cagrilintide is not approved by the U.S. Food and Drug Administration as a standalone product and is sold on the gray market for research use only.",
+        "sections": [
+          {
+            "id": "mechanism",
+            "title": "Mechanism of action",
+            "body": "Cagrilintide is an analog of amylin, the peptide hormone co-secreted with insulin from pancreatic beta cells after a meal. Amylin acts on receptors in the hindbrain to slow gastric emptying, suppress glucagon, and signal fullness, which reduces food intake [1]. Morelli describes amylin plainly as the hormone that 'tells your stomach to empty slowly and tells your brain that you're full' [1]. Because native amylin is unstable and very short-lived, cagrilintide is engineered with sequence modifications and a fatty-acid side chain (acylation) that bind albumin and extend its half-life to roughly a week, allowing once-weekly injection. Its satiety mechanism is complementary to that of GLP-1 agonists, which is the rationale for pairing it with semaglutide in CagriSema."
+          },
+          {
+            "id": "history",
+            "title": "History",
+            "body": "Cagrilintide emerged from Novo Nordisk's amylin-analog program under the code AM833. Early human studies evaluated it as a standalone once-weekly weight-loss agent, but its principal development path became the combination drug CagriSema, co-formulating cagrilintide with the established GLP-1 agonist semaglutide. The combination advanced into Phase 3 obesity and type 2 diabetes programs in the mid-2020s. Morelli groups cagrilintide with the early 'fat-burning' peptides that 'were the first peptides people reached for when they wanted to lose fat' [1]."
+          },
+          {
+            "id": "clinical-evidence",
+            "title": "Clinical evidence",
+            "body": "As a standalone agent, cagrilintide produced meaningful weight loss in early-phase trials, but the headline results have come from the CagriSema combination. Morelli reports that CagriSema is 'approaching 16% weight loss,' positioning it between standalone semaglutide and the more potent dual- and triple-agonists [1]. Independent reporting on the Phase 3 CagriSema program has noted weight-loss figures somewhat below the most optimistic earlier expectations, with substantial variability driven by how many participants reached the highest doses. Standalone cagrilintide has a thinner published human evidence base than the combination, and direct head-to-head data against GLP-1 monotherapy are limited."
+          },
+          {
+            "id": "dosing",
+            "title": "Dosing and administration",
+            "body": "Cagrilintide is given by subcutaneous injection once weekly, with doses titrated upward over several weeks to manage gastrointestinal side effects. In CagriSema it is co-formulated with semaglutide in a single weekly injection. There is no FDA-approved dose for cagrilintide as a standalone product, and gray-market protocols are extrapolated from trial titration schedules."
+          },
+          {
+            "id": "regulatory",
+            "title": "Regulatory status",
+            "body": "Cagrilintide is an investigational drug and is not FDA-approved as a standalone product. Its regulatory future is tied largely to the CagriSema combination, which Novo Nordisk has advanced through late-stage trials toward potential approval for obesity and type 2 diabetes. In the United States, cagrilintide is sold only as a research compound for research use only, and it is not on any FDA compounding enforcement-discretion list as an approved peptide."
+          },
+          {
+            "id": "safety",
+            "title": "Safety profile",
+            "body": "The dominant adverse effects are gastrointestinal, principally nausea and vomiting, consistent with both amylin and GLP-1 mechanisms; these are dose-dependent and most pronounced during dose escalation. Because development has centered on the CagriSema combination, standalone long-term human safety data for cagrilintide are limited. Morelli explicitly flags a poor personal experience, writing that he 'had a terrible experience with cagrilintide' [1], which is consistent with the tolerability problems some users report during titration. As with all gray-market peptides, sourcing risk (purity, contaminants, mislabeling) is an additional concern beyond the molecule's intrinsic effects."
+          },
+          {
+            "id": "morelli-protocol",
+            "title": "Morelli's protocol notes",
+            "body": "Morelli categorizes cagrilintide within the 'fat-burning group' of peptides rather than the core GLP-1 group, treating it as an amylin-axis tool that complements rather than replaces semaglutide [1]. He notes the combination drug CagriSema is 'approaching 16% weight loss' [1]. Unusually for his write-ups, his personal takeaway is negative: he states he 'had a terrible experience with cagrilintide' and points readers to a separate write-up about it [1]. He does not publish a standalone cagrilintide dosing or stacking protocol of his own, and his broader advice is to add one peptide at a time and track its effects rather than stacking blindly [1]."
+          },
+          {
+            "id": "see-also",
+            "title": "See also",
+            "body": "[[semaglutide|Semaglutide]] (its CagriSema partner), [[tirzepatide|Tirzepatide]], [[retatrutide|Retatrutide]], [[tesofensine|Tesofensine]], [[aod-9604|AOD-9604]]."
+          }
+        ],
+        "references": [
+          {
+            "id": 1,
+            "label": "Michael Morelli (@morellifit) - Everything you need to know about peptides",
+            "source": "morelli_x",
+            "url": "https://x.com/morellifit/status/2056409530821468627"
+          }
+        ]
+      }
+    },
+    {
+      "id": "humanin",
+      "name": "Humanin",
+      "aliases": [
+        "HN",
+        "HNG (humanin analog, S14G)",
+        "MTRNR2-derived peptide",
+        "Rattin (rat ortholog)"
+      ],
+      "category": "longevity",
+      "whatItDoes": "Mitochondrial-derived peptide encoded within the mitochondrial 16S rRNA (MT-RNR2) region. Acts as a cytoprotective and metabolic signaling factor: in laboratory models it protects neurons from amyloid-beta toxicity, reduces apoptosis, improves insulin sensitivity, and is associated in human observational data with better metabolic health and longevity. Circulating levels decline with age.",
+      "scores": {
+        "humanResearch": 2,
+        "weightLoss": null,
+        "muscleGrowth": null,
+        "sleep": null,
+        "recovery": null,
+        "hairSkin": null,
+        "cognitive": 3,
+        "sideEffectSeverity": null
+      },
+      "cycled": false,
+      "notableQuote": {
+        "text": "Humanin is another peptide hidden inside mitochondrial DNA. It was first found because it protected brain cells from Alzheimer's damage, then researchers noticed the people with the highest levels of it also had the best metabolic health and lived the longest.",
+        "transcript": "morelli_x"
+      },
+      "halfLifeOrDose": "No established human therapeutic dose. Native humanin is a short circulating peptide with a brief plasma half-life; potency-enhanced analogs such as HNG (S14G) are used in animal research. No validated human dosing protocol exists.",
+      "transcripts": [],
+      "tier": "D",
+      "regulatoryStatus": "Not FDA-approved for any indication. Not a registered drug; investigated only in pre-clinical and early observational research.",
+      "moleculeWeight": 2687,
+      "brandNames": [],
+      "molecularStructure": "A 24-amino-acid peptide (MAPRGFSCLLLLTSEIDLPVKRRA) encoded within the mitochondrial MT-RNR2 (16S ribosomal RNA) gene; a shorter 21-residue form arises from cytoplasmic translation. The synthetic analog HNG carries a serine-to-glycine substitution at position 14 (S14G) that increases potency by roughly three orders of magnitude in protective assays.",
+      "history": "Humanin was identified in 2001 by Hashimoto and colleagues while screening a cDNA library from the surviving brain region of an Alzheimer's disease patient for factors that protected neurons against amyloid-beta toxicity. It was the first member of what is now called the mitochondrial-derived peptide (MDP) family, later expanded to include MOTS-c and the small humanin-like peptides (SHLPs). Subsequent human studies reported that circulating humanin levels decline with age and that higher levels track with better metabolic profiles and longevity, though causal direction remains unresolved.",
+      "administration": "In research settings humanin and its analogs are delivered by injection (intraperitoneal or subcutaneous in animals); intranasal and central routes have been used experimentally to study brain effects. No standardized human route of administration exists.",
+      "legalStatus": "Not approved by the FDA. Not on the Section 503A compounding list. Sold only as a gray-market or research-use chemical; no medical product is registered.",
+      "safetyProfile": "Human safety has not been formally characterized; there are no controlled human trials establishing a safety profile. Pre-clinical studies report it as well tolerated, but long-term human safety, immunogenicity, and effects of exogenous administration are unknown. As with all gray-market peptides, sourcing risks (impurity, mislabeling, contamination) dominate the practical hazard.",
+      "recommendedVendors": [],
+      "news": [],
+      "viralPosts": [
+        {
+          "url": "https://x.com/morellifit/status/2056409530821468627",
+          "author": "Michael Morelli (@morellifit)",
+          "text": "Humanin is another peptide hidden inside mitochondrial DNA. It was first found because it protected brain cells from Alzheimer's damage, then researchers noticed the people with the highest levels of it also had the best metabolic health and lived the longest. Levels drop with age, and whether you can put it back and reverse the drop is still an open question.",
+          "engagement": null
+        }
+      ],
+      "informativeVideos": [],
+      "isPeptide": true,
+      "wiki": {
+        "lede": "Humanin is a 24-amino-acid mitochondrial-derived peptide (MDP) encoded within the mitochondrial 16S rRNA (MT-RNR2) gene. It was the first such peptide discovered, identified in 2001 for its ability to protect neurons against amyloid-beta toxicity, and it is studied as a cytoprotective and metabolic signaling molecule whose circulating levels decline with age. Michael Morelli groups it with MOTS-c and SS-31 in the 'mitochondrial' family and notes that people with the highest humanin levels tend to have the best metabolic health and longest lifespans, while cautioning that whether supplementing it can reverse the age-related decline 'is still an open question' [1]. Humanin is not approved by the U.S. Food and Drug Administration for any indication, has essentially no controlled human-trial evidence, and exists only as a research chemical.",
+        "sections": [
+          {
+            "id": "mechanism",
+            "title": "Mechanism of action",
+            "body": "Humanin is one of several mitochondrial-derived peptides (MDPs), short open reading frames hidden inside mitochondrial ribosomal RNA genes that act as signaling molecules outside the mitochondrion. In cell and animal models, humanin binds a heterotrimeric receptor complex (involving CNTFR, WSX-1/IL-27RA, and gp130) and engages STAT3 signaling, and it interacts with the pro-apoptotic protein BAX to block its mitochondrial translocation, thereby suppressing apoptosis. These actions underlie its reported cytoprotective effects against amyloid-beta and oxidative stress. Metabolically, humanin has been reported to improve insulin sensitivity and reduce inflammatory signaling in rodent models. Morelli frames the broader category in plain terms: mitochondria are the cell's 'little factories,' and peptides hidden in their DNA, like humanin and MOTS-c, are released signals that influence whole-body metabolism [1]."
+          },
+          {
+            "id": "history",
+            "title": "History",
+            "body": "Humanin was discovered in 2001 by Hashimoto and colleagues, who screened a cDNA library derived from the occipital lobe of an Alzheimer's disease patient, a region relatively spared from neuronal loss, looking for factors that protected cells from amyloid-beta toxicity. The protective factor they isolated traced back to a short reading frame inside the mitochondrial MT-RNR2 (16S rRNA) gene, making humanin the founding member of the mitochondrial-derived peptide family later joined by MOTS-c and the SHLPs. Morelli echoes this origin story, noting humanin 'was first found because it protected brain cells from Alzheimer's damage' before researchers connected higher levels to metabolic health and longevity [1]."
+          },
+          {
+            "id": "clinical-evidence",
+            "title": "Clinical evidence",
+            "body": "The human evidence for humanin is observational and pre-clinical rather than interventional. Observational studies have reported that circulating humanin concentrations decline with age and that higher levels are associated with markers of better metabolic health and with longevity, including reports of elevated levels in long-lived individuals and their offspring. Morelli summarizes this as people with the highest humanin levels having 'the best metabolic health and the longest lifespans' [1]. These are correlations, however, and do not establish that raising humanin produces benefit. There are no published, adequately controlled human trials of exogenous humanin or its analogs for cognition, metabolism, or longevity. Morelli is explicit that the key question, whether you can 'put it back and reverse the drop,' remains unanswered [1]."
+          },
+          {
+            "id": "dosing",
+            "title": "Dosing and administration",
+            "body": "There is no established human dose for humanin. Pre-clinical work typically uses the potency-enhanced analog HNG (the S14G substitution), which is far more active than native humanin in protective assays, delivered by injection in animals. Native humanin is a short circulating peptide with a brief plasma half-life, which complicates any attempt at exogenous dosing. Any human protocols circulating online are extrapolations from animal studies and are not supported by clinical data."
+          },
+          {
+            "id": "regulatory",
+            "title": "Regulatory status",
+            "body": "Humanin is not approved by the FDA for any use and is not a registered drug anywhere. It does not appear on the FDA's Section 503A compounding bulks list, and it has not been the subject of the recent FDA compounding actions that affected peptides such as BPC-157. It is available only as a research chemical, outside the regulated medical supply chain."
+          },
+          {
+            "id": "safety",
+            "title": "Safety profile",
+            "body": "Because there are no controlled human trials, humanin's clinical safety profile is unknown. Pre-clinical studies generally describe it and its analogs as well tolerated, consistent with its role as an endogenous cytoprotective peptide, but exogenous administration, long-term exposure, and immunogenicity have not been characterized in humans. A theoretical consideration shared with other anti-apoptotic and growth-supportive signals is whether chronically suppressing programmed cell death could be undesirable in the context of malignancy, though there is no direct human evidence on this point. In practice, the dominant real-world risk is gray-market sourcing, where peptides have been found mislabeled, impure, or contaminated."
+          },
+          {
+            "id": "morelli-protocol-notes",
+            "title": "Morelli's protocol notes",
+            "body": "In his long-form article 'Everything you need to know about peptides,' Morelli places humanin in 'the mitochondrial group,' the category he says fascinates him the most, alongside MOTS-c, SS-31, BPC-157, and others [1]. Unlike Semax, which he reports using daily, Morelli does not describe any personal humanin protocol, dose, or stack, and he reports no results from taking it himself [1]. His treatment of humanin is deliberately cautious: he presents the longevity and metabolic correlations as intriguing observational findings, then flags the central uncertainty that supplementing the peptide may not reverse the age-related decline, calling that 'an open question' [1]. He does not recommend it as a practical protocol in the way he does CJC-1295 with Ipamorelin or BPC-157 with TB-500."
+          },
+          {
+            "id": "see-also",
+            "title": "See also",
+            "body": "[[mots-c|MOTS-c]], [[ss-31|SS-31 (Elamipretide)]], [[epitalon|Epitalon]], [[bpc-157|BPC-157]]."
+          }
+        ],
+        "references": [
+          {
+            "id": 1,
+            "label": "Morelli - Everything you need to know about peptides",
+            "source": "morelli_x",
+            "url": "https://x.com/morellifit/status/2056409530821468627"
+          }
+        ]
+      }
+    },
+    {
+      "id": "oxytocin",
+      "name": "Oxytocin",
+      "aliases": [
+        "OXT",
+        "Oxt",
+        "alpha-Hypophamine",
+        "Pitocin",
+        "Syntocinon"
+      ],
+      "category": "longevity",
+      "isPeptide": true,
+      "whatItDoes": "Endogenous nine-amino-acid neuropeptide and hormone best known for roles in childbirth, lactation, and social bonding. In the context of metabolism it acts as a satiety and fullness signal; intranasal oxytocin has been studied as an appetite modulator, with reported reductions in caloric and fat intake that appear to come from increased satisfaction rather than suppressed hunger.",
+      "scores": {
+        "humanResearch": 6,
+        "weightLoss": 3,
+        "muscleGrowth": null,
+        "sleep": null,
+        "recovery": null,
+        "hairSkin": null,
+        "cognitive": 4,
+        "sideEffectSeverity": 2
+      },
+      "cycled": false,
+      "notableQuote": {
+        "text": "Oxytocin is the cuddle hormone, but it's also a fullness signal, especially for emotional eating. People on intranasal oxytocin eat less (less fat), and the effect comes from feeling satisfied rather than from suppressed hunger.",
+        "transcript": "morelli_x"
+      },
+      "halfLifeOrDose": "Plasma half-life of roughly 3-5 minutes after intravenous administration. No established dose for metabolic use; intranasal research protocols have commonly used 24 IU per administration.",
+      "transcripts": [],
+      "tier": "C",
+      "regulatoryStatus": "FDA-approved as injectable oxytocin (Pitocin) for obstetric use only. Intranasal and metabolic uses are off-label or investigational; compounded intranasal oxytocin is gray-market for these purposes.",
+      "moleculeWeight": 1007,
+      "brandNames": [
+        "Pitocin",
+        "Syntocinon"
+      ],
+      "molecularStructure": "Cyclic nonapeptide (nine amino acids) with a disulfide bridge between two cysteine residues forming a six-residue ring and a three-residue tail; differs from vasopressin by two amino acids.",
+      "history": "Oxytocin's uterine-contracting activity was demonstrated by Henry Dale in 1906, and its milk-ejection (let-down) action was described in the 1910s. Vincent du Vigneaud sequenced and chemically synthesized oxytocin in 1953, the first polypeptide hormone to be synthesized, work for which he received the 1955 Nobel Prize in Chemistry. Synthetic oxytocin (Pitocin) has been used clinically to induce or augment labor for decades; interest in central, behavioral, and metabolic effects via intranasal delivery is more recent.",
+      "administration": "Clinically administered intravenously or intramuscularly for obstetric indications. Behavioral and metabolic research almost always uses an intranasal spray, intended to reach the brain; whether and how much intranasal oxytocin crosses into the central nervous system remains debated.",
+      "legalStatus": "Prescription drug in the United States (injectable, obstetric). Not FDA-approved for appetite, weight, mood, or social indications; such uses are off-label or rely on compounded preparations.",
+      "safetyProfile": "Injectable oxytocin has a long obstetric safety record but carries dose-dependent risks including uterine hyperstimulation and, at high or prolonged doses, hyponatremia from its antidiuretic effect. Intranasal oxytocin in research has generally been well tolerated short-term, with mild effects such as headache or nasal irritation; long-term safety of repeated intranasal use for metabolic or behavioral purposes is not established.",
+      "recommendedVendors": [],
+      "news": [],
+      "viralPosts": [
+        {
+          "url": "https://x.com/morellifit/status/2056409530821468627",
+          "author": "Michael Morelli (@morellifit)",
+          "text": "Oxytocin is the cuddle hormone, but it's also a fullness signal, especially for emotional eating. People on intranasal oxytocin eat less (less fat), and the effect comes from feeling satisfied rather than from suppressed hunger.",
+          "engagement": "562,939 views"
+        }
+      ],
+      "informativeVideos": [],
+      "wiki": {
+        "lede": "Oxytocin is an endogenous nine-amino-acid neuropeptide produced in the hypothalamus and released by the posterior pituitary. It is classically known for triggering uterine contractions during labor and milk let-down during lactation, and it acts centrally as a modulator of social bonding, trust, and stress. In the peptide-optimization community it is discussed mainly as a satiety and anti-craving agent: Michael Morelli groups it with the 'brain' peptides for fat loss and frames it as a fullness signal that is 'especially' useful for emotional eating, noting that people on intranasal oxytocin eat less, particularly less fat, because they feel satisfied rather than because hunger is suppressed [1]. Injectable oxytocin (Pitocin) is FDA-approved only for obstetric use; intranasal and metabolic applications are off-label or investigational.",
+        "sections": [
+          {
+            "id": "mechanism",
+            "title": "Mechanism of action",
+            "body": "Oxytocin signals through the oxytocin receptor (OXTR), a G-protein-coupled receptor expressed in the uterus, mammary tissue, and many brain regions including the hypothalamus, amygdala, and brainstem. Peripherally it drives smooth-muscle contraction in the uterus and milk ducts. Centrally, oxytocin neurons project to and modulate reward, stress, and feeding circuits. In the context of appetite, oxytocin is thought to enhance satiety signaling and reduce intake of energy-dense and palatable foods, an effect attributed to increased satisfaction rather than to outright hunger suppression [1]. Mechanistic models propose actions on hypothalamic feeding centers and on reward-related processing of food cues, but the precise central pathways in humans are not fully resolved, and the degree to which intranasally delivered oxytocin actually reaches relevant brain targets remains debated."
+          },
+          {
+            "id": "history",
+            "title": "History",
+            "body": "Henry Dale demonstrated oxytocin's uterine-contracting activity in 1906, and its milk-ejection action was characterized over the following years. In 1953 Vincent du Vigneaud determined the amino-acid sequence and achieved the first chemical synthesis of oxytocin, making it the first polypeptide hormone to be synthesized; he was awarded the 1955 Nobel Prize in Chemistry for this work. Synthetic oxytocin entered obstetric practice as Pitocin and has been used for decades to induce and augment labor and to control postpartum bleeding. Research into oxytocin's central effects on social behavior, mood, and feeding expanded substantially after intranasal delivery became a common experimental route."
+          },
+          {
+            "id": "clinical-evidence",
+            "title": "Clinical evidence",
+            "body": "Oxytocin's obstetric efficacy is well established. Its metabolic and behavioral effects are far less certain. A body of small, mostly short-term human studies of intranasal oxytocin has reported reductions in caloric intake, a shift away from fatty or highly palatable foods, and effects on food-related brain activity, consistent with Morelli's framing of it as a fullness signal for emotional eating [1]. However, the literature is heterogeneous: trials are small, replication has been inconsistent, and a recurring methodological concern is whether intranasal oxytocin meaningfully crosses the blood-brain barrier. There is no large, definitive trial demonstrating clinically meaningful, durable weight loss from oxytocin, and it is not an approved obesity treatment. Claims about its anti-craving benefit should be read as preliminary."
+          },
+          {
+            "id": "dosing",
+            "title": "Dosing and administration",
+            "body": "For obstetric use, oxytocin is given intravenously or intramuscularly under medical supervision at carefully titrated doses. For appetite and behavioral research it is delivered intranasally; a commonly used research dose is 24 IU per administration, though protocols vary. There is no established or approved dose for weight management or emotional eating. Oxytocin's plasma half-life is only a few minutes, so any peripheral effect is short-lived; the rationale for intranasal dosing is to favor central delivery, which is itself contested."
+          },
+          {
+            "id": "regulatory",
+            "title": "Regulatory status",
+            "body": "Injectable oxytocin (Pitocin, Syntocinon) is an FDA-approved prescription drug for obstetric indications such as labor induction and control of postpartum hemorrhage. It is not approved for appetite suppression, weight loss, mood, social, or anti-aging indications; all such uses are off-label. Intranasal oxytocin marketed or compounded for these purposes falls outside its approved labeling and is effectively a gray-market or investigational product in that context. As an endogenous hormone with approved medical formulations, oxytocin's regulatory situation differs from that of research-only peptides such as BPC-157."
+          },
+          {
+            "id": "safety",
+            "title": "Safety profile",
+            "body": "In supervised obstetric use, oxytocin is generally safe but can cause uterine hyperstimulation, fetal distress, and, because oxytocin has weak antidiuretic activity, water retention and hyponatremia when given in high doses or with large fluid volumes. Intranasal oxytocin in short-term research has typically been well tolerated, with side effects limited to mild headache, nasal irritation, or transient changes in mood; some studies also report context-dependent social or emotional effects that are not uniformly positive. The long-term safety of repeated intranasal use for metabolic or behavioral self-experimentation is unknown, and as with all gray-market peptide use, product purity and accurate dosing from non-pharmaceutical sources are additional concerns."
+          },
+          {
+            "id": "morelli-protocol-notes",
+            "title": "Morelli's protocol notes",
+            "body": "In his long-form article 'Everything you need to know about peptides,' Michael Morelli places oxytocin in what he calls the 'brain group' of fat-loss peptides, arguing that roughly half of fat loss happens in the head and that the goal is to 'engineer your brain environment so the cravings quiet down' [1]. He describes oxytocin as 'the cuddle hormone' that doubles as a fullness signal, emphasizing that it is 'especially' relevant for emotional eating and that the benefit comes from feeling satisfied rather than from suppressed hunger [1]. In his practical guidance, Morelli pairs it with another agent for a specific use case: 'If your problem is emotional eating, Oxytocin and Tesofensine address it directly' [1]. He does not publish a specific personal oxytocin dose, cycle, or quantitative result in this source, and he repeatedly cautions readers to add one peptide at a time, track everything, and 'never stack 5 peptides and then wonder what each one is doing' [1]."
+          },
+          {
+            "id": "see-also",
+            "title": "See also",
+            "body": "[[pt-141|PT-141]], [[kisspeptin-10|Kisspeptin-10]], [[melanotan-ii|Melanotan-II]], [[semaglutide|Semaglutide]], [[selank|Selank]]."
+          }
+        ],
+        "references": [
+          {
+            "id": 1,
+            "label": "Michael Morelli (@morellifit) - Everything you need to know about peptides",
+            "source": "morelli_x",
+            "url": "https://x.com/morellifit/status/2056409530821468627"
+          }
+        ]
+      }
+    },
+    {
+      "id": "setmelanotide",
+      "name": "Setmelanotide",
+      "aliases": [
+        "RM-493",
+        "BIM-22493",
+        "IRC-022493"
+      ],
+      "category": "immune",
+      "isPeptide": true,
+      "whatItDoes": "Cyclic eight-amino-acid melanocortin-4 receptor (MC4R) agonist approved for chronic weight management in rare monogenic obesity caused by defects in the leptin-melanocortin pathway. It restores satiety signalling downstream of leptin in patients whose hunger circuit is genetically broken, producing dramatic weight loss in that narrow population while doing little in common polygenic obesity.",
+      "scores": {
+        "humanResearch": 7,
+        "weightLoss": 6,
+        "muscleGrowth": null,
+        "sleep": null,
+        "recovery": null,
+        "hairSkin": null,
+        "cognitive": null,
+        "sideEffectSeverity": 4
+      },
+      "cycled": false,
+      "notableQuote": {
+        "text": "Setmelanotide is approved for rare genetic forms of obesity. It only works on people whose bodies have a specific broken signaling pathway, but in those people, it works dramatically, which proves that hitting the right brain receptor can produce massive weight loss.",
+        "transcript": "morelli_x"
+      },
+      "halfLifeOrDose": "Once-daily subcutaneous injection; approved adult dosing titrates up to 3 mg/day (lower in younger children). Terminal half-life roughly 11 hours.",
+      "transcripts": [],
+      "tier": "B",
+      "regulatoryStatus": "FDA-approved (2020) and EMA-approved (2021) as a prescription drug (Imcivree) for specific rare genetic obesity indications. Not a gray-market compounded peptide.",
+      "moleculeWeight": 1117,
+      "brandNames": [
+        "Imcivree"
+      ],
+      "molecularStructure": "Synthetic cyclic octapeptide analog of alpha-melanocyte-stimulating hormone (alpha-MSH) that selectively activates the melanocortin-4 receptor.",
+      "history": "Developed by Rhythm Pharmaceuticals (originally licensed from Ipsen as RM-493/BIM-22493). It was designed to bypass upstream defects in the leptin-melanocortin pathway by directly agonizing MC4R, the receptor that converts leptin's signal into satiety. The FDA approved it in November 2020 for obesity due to POMC, PCSK1, or LEPR deficiency; the label was later expanded to Bardet-Biedl syndrome (2022) and acquired hypothalamic obesity (2024).",
+      "administration": "Once-daily subcutaneous injection, typically in the abdomen, thigh, or arm.",
+      "legalStatus": "Approved prescription drug in the US and EU under the brand name Imcivree; available only by prescription for its labeled rare-disease indications. It is not on FDA compounding lists and is not marketed as a research peptide.",
+      "safetyProfile": "Common adverse effects include injection-site reactions, skin hyperpigmentation and darkening of moles (an on-target effect of melanocortin signalling on melanocytes), nausea, and spontaneous penile erections in males. Because MC4R agonism can affect mood and depression has been observed, patients are monitored. Long-term data outside the small approved populations are limited.",
+      "recommendedVendors": [],
+      "news": [],
+      "viralPosts": [
+        {
+          "url": "https://x.com/morellifit/status/2056409530821468627",
+          "author": "Michael Morelli (@morellifit)",
+          "text": "Setmelanotide is approved for rare genetic forms of obesity. It only works on people whose bodies have a specific broken signaling pathway, but in those people, it works dramatically, which proves that hitting the right brain receptor can produce massive weight loss.",
+          "engagement": "562,939 views"
+        }
+      ],
+      "informativeVideos": [],
+      "wiki": {
+        "lede": "Setmelanotide (brand name Imcivree) is a synthetic cyclic octapeptide that selectively activates the melanocortin-4 receptor (MC4R), a key node in the brain's leptin-melanocortin satiety pathway. Unlike gray-market research peptides, it is an FDA-approved prescription drug (2020), indicated for chronic weight management in rare monogenic obesity caused by deficiencies in POMC, PCSK1, or LEPR, and in conditions such as Bardet-Biedl syndrome and acquired hypothalamic obesity. Michael Morelli frames it as a proof-of-concept that hitting the right brain receptor can produce massive weight loss, while stressing that it only works in people whose specific signalling pathway is broken [1].",
+        "sections": [
+          {
+            "id": "mechanism",
+            "title": "Mechanism of action",
+            "body": "Leptin, released by fat tissue, normally signals the brain that energy stores are full. That signal is relayed through POMC-derived alpha-MSH onto the melanocortin-4 receptor (MC4R) in the hypothalamus, which suppresses appetite and increases energy expenditure. In people with loss-of-function mutations upstream of MC4R (in POMC, PCSK1, or LEPR), this relay is broken, producing extreme early-onset hunger and obesity. Setmelanotide is a cyclic eight-amino-acid analog of alpha-MSH that binds and activates MC4R directly, restoring satiety signalling downstream of the genetic defect. Morelli describes the brain group of weight-loss peptides as engineering the brain environment so cravings quiet down, and points to Setmelanotide as the cleanest demonstration that targeting the right receptor can do exactly that [1]."
+          },
+          {
+            "id": "history",
+            "title": "History",
+            "body": "Setmelanotide originated as RM-493 (also BIM-22493), an MC4R agonist licensed by Rhythm Pharmaceuticals from Ipsen. It was developed specifically to bypass upstream defects in the leptin-melanocortin pathway rather than to treat common obesity. The US Food and Drug Administration approved it in November 2020 for obesity due to confirmed POMC, PCSK1, or LEPR deficiency, with the European Medicines Agency following in 2021. The label was subsequently broadened to Bardet-Biedl syndrome (2022) and, more recently, acquired hypothalamic obesity (2024)."
+          },
+          {
+            "id": "clinical-evidence",
+            "title": "Clinical evidence",
+            "body": "The pivotal evidence comes from pivotal trials in the very rare populations carrying leptin-melanocortin pathway mutations. In these patients, a substantial fraction achieved clinically meaningful weight loss over roughly a year of treatment, alongside marked reductions in hunger scores. The effect is striking precisely because it is confined to people whose satiety circuit is genetically disabled; in the much larger population with ordinary polygenic obesity, MC4R agonism has not produced comparable results. Morelli summarizes this honestly: it works dramatically, but only in those with the specific broken pathway, which is why he presents it as a mechanistic proof-of-concept rather than a general weight-loss tool [1]."
+          },
+          {
+            "id": "dosing",
+            "title": "Dosing and administration",
+            "body": "Setmelanotide is given as a once-daily subcutaneous injection. In adults the dose is titrated up to a maximum of 3 mg/day, with lower starting and maximum doses in younger children, and adjustments based on tolerability and weight response. Its terminal half-life is on the order of 11 hours, consistent with once-daily dosing. Because it is an approved prescription drug for defined rare indications, dosing is supervised by a clinician rather than self-directed, distinguishing it from the gray-market peptides Morelli discusses elsewhere [1]."
+          },
+          {
+            "id": "regulatory",
+            "title": "Regulatory status",
+            "body": "Setmelanotide is an FDA-approved prescription drug (approved November 2020), marketed as Imcivree by Rhythm Pharmaceuticals, and is approved in the European Union as well. It is not on the FDA's peptide compounding lists and is not sold as a research compound. Its approvals are narrow and indication-specific, covering rare monogenic and syndromic obesity rather than general weight management."
+          },
+          {
+            "id": "safety",
+            "title": "Safety profile",
+            "body": "The most characteristic adverse effects flow directly from melanocortin signalling. Because MC1R on melanocytes is also a melanocortin receptor, patients commonly develop skin hyperpigmentation and darkening of existing moles and freckles, prompting routine skin examinations. Other common effects include injection-site reactions, nausea, and spontaneous penile erections in males. Depression and suicidal ideation have been reported, so mood is monitored during treatment. Long-term safety data outside the small approved populations are limited. Morelli notes more broadly that the brain-targeting weight-loss peptides act on reward and satiety circuitry, which is why receptor selectivity matters [1]."
+          },
+          {
+            "id": "morelli-protocol-notes",
+            "title": "Morelli's protocol notes",
+            "body": "In his long-form peptide article, Morelli does not report personal use of Setmelanotide and does not give a self-experimentation dose, stacking protocol, or results for it, unlike the peptides he runs himself such as Semax or BPC-157 [1]. He places it in the brain group of weight-loss tools and treats it as an illustrative, prescription-only case rather than something he recommends acquiring on the gray market. His practical guidance is that most people only need two or three peptides, that a GLP-1 such as semaglutide or tirzepatide is the obvious, safest, and most-researched starting point for significant weight loss, and that one should add a single peptide at a time and track its effect before adding another [1]. Setmelanotide sits outside that everyday toolkit because it is indicated only for people with specific rare genetic defects."
+          },
+          {
+            "id": "see-also",
+            "title": "See also",
+            "body": "[[melanotan-ii|Melanotan II]], [[melanotan-i|Melanotan I]], [[pt-141|PT-141]], [[semaglutide|Semaglutide]], [[tirzepatide|Tirzepatide]]."
+          }
+        ],
+        "references": [
+          {
+            "id": 1,
+            "label": "Michael Morelli (@morellifit) - Everything you need to know about peptides",
+            "source": "morelli_x",
+            "url": "https://x.com/morellifit/status/2056409530821468627"
+          }
+        ]
+      }
+    },
+    {
+      "id": "survodutide",
+      "name": "Survodutide",
+      "aliases": [
+        "BI 456906",
+        "BI456906"
+      ],
+      "category": "glp1",
+      "isPeptide": true,
+      "whatItDoes": "Investigational once-weekly dual agonist at the GLP-1 and glucagon receptors, developed by Boehringer Ingelheim and Zealand Pharma. The glucagon arm targets the liver directly to raise energy expenditure and clear hepatic fat, which is why it is framed as a GLP-1 variant built primarily for fatty liver disease (MASH/NASH) rather than weight loss alone.",
+      "scores": {
+        "humanResearch": 5,
+        "weightLoss": 7,
+        "muscleGrowth": null,
+        "sleep": null,
+        "recovery": null,
+        "hairSkin": null,
+        "cognitive": null,
+        "sideEffectSeverity": 5
+      },
+      "cycled": false,
+      "notableQuote": {
+        "text": "And then we have Survodutide, Mazdutide, and Cotadutide. These are the variations of the same theme, different combination of receptors, used on different populations. Survodutide is built for fatty liver.",
+        "transcript": "morelli_x"
+      },
+      "halfLifeOrDose": "Long-acting, designed for once-weekly subcutaneous injection. Trial doses titrated up to roughly 6 mg weekly. No FDA-approved dose.",
+      "transcripts": [],
+      "tier": "B",
+      "regulatoryStatus": "Investigational. Not FDA-approved. Received FDA Breakthrough Therapy designation for metabolic dysfunction-associated steatohepatitis (MASH) with fibrosis; in Phase 3 development for MASH and obesity.",
+      "moleculeWeight": null,
+      "brandNames": [],
+      "molecularStructure": "Synthetic peptide dual agonist of the glucagon and GLP-1 receptors, acylated with a fatty-acid side chain that binds albumin to extend its half-life and support once-weekly dosing.",
+      "history": "Co-developed by Boehringer Ingelheim and Zealand Pharma under the code BI 456906. It belongs to the dual GLP-1/glucagon (glucagon-like) agonist class and was positioned in the same family as cotadutide and mazdutide, each pairing GLP-1 with glucagon agonism but tuned for different patient populations. Its lead indication became metabolic dysfunction-associated steatohepatitis (MASH, formerly NASH), reflecting the rationale that glucagon-receptor activity acts directly on the liver to mobilize and burn hepatic fat.",
+      "administration": "Subcutaneous injection, once weekly, with a multi-week dose-titration schedule to limit gastrointestinal side effects.",
+      "legalStatus": "Investigational research compound in the United States; not approved for human use. Available on the gray market for research use only.",
+      "safetyProfile": "Most common adverse effects in trials are gastrointestinal (nausea, vomiting, diarrhea, decreased appetite), consistent with the GLP-1 class and most pronounced during titration. The glucagon arm raises theoretical concerns about increased heart rate and effects on glucose handling that are characteristic of glucagon-receptor agonists. Long-term human safety data are still accumulating.",
+      "recommendedVendors": [],
+      "news": [],
+      "viralPosts": [
+        {
+          "url": "https://x.com/morellifit/status/2056409530821468627",
+          "author": "Michael Morelli (@morellifit)",
+          "text": "And then we have Survodutide, Mazdutide, and Cotadutide. These are the variations of the same theme, different combination of receptors, used on different populations. Survodutide is built for fatty liver.",
+          "engagement": "~563K views, 649 likes"
+        }
+      ],
+      "informativeVideos": [],
+      "wiki": {
+        "lede": "Survodutide (BI 456906) is an investigational once-weekly peptide that activates both the GLP-1 and glucagon receptors, co-developed by Boehringer Ingelheim and Zealand Pharma [1]. Like the closely related triple agonist retatrutide, it adds glucagon-receptor agonism on top of GLP-1, but its lead indication is liver disease: it is being developed primarily for metabolic dysfunction-associated steatohepatitis (MASH, formerly NASH) rather than weight loss alone. Morelli groups it with mazdutide and cotadutide as 'variations of the same theme, different combination of receptors, used on different populations,' and summarizes survodutide simply as 'built for fatty liver' [1]. It is not approved by the U.S. Food and Drug Administration for any indication and is sold on the gray market for research use only.",
+        "sections": [
+          {
+            "id": "mechanism",
+            "title": "Mechanism of action",
+            "body": "Survodutide is a dual agonist of the GLP-1 and glucagon receptors. The GLP-1 arm suppresses appetite, slows gastric emptying, and improves glucose-dependent insulin secretion, the same mechanism shared by semaglutide. The glucagon arm is the distinguishing feature: glucagon-receptor activation in the liver increases energy expenditure and promotes the breakdown and clearance of hepatic fat. This direct hepatic action is the rationale for targeting fatty liver disease, and it is why Morelli describes survodutide as 'built for fatty liver' [1]. The same glucagon mechanism underlies retatrutide's reported ability to clear liver fat, which Morelli highlights as a major reason that class of drugs is so consequential [1]."
+          },
+          {
+            "id": "history",
+            "title": "History",
+            "body": "Survodutide (BI 456906) was developed jointly by Boehringer Ingelheim and Zealand Pharma as part of a broader effort to build GLP-1/glucagon dual agonists. It sits alongside cotadutide and mazdutide as members of the GLP-1/glucagon family, each pairing GLP-1 agonism with glucagon agonism but optimized for different populations and indications. Morelli frames these three as variants of one underlying idea, noting that cotadutide is dosed daily rather than weekly and that mazdutide came out of China for Asian patients who tend to develop metabolic disease at lower body weight than Westerners [1]. Survodutide's distinguishing positioning is its focus on fatty liver disease."
+          },
+          {
+            "id": "clinical-evidence",
+            "title": "Clinical evidence",
+            "body": "Survodutide's most notable human data come from mid-stage trials in MASH and in obesity. In a Phase 2 MASH trial, a substantial proportion of treated patients achieved improvement in steatohepatitis without worsening of fibrosis compared with placebo, results strong enough to support advancement into Phase 3. Separate Phase 2 obesity studies showed meaningful weight loss in the range expected for potent incretin-class agents, with the degree of loss dependent on how many participants reached the higher titrated doses. Head-to-head data against approved GLP-1 drugs are limited, and the long-term outcome data needed for approval are still being generated. Morelli does not cite specific survodutide trial statistics; his framing is qualitative, treating it as the liver-focused member of the GLP-1/glucagon group [1]."
+          },
+          {
+            "id": "dosing",
+            "title": "Dosing and administration",
+            "body": "Survodutide is administered by subcutaneous injection once weekly. Like other incretin-class agents, it requires a multi-week dose-titration schedule to limit gastrointestinal side effects, with trial regimens escalating to roughly 6 mg weekly. There is no FDA-approved dose; any gray-market protocols are extrapolated from trial titration schedules rather than from validated human guidance."
+          },
+          {
+            "id": "regulatory",
+            "title": "Regulatory status",
+            "body": "Survodutide is investigational and is not approved by the FDA for any indication. It received FDA Breakthrough Therapy designation for MASH with fibrosis, reflecting its mid-stage liver data, and has advanced into Phase 3 trials for MASH and obesity. In the United States it is available only as a research compound sold for research use only, and it is not on any FDA compounding enforcement-discretion list."
+          },
+          {
+            "id": "safety",
+            "title": "Safety profile",
+            "body": "The dominant adverse effects reported in trials are gastrointestinal, principally nausea, vomiting, diarrhea, and decreased appetite, consistent with the GLP-1 mechanism and most pronounced during dose escalation. The glucagon-receptor arm introduces theoretical and class-typical concerns, including the potential for an increased resting heart rate and effects on glucose metabolism that warrant monitoring, as seen with other glucagon-containing agonists. Long-term human safety data remain incomplete because the compound is still in late-stage development. As with all gray-market peptides, sourcing risk (purity, contaminants, and mislabeling) is an additional hazard independent of the molecule's intrinsic profile."
+          },
+          {
+            "id": "morelli-protocol",
+            "title": "Morelli's protocol notes",
+            "body": "Morelli does not publish a personal survodutide dosing or stacking protocol and does not report running it on himself or his clients in this article. He treats it descriptively, slotting it into the GLP-1 group as one of three variants alongside mazdutide and cotadutide that share a GLP-1/glucagon theme but are 'used on different populations' [1]. His one-line characterization is that survodutide is 'built for fatty liver' [1], which positions it in his framework as a targeted, indication-specific tool rather than a default starting GLP-1. For readers new to the class, his general guidance points toward semaglutide as 'the safest peptide to start' if GLP-1 fits the goal, with the more aggressive multi-receptor agents reserved for specific cases [1]."
+          },
+          {
+            "id": "see-also",
+            "title": "See also",
+            "body": "[[retatrutide|Retatrutide]] (GLP-1/GIP/glucagon triple agonist that also clears liver fat), [[semaglutide|Semaglutide]], [[tirzepatide|Tirzepatide]], [[cagrilintide|Cagrilintide]], [[tesofensine|Tesofensine]]."
+          }
+        ],
+        "references": [
+          {
+            "id": 1,
+            "label": "Michael Morelli (@morellifit) - Everything you need to know about peptides",
+            "source": "morelli_x",
+            "url": "https://x.com/morellifit/status/2056409530821468627"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mazdutide",
+      "name": "Mazdutide",
+      "aliases": [
+        "IBI362",
+        "LY3305677",
+        "OXM analog"
+      ],
+      "category": "glp1",
+      "isPeptide": true,
+      "whatItDoes": "Long-acting dual GLP-1 and glucagon receptor agonist based on the gut hormone oxyntomodulin. The GLP-1 arm reduces appetite and slows gastric emptying while the glucagon arm raises energy expenditure and promotes liver fat clearance. Developed by Innovent Biologics in China and studied largely in Asian populations, where metabolic disease tends to appear at lower body weight than in Western populations.",
+      "scores": {
+        "humanResearch": 6,
+        "weightLoss": 7,
+        "muscleGrowth": null,
+        "sleep": null,
+        "recovery": null,
+        "hairSkin": null,
+        "cognitive": null,
+        "sideEffectSeverity": 5
+      },
+      "cycled": false,
+      "notableQuote": {
+        "text": "And then we have Survodutide, Mazdutide, and Cotadutide. These are the variations of the same theme, different combination of receptors, used on different populations. Mazdutide came out of China for Asian patients who tend to develop metabolic disease at lower body weight than Westerners.",
+        "transcript": "morelli_x"
+      },
+      "halfLifeOrDose": "Long-acting acylated peptide supporting once-weekly subcutaneous injection. Trials titrated weekly doses up through roughly 4-9 mg. No FDA-approved dose; gray-market protocols are extrapolated from trial titration schedules.",
+      "transcripts": [],
+      "tier": "B",
+      "regulatoryStatus": "Investigational outside China. Not FDA-approved. Developed by Innovent Biologics (originally licensed from Eli Lilly); first regulatory approvals have been pursued in China for chronic weight management and type 2 diabetes.",
+      "moleculeWeight": null,
+      "brandNames": [],
+      "molecularStructure": "Synthetic oxyntomodulin-based peptide engineered as a dual agonist of the GLP-1 and glucagon receptors, acylated with a fatty-acid side chain to bind albumin and extend half-life for once-weekly dosing.",
+      "history": "Mazdutide originated as an oxyntomodulin (OXM) analog developed by Eli Lilly under the code LY3305677 and was licensed to the Chinese biotech Innovent Biologics, which advanced it as IBI362. Its clinical program has been centered in China and Asian populations, who tend to develop type 2 diabetes and metabolic disease at lower body-mass indices than Western populations. Morelli frames it as one of several GLP-1-family 'variations on the same theme,' alongside survodutide and cotadutide, differentiated by receptor combination and target population.",
+      "administration": "Subcutaneous injection, once weekly, with the dose titrated upward over several weeks to limit gastrointestinal side effects.",
+      "legalStatus": "Investigational research compound in the United States; not approved by the FDA for human use and not on any FDA compounding enforcement-discretion list. Sold on the gray market for research use only. Regulatory submissions have been pursued in China.",
+      "safetyProfile": "Adverse effects are predominantly gastrointestinal (nausea, vomiting, diarrhea, decreased appetite), consistent with the GLP-1 mechanism and most pronounced during dose escalation. The glucagon component can raise heart rate and transiently affect blood glucose and hepatic markers, so cardiometabolic monitoring is relevant. Long-term safety data outside the Chinese trial program are limited, and gray-market sourcing adds purity and contamination risk on top of the molecule's intrinsic effects.",
+      "recommendedVendors": [],
+      "news": [],
+      "viralPosts": [
+        {
+          "url": "https://x.com/morellifit/status/2056409530821468627",
+          "author": "Michael Morelli (@morellifit)",
+          "text": "And then we have Survodutide, Mazdutide, and Cotadutide. These are the variations of the same theme... Mazdutide came out of China for Asian patients who tend to develop metabolic disease at lower body weight than Westerners.",
+          "engagement": "~563K views, 649 likes"
+        }
+      ],
+      "informativeVideos": [],
+      "wiki": {
+        "lede": "Mazdutide (development codes IBI362 and LY3305677) is a long-acting peptide that activates both the GLP-1 and glucagon receptors, built on the natural gut hormone oxyntomodulin [1]. The GLP-1 arm suppresses appetite and slows gastric emptying, while the glucagon arm increases energy expenditure and helps clear fat from the liver. It was originally an Eli Lilly oxyntomodulin analog licensed to the Chinese company Innovent Biologics, and its clinical program has focused on Asian populations, who, as Morelli notes, 'tend to develop metabolic disease at lower body weight than Westerners' [1]. Mazdutide is not approved by the U.S. Food and Drug Administration and is sold on the gray market for research use only.",
+        "sections": [
+          {
+            "id": "mechanism",
+            "title": "Mechanism of action",
+            "body": "Mazdutide is a dual agonist engineered from oxyntomodulin, a naturally occurring gut hormone that activates both the GLP-1 and glucagon receptors. The GLP-1 component reduces food intake by acting on appetite centers in the brain and by slowing gastric emptying, the same mechanism Morelli describes for the GLP-1 class generally: a hormone that 'tells your stomach to empty slowly and your brain that you're done eating' [1]. The glucagon component adds an energy-expenditure and hepatic-lipid dimension, raising metabolic rate and promoting fat mobilization and clearance from the liver. Combining both receptors aims to produce weight loss that exceeds GLP-1 activity alone while also improving liver fat, a rationale shared with the broader dual- and triple-agonist class. To support once-weekly dosing, the peptide is acylated with a fatty-acid side chain that binds albumin and slows clearance."
+          },
+          {
+            "id": "history",
+            "title": "History",
+            "body": "Mazdutide began as an oxyntomodulin analog developed by Eli Lilly under the code LY3305677. Lilly licensed the molecule to Innovent Biologics, a Chinese biotechnology company, which advanced it as IBI362. The clinical program has been conducted primarily in China and in Asian populations. Morelli situates mazdutide within a cluster of GLP-1-family agents that are 'variations of the same theme, different combination of receptors, used on different populations,' specifically describing mazdutide as having 'came out of China for Asian patients who tend to develop metabolic disease at lower body weight than Westerners' [1]. This population focus is clinically meaningful because type 2 diabetes and obesity-related complications often appear at lower body-mass indices in East Asian populations than the thresholds used in Western guidelines."
+          },
+          {
+            "id": "clinical-evidence",
+            "title": "Clinical evidence",
+            "body": "Mazdutide has been studied in Chinese Phase 2 and Phase 3 trials for obesity and type 2 diabetes, reporting clinically meaningful weight loss and glycemic improvement along with reductions in liver fat consistent with its glucagon component. Morelli does not cite specific trial percentages for mazdutide; he groups it qualitatively with survodutide and cotadutide as receptor variations rather than ranking its potency [1]. In the GLP-1 hierarchy he lays out, single-receptor semaglutide produces roughly 15% weight loss, dual GLP-1/GIP tirzepatide around 22%, and triple-agonist retatrutide nearly 29% [1]; mazdutide is a GLP-1/glucagon dual agonist whose published weight-loss figures fall within the dual-agonist range, but readers should treat precise numbers cautiously because most data come from Asian trial populations and have not been replicated in large Western trials. There is no FDA-reviewed efficacy dataset."
+          },
+          {
+            "id": "dosing",
+            "title": "Dosing and administration",
+            "body": "Mazdutide is given by subcutaneous injection once weekly, with the dose titrated upward over several weeks to limit gastrointestinal side effects; trial regimens have escalated through roughly the 4-9 mg weekly range depending on indication. There is no FDA-approved dose, and any gray-market protocol is extrapolated from published trial titration schedules rather than from an approved label. Consistent with Morelli's general guidance, the prudent approach is to add a single agent at a time and observe its effects rather than stacking multiple metabolic peptides blindly [1]."
+          },
+          {
+            "id": "regulatory",
+            "title": "Regulatory status",
+            "body": "Mazdutide is not approved by the U.S. Food and Drug Administration for any indication and is not on any FDA compounding enforcement-discretion list. Its regulatory path has been pursued in China by Innovent Biologics, where submissions have targeted chronic weight management and type 2 diabetes. In the United States it exists only as an investigational research compound sold for research use only. As with other GLP-1-family peptides obtained outside an approved supply chain, it carries the regulatory and quality risks of the gray market."
+          },
+          {
+            "id": "safety",
+            "title": "Safety profile",
+            "body": "The dominant adverse effects are gastrointestinal, principally nausea, vomiting, diarrhea, and decreased appetite, consistent with the GLP-1 mechanism and most pronounced during dose escalation. The glucagon component introduces additional considerations: it can raise heart rate and transiently influence blood glucose and hepatic enzymes, so cardiometabolic and liver monitoring are relevant. Long-term human safety data outside the Chinese trial program are limited, and the molecule has not been through FDA safety review. As with all gray-market peptides, sourcing risk, including purity, contaminants, and mislabeling, is an additional hazard layered on top of the compound's intrinsic pharmacology."
+          },
+          {
+            "id": "morelli-protocol",
+            "title": "Morelli's protocol notes",
+            "body": "Morelli does not report any personal use, dosing, or stacking protocol for mazdutide. In his peptide overview he treats it as a contextual entry in the GLP-1 group rather than a tool he runs himself, describing it and its siblings survodutide and cotadutide as 'variations of the same theme, different combination of receptors, used on different populations' [1]. His specific note on mazdutide is that it 'came out of China for Asian patients who tend to develop metabolic disease at lower body weight than Westerners' [1], distinguishing it from survodutide ('built for fatty liver') and cotadutide ('daily injection instead of a weekly one') [1]. For practical weight loss, Morelli's own recommendation steers toward the more established options: he calls a GLP-1 like semaglutide or tirzepatide 'the obvious starting point (and the safest and most researched one),' optionally adding MOTS-c to amplify the cellular side [1]. He also cautions against stacking five peptides at once and advises adding one at a time and watching what it does [1]."
+          },
+          {
+            "id": "see-also",
+            "title": "See also",
+            "body": "[[semaglutide|Semaglutide]], [[tirzepatide|Tirzepatide]], [[retatrutide|Retatrutide]] (triple GLP-1/GIP/glucagon agonist), [[mots-c|MOTS-c]]."
+          }
+        ],
+        "references": [
+          {
+            "id": 1,
+            "label": "Michael Morelli (@morellifit) - Everything you need to know about peptides",
+            "source": "morelli_x",
+            "url": "https://x.com/morellifit/status/2056409530821468627"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cotadutide",
+      "name": "Cotadutide",
+      "aliases": [
+        "MEDI0382"
+      ],
+      "category": "glp1",
+      "isPeptide": true,
+      "whatItDoes": "Investigational once-daily peptide that activates both the GLP-1 and glucagon receptors. The GLP-1 arm suppresses appetite and slows gastric emptying while the glucagon arm raises energy expenditure and promotes hepatic fat clearance, with development historically aimed at type 2 diabetes, obesity, and fatty-liver disease.",
+      "scores": {
+        "humanResearch": 4,
+        "weightLoss": 5,
+        "muscleGrowth": null,
+        "sleep": null,
+        "recovery": null,
+        "hairSkin": null,
+        "cognitive": null,
+        "sideEffectSeverity": 4
+      },
+      "cycled": false,
+      "notableQuote": {
+        "text": "And then we have Survodutide, Mazdutide, and Cotadutide. These are the variations of the same theme, different combination of receptors, used on different populations.",
+        "transcript": "morelli_x"
+      },
+      "halfLifeOrDose": "Designed as a once-daily subcutaneous injection. Phase 2 programs used stepwise titration into the low hundreds of micrograms per day. No approved human dose.",
+      "transcripts": [],
+      "tier": "C",
+      "regulatoryStatus": "Investigational only; not approved by the FDA or EMA for any indication. Reached Phase 2 then development was deprioritized.",
+      "moleculeWeight": null,
+      "brandNames": [],
+      "molecularStructure": "Synthetic glucagon-like peptide based on the glucagon/oxyntomodulin backbone, engineered as a balanced dual agonist of the GLP-1 and glucagon receptors and lipidated for a once-daily subcutaneous profile.",
+      "history": "Originated from MedImmune/AstraZeneca (development code MEDI0382) as part of a wave of GLP-1/glucagon co-agonists inspired by the gut hormone oxyntomodulin. It advanced through Phase 1 and Phase 2 studies in type 2 diabetes, obesity, and non-alcoholic steatohepatitis before AstraZeneca shifted emphasis toward other metabolic assets.",
+      "administration": "Subcutaneous injection, dosed once daily rather than weekly.",
+      "legalStatus": "Not FDA-approved; available only through clinical research or the gray market. Not a controlled substance.",
+      "safetyProfile": "The dominant adverse effects in trials were gastrointestinal (nausea, vomiting, decreased appetite), consistent with the GLP-1 class. The glucagon component can transiently raise heart rate and glucose excursions, which complicated dose titration. Long-term human safety is unestablished.",
+      "recommendedVendors": [],
+      "news": [],
+      "viralPosts": [
+        {
+          "url": "https://x.com/morellifit/status/2056409530821468627",
+          "author": "Michael Morelli (@morellifit)",
+          "text": "And then we have Survodutide, Mazdutide, and Cotadutide. These are the variations of the same theme, different combination of receptors, used on different populations... Cotadutide is daily injection instead of a weekly one.",
+          "engagement": "~563K views, 649 likes"
+        }
+      ],
+      "informativeVideos": [],
+      "wiki": {
+        "lede": "Cotadutide (development code MEDI0382) is an investigational synthetic peptide that acts as a balanced dual agonist of the GLP-1 and glucagon receptors. Developed by MedImmune/AstraZeneca, it was studied in type 2 diabetes, obesity, and non-alcoholic steatohepatitis. In Michael Morelli's framing it is one of several 'variations of the same theme' alongside Survodutide and Mazdutide, distinguished chiefly by being a once-daily injection rather than a weekly one [1]. Cotadutide is not approved by the U.S. Food and Drug Administration or any major regulator and never advanced past mid-stage clinical development.",
+        "sections": [
+          {
+            "id": "mechanism",
+            "title": "Mechanism of action",
+            "body": "Cotadutide engages two receptors at once. The GLP-1 receptor arm reproduces the familiar incretin effects, suppressing appetite, slowing gastric emptying, and improving glucose-dependent insulin secretion. The glucagon receptor arm is the differentiator: glucagon signaling increases energy expenditure and stimulates hepatic lipid oxidation, which is intended to add fat-burning and liver-fat clearance on top of pure appetite suppression. Morelli describes this whole sub-family as different receptor combinations layered onto the same GLP-1 foundation, with the glucagon-containing agents aimed at metabolic and liver disease [1]. The engineering challenge of such co-agonists is balance, because too much glucagon activity can raise blood glucose and counteract the GLP-1 benefit."
+          },
+          {
+            "id": "history",
+            "title": "History",
+            "body": "Cotadutide emerged from MedImmune, AstraZeneca's biologics arm, as MEDI0382. It belongs to the lineage of GLP-1/glucagon co-agonists modeled on oxyntomodulin, a naturally occurring gut peptide that activates both receptors. The compound moved through Phase 1 and Phase 2 trials across type 2 diabetes, obesity, and non-alcoholic steatohepatitis during the late 2010s and early 2020s. As the field consolidated around weekly dosing and more potent multi-receptor agents, AstraZeneca deprioritized cotadutide in favor of other metabolic candidates."
+          },
+          {
+            "id": "clinical-evidence",
+            "title": "Clinical evidence",
+            "body": "Cotadutide reached Phase 2 with published evidence of glucose lowering and modest weight loss in type 2 diabetes, plus signals of reduced liver fat relevant to fatty-liver disease. The data established the dual-agonist concept but did not demonstrate the weight-loss magnitude later seen with weekly agents. By comparison, Morelli notes that semaglutide drives roughly 15% weight loss, tirzepatide around 22%, and the triple agonist retatrutide nearly 29% in late-stage trials [1]. Cotadutide's once-daily burden and mid-tier efficacy left it outside the leading wave of approved or near-approved obesity drugs. Detailed trial statistics here are summarized qualitatively to avoid overstating numbers that vary by study."
+          },
+          {
+            "id": "dosing",
+            "title": "Dosing and administration",
+            "body": "Cotadutide was developed as a once-daily subcutaneous injection, which Morelli flags as its defining practical feature relative to the weekly competitors in the GLP-1 group [1]. Phase 2 protocols used stepwise titration into the low-hundreds of micrograms per day to manage gastrointestinal tolerability and the glucagon-driven glucose and heart-rate effects. There is no approved or standardized human dose, and any figures circulating in the gray market are extrapolated from discontinued trial regimens."
+          },
+          {
+            "id": "regulatory",
+            "title": "Regulatory status",
+            "body": "Cotadutide is not approved by the FDA, the EMA, or any other major regulator for any indication. It exists only as an investigational compound that did not progress beyond mid-stage clinical development. It is not a scheduled controlled substance. Because it was never commercialized, it carries no brand name and is not part of standard compounding pathways, so any human use occurs outside an approved framework."
+          },
+          {
+            "id": "safety",
+            "title": "Safety profile",
+            "body": "In trials the most common adverse events were gastrointestinal, including nausea, vomiting, and decreased appetite, which is typical of GLP-1 receptor agonists. The glucagon component introduced additional considerations, including transient increases in heart rate and the potential to raise blood glucose if the dual-agonist balance tilted too far toward glucagon, which is one reason careful titration was required. Long-term human safety was never established, and as an unapproved peptide cotadutide also carries the gray-market sourcing risks common to this class, where independent testing of injectables has found contaminants and inaccurate purity."
+          },
+          {
+            "id": "morelli-protocol-notes",
+            "title": "Morelli's protocol notes",
+            "body": "In his long-form article 'Everything you need to know about peptides,' Morelli does not report a personal cotadutide protocol, dose, stack, or results. He treats it as a category entry rather than a peptide he runs himself, grouping it with Survodutide and Mazdutide as 'variations of the same theme, different combination of receptors, used on different populations,' and singling out that 'Cotadutide is daily injection instead of a weekly one' [1]. His broader GLP-1 guidance is to start with the safest, most studied option, naming semaglutide as the entry point when a GLP-1 fits the goal, and to view the glucagon-containing agents as more specialized tools, for example Survodutide for fatty liver and Mazdutide for Asian patients who develop metabolic disease at lower body weight [1]. No personal-use dosing or outcomes for cotadutide are claimed in the source."
+          },
+          {
+            "id": "see-also",
+            "title": "See also",
+            "body": "[[semaglutide|Semaglutide]], [[tirzepatide|Tirzepatide]], [[retatrutide|Retatrutide]]."
+          }
+        ],
+        "references": [
+          {
+            "id": 1,
+            "label": "Morelli - Everything you need to know about peptides (X article)",
+            "source": "morelli_x",
+            "url": "https://x.com/morellifit/status/2056409530821468627"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ghrp-2",
+      "name": "GHRP-2",
+      "aliases": [
+        "Growth Hormone Releasing Peptide-2",
+        "Pralmorelin",
+        "KP-102",
+        "GPA-748"
+      ],
+      "category": "ghs",
+      "whatItDoes": "Synthetic growth-hormone secretagogue and ghrelin-receptor agonist. Stimulates the pituitary to release a pulse of endogenous growth hormone and is regarded as a stronger GH releaser than ipamorelin, but it also tends to raise cortisol and prolactin and can stimulate appetite.",
+      "scores": {
+        "humanResearch": 4,
+        "weightLoss": null,
+        "muscleGrowth": 4,
+        "sleep": 4,
+        "recovery": 4,
+        "hairSkin": null,
+        "cognitive": null,
+        "sideEffectSeverity": 4
+      },
+      "cycled": true,
+      "notableQuote": {
+        "text": "GHRP-2 is stronger than Ipamorelin, but raises cortisol.",
+        "transcript": "morelli_x"
+      },
+      "halfLifeOrDose": "Short plasma half-life (roughly 15-60 minutes); typically dosed in microgram amounts (commonly cited as ~100 mcg, one to three times daily) and timed away from meals to avoid blunting by food. No established human therapeutic dose outside the diagnostic setting.",
+      "transcripts": [],
+      "tier": "C",
+      "regulatoryStatus": "Not FDA-approved for any indication in the United States. Investigated as a GH secretagogue and used as a diagnostic agent (pralmorelin) in Japan. Not on the FDA Section 503A compounding bulks list; sold gray-market as a research chemical.",
+      "moleculeWeight": 817,
+      "brandNames": [
+        "GHRP Kaken 100 (pralmorelin diagnostic, Japan)"
+      ],
+      "molecularStructure": "Synthetic hexapeptide (D-Ala-D-2-Nal-Ala-Trp-D-Phe-Lys-NH2). A small, non-natural peptide ghrelin-receptor (GHS-R1a) agonist; not a fragment of a human protein.",
+      "history": "GHRP-2 belongs to the first family of synthetic growth-hormone-releasing peptides developed from the enkephalin-derived secretagogue work of Cyril Bowers and colleagues in the 1980s and 1990s, before the natural ligand ghrelin was identified in 1999. It was studied as a potential growth-hormone therapy and as a diagnostic test of pituitary GH reserve, reaching clinical use in Japan under the name pralmorelin (KP-102). It is one of the older secretagogues, alongside GHRP-6, hexarelin, and sermorelin, that have largely been superseded in popular use by ipamorelin and CJC-1295.",
+      "administration": "Subcutaneous injection is the most common route in gray-market use; intravenous administration has been used in diagnostic and research settings. Sometimes paired with a GHRH analog such as CJC-1295 (no DAC) to combine a release signal with a pulse-amplifying signal.",
+      "legalStatus": "Not FDA-approved and not on the Section 503A compounding list in the United States. Available only as a research-use chemical. Growth-hormone secretagogues are prohibited in sport by the World Anti-Doping Agency (class S2).",
+      "safetyProfile": "Better characterized than many gray-market peptides because of diagnostic use, but still without long-term human safety data for repeated wellness dosing. The principal pharmacological drawbacks are non-selectivity: GHRP-2 raises cortisol and prolactin and stimulates appetite in addition to releasing growth hormone, which is why newer agents like ipamorelin were developed to avoid these effects. Sustained GH elevation carries the usual class concerns (insulin resistance, water retention, joint discomfort). As with all gray-market peptides, sourcing risk (impurity, mislabeling, contamination) is a dominant practical hazard.",
+      "recommendedVendors": [],
+      "news": [],
+      "viralPosts": [
+        {
+          "url": "https://x.com/morellifit/status/2056409530821468627",
+          "author": "Michael Morelli (@morellifit)",
+          "text": "GHRP-2, GHRP-6, Hexarelin, and Sermorelin are older variations. GHRP-2 is stronger than Ipamorelin, but raises cortisol. GHRP-6 makes you hungry, which is useful if you want to gain muscle. Hexarelin is the most powerful, also the one your body adjusts to the fastest so you can't run it long. Sermorelin is the gentlest.",
+          "engagement": null
+        }
+      ],
+      "informativeVideos": [],
+      "isPeptide": true,
+      "wiki": {
+        "lede": "GHRP-2 (Growth Hormone Releasing Peptide-2), also known as pralmorelin, is a synthetic hexapeptide that acts as a ghrelin-receptor agonist and growth-hormone secretagogue, prompting the pituitary to release a pulse of endogenous growth hormone. Michael Morelli classifies it among the 'older variations' of growth-hormone peptides and summarizes its trade-off directly: it is 'stronger than Ipamorelin, but raises cortisol' [1]. GHRP-2 is not approved by the U.S. Food and Drug Administration for any indication, though a diagnostic form reached clinical use in Japan, and in the United States it circulates only as a gray-market research chemical.",
+        "sections": [
+          {
+            "id": "mechanism",
+            "title": "Mechanism of action",
+            "body": "GHRP-2 is a synthetic agonist of the growth-hormone secretagogue receptor (GHS-R1a), the same receptor activated by the natural hunger-and-GH hormone ghrelin. Binding this receptor on the pituitary and hypothalamus triggers release of a pulse of endogenous growth hormone and also amplifies growth-hormone-releasing hormone (GHRH) signaling, which is why secretagogues are often paired with a GHRH analog. Unlike ipamorelin, which was engineered to be a 'clean' selective GH releaser, GHRP-2's activity is less selective: through the same ghrelin pathway it also tends to raise cortisol (via ACTH) and prolactin, and it can stimulate appetite. Morelli frames the whole growth-hormone group as peptides that 'don't give you GH directly, but instead tell your body to make its own, in the right rhythm,' and notes that older drugs in this category 'also raised cortisol and made you hungry,' a property ipamorelin was designed to avoid [1]."
+          },
+          {
+            "id": "history",
+            "title": "History",
+            "body": "GHRP-2 emerged from the synthetic growth-hormone-releasing peptide research of Cyril Bowers and colleagues, who in the 1980s built a series of small peptides (beginning with GHRP-6) that released growth hormone through a then-unknown receptor. That receptor was characterized in 1996, and its natural ligand, ghrelin, was identified in 1999, retrospectively explaining how these peptides work. GHRP-2 (also designated KP-102 and pralmorelin) was developed as a more potent member of the family and was studied both as a candidate growth-hormone therapy and as a diagnostic test of pituitary GH reserve, reaching clinical use in Japan as a diagnostic agent. Morelli groups GHRP-2 with GHRP-6, hexarelin, and sermorelin as the 'older variations' that have largely been displaced in popular use by ipamorelin and CJC-1295 [1]."
+          },
+          {
+            "id": "clinical-evidence",
+            "title": "Clinical evidence",
+            "body": "GHRP-2 has more human pharmacology data than most gray-market peptides because it was studied as a GH secretagogue and used diagnostically. Controlled studies established that it reliably and dose-dependently raises serum growth hormone and IGF-1 in healthy and GH-deficient subjects, which is the basis for its use as a stimulation test of pituitary function. What is largely missing is rigorous, long-term, controlled human evidence that repeated GHRP-2 dosing produces the body-composition, recovery, or anti-aging benefits sought by gray-market users, or that it does so safely over time. Its non-selective cortisol and prolactin effects are well documented and are precisely why the field moved toward cleaner agents. Morelli does not cite trial statistics for GHRP-2; he characterizes it qualitatively as stronger than ipamorelin but with the cortisol trade-off [1]."
+          },
+          {
+            "id": "dosing",
+            "title": "Dosing and administration",
+            "body": "GHRP-2 is most commonly self-administered by subcutaneous injection in microgram amounts; a frequently cited gray-market protocol is around 100 mcg one to three times per day, timed away from meals because food (especially carbohydrate and fat) blunts the GH response. It has a short plasma half-life of roughly 15 to 60 minutes, so multiple daily doses are used to mimic natural pulsatility, and it is often combined with a GHRH analog such as CJC-1295 (no DAC). Outside the diagnostic setting there is no established therapeutic dose, and protocols circulating online are not supported by controlled outcome data."
+          },
+          {
+            "id": "regulatory",
+            "title": "Regulatory status",
+            "body": "GHRP-2 is not approved by the FDA for any indication in the United States. A diagnostic form (pralmorelin) reached clinical use in Japan as a test of growth-hormone secretion, but no GHRP-2 product is registered as a therapy in the U.S. It does not appear on the FDA's Section 503A compounding bulks list, so it is not legally available through compounding pharmacies, and it is sold only as a research-use chemical. As a growth-hormone secretagogue it is prohibited in sport by the World Anti-Doping Agency under class S2 (peptide hormones and growth factors)."
+          },
+          {
+            "id": "safety",
+            "title": "Safety profile",
+            "body": "GHRP-2's acute pharmacology is comparatively well characterized, but long-term human safety for repeated wellness dosing is not established. Its defining liabilities are non-selectivity: it elevates cortisol and prolactin and stimulates appetite alongside the intended growth-hormone release, which over time could be counterproductive for users seeking lean body composition or low-stress physiology. Sustained growth-hormone and IGF-1 elevation carries the standard class concerns of insulin resistance, fluid retention, carpal-tunnel-type symptoms, and joint discomfort. A general theoretical concern shared across GH-axis peptides is that chronically raising IGF-1 could in principle support the growth of an undiagnosed malignancy, though this is not specifically demonstrated for GHRP-2 at secretagogue doses. As with all gray-market peptides, the dominant practical risk is sourcing: independent testing of the broader peptide market has found impurities, contaminants, and mislabeled or under-strength material."
+          },
+          {
+            "id": "morelli-protocol-notes",
+            "title": "Morelli's protocol notes",
+            "body": "In his long-form article 'Everything you need to know about peptides,' Morelli places GHRP-2 in 'the growth hormone group' and treats it as a legacy option rather than a peptide he personally recommends running. He lists it among 'older variations' (with GHRP-6, hexarelin, and sermorelin) and gives a one-line verdict: GHRP-2 'is stronger than Ipamorelin, but raises cortisol' [1]. Notably, Morelli does not describe a personal GHRP-2 dose, stack, or any results from taking it himself, and his practical recommendation for the GH axis is the cleaner pairing of CJC-1295 with ipamorelin, which he frames as a slow, low-side-effect 'maintenance protocol' for already-lean people who want better sleep, faster recovery, and gradual body-composition improvement [1]. His broader guidance applies to GHRP-2 as well: start with one peptide, track everything, add the next only after you see what the first does, and never stack five at once [1]. Read against that framework, GHRP-2's cortisol-raising, appetite-stimulating profile is the reason it sits below ipamorelin in his implicit ranking; the extra GH-releasing strength comes with the off-target effects newer agents were built to avoid."
+          },
+          {
+            "id": "see-also",
+            "title": "See also",
+            "body": "[[ipamorelin|Ipamorelin]], [[cjc-1295|CJC-1295]], [[sermorelin|Sermorelin]], [[mk-677|MK-677 (Ibutamoren)]], [[tesamorelin|Tesamorelin]], [[growth-hormone|Growth Hormone]]."
+          }
+        ],
+        "references": [
+          {
+            "id": 1,
+            "label": "Morelli - Everything you need to know about peptides",
+            "source": "morelli_x",
+            "url": "https://x.com/morellifit/status/2056409530821468627"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ghrp-6",
+      "name": "GHRP-6",
+      "aliases": [
+        "Growth Hormone Releasing Peptide-6",
+        "SKF-110679",
+        "His-D-Trp-Ala-Trp-D-Phe-Lys-NH2"
+      ],
+      "category": "ghs",
+      "isPeptide": true,
+      "whatItDoes": "First-generation synthetic hexapeptide growth hormone secretagogue. Stimulates pituitary GH release by acting as a ghrelin-mimetic at the GHS-R1a receptor, and is best known among the older secretagogues for the strong, ghrelin-like appetite stimulation it produces.",
+      "scores": {
+        "humanResearch": 3,
+        "weightLoss": null,
+        "muscleGrowth": 5,
+        "sleep": 4,
+        "recovery": 4,
+        "hairSkin": null,
+        "cognitive": null,
+        "sideEffectSeverity": 4
+      },
+      "cycled": true,
+      "notableQuote": {
+        "text": "GHRP-6 makes you hungry, which is useful if you want to gain muscle.",
+        "transcript": "morelli_x"
+      },
+      "halfLifeOrDose": "Short plasma half-life on the order of 15-60 minutes; typically dosed at roughly 100 mcg per injection, one to three times daily, on an empty stomach. No established or approved human therapeutic dose.",
+      "transcripts": [],
+      "tier": "C",
+      "regulatoryStatus": "Not FDA-approved for any indication; never marketed as a finished drug. Sold only as a research chemical on the gray market.",
+      "moleculeWeight": 873,
+      "brandNames": [],
+      "molecularStructure": "Synthetic, unnatural hexapeptide (His-D-Trp-Ala-Trp-D-Phe-Lys-NH2) containing D-amino acids; a ghrelin-mimetic growth hormone secretagogue.",
+      "history": "GHRP-6 was one of the earliest synthetic growth hormone secretagogues, developed in the 1980s out of structure-activity work on the enkephalin-derived peptide GHRP. It was a key research tool in the discovery of the growth hormone secretagogue receptor (GHS-R1a) and, ultimately, of its endogenous ligand ghrelin in 1999. Although it advanced into early clinical investigation as a GH-releasing agent, it was never developed into an approved product and has since been displaced by cleaner, more selective secretagogues such as ipamorelin.",
+      "administration": "Subcutaneous injection, typically on an empty stomach to avoid blunting of the GH pulse by food; intravenous and intranasal routes have been used in research settings.",
+      "legalStatus": "Not approved by the FDA. Not on the Section 503A compounding list. Available only as a research chemical 'not for human consumption.' Prohibited in sport by the World Anti-Doping Agency under the S2 category (growth hormone secretagogues).",
+      "safetyProfile": "Short-term human research did not surface serious toxicity, but the safety database is small and dated. The main practical drawbacks are pronounced hunger, transient increases in prolactin and cortisol relative to more selective agents, water retention, and possible numbness or tingling. Long-term safety is unknown, and gray-market product quality is a dominant real-world risk.",
+      "recommendedVendors": [],
+      "news": [],
+      "viralPosts": [
+        {
+          "url": "https://x.com/morellifit/status/2056409530821468627",
+          "author": "Michael Morelli (@morellifit)",
+          "text": "GHRP-2, GHRP-6, Hexarelin, and Sermorelin are older variations. GHRP-6 makes you hungry, which is useful if you want to gain muscle.",
+          "engagement": ""
+        }
+      ],
+      "informativeVideos": [],
+      "wiki": {
+        "lede": "GHRP-6 (Growth Hormone Releasing Peptide-6) is a synthetic hexapeptide growth hormone secretagogue and one of the earliest compounds of its class. It mimics the gut hormone ghrelin at the GHS-R1a receptor to trigger a pulse of growth hormone from the pituitary, and is distinguished among the older secretagogues by the strong appetite stimulation it produces [1]. Michael Morelli groups it with GHRP-2, Hexarelin, and Sermorelin as 'older variations' that have largely been superseded by more selective peptides such as ipamorelin, noting that GHRP-6's hunger effect 'is useful if you want to gain muscle' [1]. GHRP-6 is not approved by the U.S. Food and Drug Administration for any indication and is sold only as a research chemical.",
+        "sections": [
+          {
+            "id": "mechanism",
+            "title": "Mechanism of action",
+            "body": "GHRP-6 is a ghrelin-mimetic: it binds the growth hormone secretagogue receptor (GHS-R1a) in the pituitary and hypothalamus, the same receptor activated by the endogenous hunger hormone ghrelin. Activation amplifies the amplitude of natural growth hormone pulses rather than creating a flat, continuous elevation, and it also suppresses somatostatin tone. Because GHS-R1a is the canonical hunger receptor, agonism produces marked appetite stimulation as an on-target effect, which Morelli highlights as GHRP-6's defining characteristic and a reason it can be useful in a muscle-gain (bulking) phase [1]. Unlike the more selective ipamorelin, first-generation secretagogues in this family can also transiently raise prolactin and cortisol."
+          },
+          {
+            "id": "history",
+            "title": "History",
+            "body": "GHRP-6 emerged in the 1980s from medicinal-chemistry work building on the enkephalin-derived peptide GHRP, as researchers searched for small synthetic molecules that could release growth hormone. It became an important pharmacological probe in the line of research that identified the growth hormone secretagogue receptor and, in 1999, its natural ligand ghrelin. Despite this scientific importance, GHRP-6 was never commercialized as an approved medicine and was eventually overshadowed by later, cleaner secretagogues. Morelli frames it as one of several 'older variations' in the growth hormone group [1]."
+          },
+          {
+            "id": "clinical-evidence",
+            "title": "Clinical evidence",
+            "body": "GHRP-6 was studied in humans in the 1980s and 1990s primarily as a tool to provoke and measure growth hormone secretion, including as a diagnostic stimulus and in early investigations of GH deficiency. These studies established that it reliably releases growth hormone when given by injection, but the program never matured into controlled efficacy trials for body composition, recovery, or muscle growth. There is no robust modern clinical evidence that GHRP-6 builds muscle or reduces fat in healthy adults; claims in this area are extrapolated from its GH-releasing pharmacology and from anecdote. Morelli does not cite human outcome data, presenting GHRP-6 instead as an older, appetite-stimulating option within the secretagogue family [1]."
+          },
+          {
+            "id": "dosing",
+            "title": "Dosing and administration",
+            "body": "GHRP-6 has a short plasma half-life, generally cited on the order of 15 to 60 minutes, and is injected subcutaneously, typically on an empty stomach because food (especially carbohydrate and fat) blunts the growth hormone response. Gray-market protocols commonly use roughly 100 mcg per dose, one to three times daily, often timed before sleep and around training, and frequently paired with a GHRH analog such as CJC-1295 to combine a pituitary 'release' signal with the secretagogue 'amplify' signal. No human therapeutic dose has been established, and all such protocols are extrapolated rather than label-derived."
+          },
+          {
+            "id": "regulatory",
+            "title": "Regulatory status",
+            "body": "GHRP-6 is not FDA-approved for any indication and was never brought to market as a finished drug. It does not appear on the FDA's Section 503A list of bulk substances eligible for compounding, and it is sold only as a research chemical labeled 'not for human consumption.' Like other growth hormone secretagogues, GHRP-6 is prohibited in sport at all times by the World Anti-Doping Agency under category S2."
+          },
+          {
+            "id": "safety",
+            "title": "Safety profile",
+            "body": "Short-term human research with GHRP-6 did not reveal serious acute toxicity, but the database is small, old, and not designed to detect long-term harms. The most consistent and predictable effect is strong hunger, which is desirable during a bulk but counterproductive during fat loss. First-generation secretagogues such as GHRP-6 can transiently raise prolactin and cortisol more than the selective ipamorelin, and users report water retention, tingling or numbness, and head-rush sensations after injection. As with any chronic growth hormone elevation, theoretical concerns include insulin resistance and the possibility of promoting the growth of an undiagnosed tumor, though there is no direct evidence specific to GHRP-6. In practice the dominant risk is gray-market sourcing, where purity, identity, and contamination are unverified."
+          },
+          {
+            "id": "morelli-protocol-notes",
+            "title": "Morelli's protocol notes",
+            "body": "In his long-form overview of the growth hormone group, Morelli places GHRP-6 alongside GHRP-2, Hexarelin, and Sermorelin as 'older variations' of the secretagogue idea, and he does not present GHRP-6 as part of his own core stack [1]. His operative point about GHRP-6 is specific and narrow: it 'makes you hungry, which is useful if you want to gain muscle,' meaning he frames it as a situational bulking tool whose value is its appetite drive rather than a maintenance or recovery peptide [1]. For the routine growth-hormone maintenance role he instead recommends the CJC-1295 with Ipamorelin pairing, describing that combination as a slow, low-side-effect protocol that improves sleep, recovery, and body composition over time, and contrasting ipamorelin favorably because, unlike the older drugs in this category, 'it doesn't raise cortisol and make you hungry' [1]. Morelli reports no personal dosing numbers, no stack, and no results specific to GHRP-6; his consistent advice is to add one peptide at a time, track everything, and not trust any source (including him) without testing it yourself [1]."
+          },
+          {
+            "id": "see-also",
+            "title": "See also",
+            "body": "[[ipamorelin|Ipamorelin]], [[cjc-1295|CJC-1295]], [[sermorelin|Sermorelin]], [[tesamorelin|Tesamorelin]], [[mk-677|MK-677]], [[growth-hormone|Growth Hormone]]."
+          }
+        ],
+        "references": [
+          {
+            "id": 1,
+            "label": "Morelli - Everything You Need to Know About Peptides",
+            "source": "morelli_x",
+            "url": "https://x.com/morellifit/status/2056409530821468627"
+          }
+        ]
+      }
+    },
+    {
+      "id": "hexarelin",
+      "name": "Hexarelin",
+      "aliases": [
+        "Examorelin",
+        "Hexarelin Acetate",
+        "EP-23905",
+        "MF-6003"
+      ],
+      "category": "ghs",
+      "whatItDoes": "Synthetic growth-hormone secretagogue and ghrelin-receptor agonist. Among the most potent of the older growth-hormone-releasing peptides at triggering a pituitary GH pulse, but it is also the one the body adapts to fastest, so tolerance develops quickly and it cannot be run continuously.",
+      "scores": {
+        "humanResearch": 4,
+        "weightLoss": null,
+        "muscleGrowth": 4,
+        "sleep": 4,
+        "recovery": 4,
+        "hairSkin": null,
+        "cognitive": null,
+        "sideEffectSeverity": 4
+      },
+      "cycled": true,
+      "notableQuote": {
+        "text": "Hexarelin is the most powerful, also the one your body adjust to the fastest so you can't run it long.",
+        "transcript": "morelli_x"
+      },
+      "halfLifeOrDose": "Short plasma half-life (on the order of an hour); typically dosed in microgram amounts (commonly cited as ~100 mcg, one to a few times daily) and timed away from meals. Receptor desensitization develops within weeks, so it is run in short cycles rather than continuously. No established human therapeutic dose.",
+      "transcripts": [],
+      "tier": "C",
+      "regulatoryStatus": "Not FDA-approved for any indication in the United States. Studied in clinical research as a GH secretagogue and cardiovascular probe but never registered as a therapy. Not on the FDA Section 503A compounding bulks list; sold gray-market as a research chemical.",
+      "moleculeWeight": 887,
+      "brandNames": [],
+      "molecularStructure": "Synthetic hexapeptide (His-D-2-methyl-Trp-Ala-Trp-D-Phe-Lys-NH2). A small, non-natural peptide agonist of the ghrelin / growth-hormone secretagogue receptor (GHS-R1a); it also binds the scavenger receptor CD36. Not a fragment of a human protein.",
+      "history": "Hexarelin was developed in the 1990s as part of the synthetic growth-hormone-releasing peptide family that grew out of Cyril Bowers' secretagogue work in the 1980s, before the natural ligand ghrelin was identified in 1999. It was studied as a candidate growth-hormone therapy and, distinctively, as a cardiovascular agent, because it binds the CD36 receptor on the heart and vasculature in addition to the pituitary GH-secretagogue receptor. It is one of the older secretagogues, alongside GHRP-2, GHRP-6, and sermorelin, that have largely been superseded in popular use by ipamorelin and CJC-1295.",
+      "administration": "Subcutaneous injection is the most common route in gray-market use; intravenous and intranasal routes were used in clinical research. Sometimes paired with a GHRH analog such as CJC-1295 (no DAC) to combine a release signal with a pulse-amplifying signal, though its rapid desensitization limits how long it can be used.",
+      "legalStatus": "Not FDA-approved and not on the Section 503A compounding list in the United States. Available only as a research-use chemical. Growth-hormone secretagogues are prohibited in sport by the World Anti-Doping Agency (class S2).",
+      "safetyProfile": "Characterized in short clinical studies as an acute GH releaser, but without long-term human safety data for repeated wellness dosing. Its defining pharmacological feature is rapid receptor desensitization: GH output falls steeply with continued use, so the strength that makes it attractive is offset by tolerance that limits duration. Like other GHRP-class agents it can raise cortisol and prolactin and can stimulate appetite. Its CD36 binding gives it cardiovascular activity that has been studied for both potential benefit and concern. Sustained GH and IGF-1 elevation carries the usual class concerns (insulin resistance, fluid retention, joint discomfort). As with all gray-market peptides, sourcing risk (impurity, mislabeling, contamination) is a dominant practical hazard.",
+      "recommendedVendors": [],
+      "news": [],
+      "viralPosts": [
+        {
+          "url": "https://x.com/morellifit/status/2056409530821468627",
+          "author": "Michael Morelli (@morellifit)",
+          "text": "GHRP-2, GHRP-6, Hexarelin, and Sermorelin are older variations. Hexarelin is the most powerful, also the one your body adjust to the fastest so you can't run it long.",
+          "engagement": null
+        }
+      ],
+      "informativeVideos": [],
+      "isPeptide": true,
+      "wiki": {
+        "lede": "Hexarelin (examorelin) is a synthetic hexapeptide that acts as a ghrelin-receptor agonist and growth-hormone secretagogue, prompting the pituitary to release a pulse of endogenous growth hormone. Michael Morelli classifies it among the 'older variations' of growth-hormone peptides and gives it a pointed two-part verdict: it is 'the most powerful, also the one your body adjust to the fastest so you can't run it long' [1]. Hexarelin is not approved by the U.S. Food and Drug Administration for any indication; it was studied in clinical research both as a GH releaser and, unusually, as a cardiovascular agent, and in the United States it circulates only as a gray-market research chemical.",
+        "sections": [
+          {
+            "id": "mechanism",
+            "title": "Mechanism of action",
+            "body": "Hexarelin is a synthetic agonist of the growth-hormone secretagogue receptor (GHS-R1a), the same receptor activated by the natural hunger-and-GH hormone ghrelin. Binding this receptor on the pituitary and hypothalamus triggers a pulse of endogenous growth hormone and synergizes with growth-hormone-releasing hormone (GHRH) signaling, which is why secretagogues are often paired with a GHRH analog. Hexarelin is notable for a second, GH-independent target: it binds the scavenger receptor CD36, expressed in heart and vascular tissue, which underlies the cardiovascular effects studied separately from its GH activity. Like other GHRP-class peptides it is less selective than ipamorelin and can raise cortisol and prolactin and stimulate appetite. Its most practically important property is rapid desensitization: continued exposure down-regulates the response so GH output falls within weeks, which is why Morelli says 'you can't run it long' [1]."
+          },
+          {
+            "id": "history",
+            "title": "History",
+            "body": "Hexarelin emerged from the synthetic growth-hormone-releasing peptide research that began with Cyril Bowers and colleagues in the 1980s, who built a series of small peptides (starting with GHRP-6) that released growth hormone through a then-unknown receptor. That receptor was characterized in the mid-1990s and its natural ligand, ghrelin, was identified in 1999, retrospectively explaining how these peptides work. Hexarelin (also called examorelin) was developed in the 1990s as one of the most potent members of the family and was investigated both as a candidate growth-hormone therapy and, distinctively, as a cardiovascular agent through its binding of the CD36 receptor. Morelli groups hexarelin with GHRP-2, GHRP-6, and sermorelin as the 'older variations' that have largely been displaced in popular use by ipamorelin and CJC-1295 [1]."
+          },
+          {
+            "id": "clinical-evidence",
+            "title": "Clinical evidence",
+            "body": "Hexarelin has more acute human pharmacology data than many gray-market peptides because it was studied in clinical research as a GH secretagogue and as a cardiovascular probe. Short studies established that it strongly and dose-dependently raises serum growth hormone in healthy and GH-deficient subjects, and small cardiovascular studies explored its CD36-mediated effects on cardiac function. The recurring limitation is desensitization: the GH response attenuates with repeated dosing, which complicates its use as a sustained therapy and is part of why it was not advanced as a registered drug. What is largely missing is rigorous, long-term, controlled human evidence that repeated hexarelin dosing produces the body-composition, recovery, or anti-aging outcomes sought by gray-market users, or that it does so safely over time. Morelli does not cite trial statistics for hexarelin; he describes it qualitatively as the most powerful of the older GHRPs but the fastest to lose effect [1]."
+          },
+          {
+            "id": "dosing",
+            "title": "Dosing and administration",
+            "body": "Hexarelin is most commonly self-administered by subcutaneous injection in microgram amounts; a frequently cited gray-market protocol is around 100 mcg one to a few times per day, timed away from meals because food (especially carbohydrate and fat) blunts the GH response. It has a short plasma half-life, so multiple daily doses are used to mimic natural pulsatility, and it is sometimes combined with a GHRH analog such as CJC-1295 (no DAC). The defining practical constraint is tolerance: because hexarelin desensitizes its receptor faster than other secretagogues, it is run in short cycles with breaks rather than continuously, the direct reason Morelli says 'you can't run it long' [1]. Outside the research setting there is no established therapeutic dose, and protocols circulating online are not supported by controlled outcome data."
+          },
+          {
+            "id": "regulatory",
+            "title": "Regulatory status",
+            "body": "Hexarelin is not approved by the FDA for any indication in the United States, and no hexarelin product is registered as a therapy. It does not appear on the FDA's Section 503A compounding bulks list, so it is not legally available through compounding pharmacies, and it is sold only as a research-use chemical. As a growth-hormone secretagogue it is prohibited in sport by the World Anti-Doping Agency under class S2 (peptide hormones, growth factors, related substances and mimetics)."
+          },
+          {
+            "id": "safety",
+            "title": "Safety profile",
+            "body": "Hexarelin's acute pharmacology is comparatively well studied, but long-term human safety for repeated wellness dosing is not established. Its defining liability is rapid desensitization, which both blunts its usefulness over time and means the effective window is short. Like other GHRP-class agents it can elevate cortisol and prolactin and stimulate appetite alongside the intended growth-hormone release. Its CD36 binding gives it direct cardiovascular activity that has been studied for both potential benefit and risk, a property that distinguishes it from cleaner secretagogues such as ipamorelin. Sustained growth-hormone and IGF-1 elevation carries the standard class concerns of insulin resistance, fluid retention, carpal-tunnel-type symptoms, and joint discomfort. A general theoretical concern shared across GH-axis peptides is that chronically raising IGF-1 could in principle support the growth of an undiagnosed malignancy, though this is not specifically demonstrated for hexarelin at secretagogue doses. As with all gray-market peptides, the dominant practical risk is sourcing: independent testing of the broader peptide market has found impurities, contaminants, and mislabeled or under-strength material."
+          },
+          {
+            "id": "morelli-protocol-notes",
+            "title": "Morelli's protocol notes",
+            "body": "In his long-form article 'Everything you need to know about peptides,' Morelli places hexarelin in 'the growth hormone group' and treats it as a legacy option rather than a peptide he personally endorses. He lists it among 'older variations' (with GHRP-2, GHRP-6, and sermorelin) and gives a one-line verdict: hexarelin is 'the most powerful, also the one your body adjust to the fastest so you can't run it long' [1]. Notably, Morelli does not describe a personal hexarelin dose, stack, or any results from taking it himself; his framing positions hexarelin's fast tolerance as the reason its raw potency does not translate into a practical maintenance protocol. His own recommendation for the GH axis is the cleaner pairing of CJC-1295 with ipamorelin, which he frames as a slow, low-side-effect 'maintenance protocol' for already-lean people who want better sleep, faster recovery, and gradual body-composition improvement [1]. His broader guidance applies to hexarelin as well: start with one peptide, track everything, add the next only after you see what the first does, and avoid stacking many at once [1]. Read against that framework, hexarelin sits below ipamorelin in his implicit ranking precisely because its strength is self-limiting; the body adapts to it faster than the user can benefit from running it."
+          },
+          {
+            "id": "see-also",
+            "title": "See also",
+            "body": "[[ipamorelin|Ipamorelin]], [[cjc-1295|CJC-1295]], [[sermorelin|Sermorelin]], [[mk-677|MK-677 (Ibutamoren)]], [[tesamorelin|Tesamorelin]], [[growth-hormone|Growth Hormone]]."
+          }
+        ],
+        "references": [
+          {
+            "id": 1,
+            "label": "Morelli - Everything you need to know about peptides",
+            "source": "morelli_x",
+            "url": "https://x.com/morellifit/status/2056409530821468627"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ara-290",
+      "name": "ARA-290",
+      "aliases": [
+        "Cibinetide",
+        "Cibinetide acetate",
+        "pHBSP (pyroglutamate helix B surface peptide)",
+        "Helix B surface peptide (HBSP)"
+      ],
+      "category": "immune",
+      "whatItDoes": "An 11-amino-acid peptide derived from the helix B surface region of erythropoietin (EPO). It is engineered to engage the tissue-protective 'innate repair receptor' (an EPO-receptor/beta-common-receptor heterocomplex) without stimulating red-blood-cell production. In trials it has been studied as an anti-inflammatory and tissue-protective agent, most notably for neuropathic pain in sarcoidosis-associated small-fiber neuropathy.",
+      "scores": {
+        "humanResearch": 3,
+        "weightLoss": null,
+        "muscleGrowth": null,
+        "sleep": null,
+        "recovery": 4,
+        "hairSkin": null,
+        "cognitive": null,
+        "sideEffectSeverity": 2
+      },
+      "cycled": false,
+      "notableQuote": {
+        "text": "Thymosin Alpha-1 (TA-1), ARA-290, and KPV are anti-inflammatory peptides. Obesity is partly an inflammation problem, and chronic inflammation is what blocks fat loss in a lot of people. These peptides lower that inflammation.",
+        "transcript": "morelli_x"
+      },
+      "halfLifeOrDose": "Short plasma half-life (on the order of minutes after injection, consistent with a small peptide cleared rapidly from circulation). Trial dosing was typically 1-4 mg given subcutaneously, often daily for several weeks. No FDA-approved dose exists.",
+      "transcripts": [],
+      "tier": "C",
+      "regulatoryStatus": "Not FDA-approved for any indication. Investigational only; granted orphan-drug designation in the United States and Europe for sarcoidosis-associated and diabetic neuropathic pain, but never approved.",
+      "moleculeWeight": 1257,
+      "brandNames": [],
+      "molecularStructure": "A synthetic 11-amino-acid linear peptide (sequence QEQLERALNSS, with an N-terminal pyroglutamate) corresponding to the aqueous-face residues of helix B of erythropoietin. The sequence is deliberately distinct from the receptor-binding face that drives erythropoiesis, so it activates tissue-protective signaling without raising hematocrit.",
+      "history": "ARA-290 (cibinetide) grew out of work by Anthony Cerami, Michael Brines, and colleagues in the 2000s, who showed that erythropoietin's tissue-protective and anti-inflammatory effects are mediated by a receptor complex (the 'innate repair receptor', an EPOR/beta-common-receptor heterodimer) that is separate from the homodimeric EPO receptor responsible for making red blood cells. To capture the protective effects without the thrombotic and hematopoietic risks of EPO, they designed short peptides mimicking helix B, yielding HBSP/pHBSP and the clinical candidate cibinetide (ARA-290). It was developed by Araim Pharmaceuticals and tested principally in sarcoidosis-associated small-fiber neuropathy and in diabetic neuropathic pain.",
+      "administration": "Subcutaneous injection in clinical studies. Gray-market use is also by subcutaneous injection.",
+      "legalStatus": "Not approved by the FDA. Does not appear on the FDA Section 503A compounding bulks list. Available only as an investigational compound or gray-market research chemical; no registered medical product exists.",
+      "safetyProfile": "In the controlled trials conducted to date, cibinetide was generally well tolerated, with adverse-event rates similar to placebo and, by design, no clinically meaningful increase in hemoglobin or hematocrit, which distinguishes it from erythropoietin. Long-term human safety has not been established, the total number of trial participants is small, and gray-market sourcing (impurity, mislabeling, contamination) remains the dominant practical hazard. Theoretical concerns associated with EPO-pathway and pro-repair signaling have not been borne out in the limited human data.",
+      "recommendedVendors": [],
+      "news": [],
+      "viralPosts": [
+        {
+          "url": "https://x.com/morellifit/status/2056409530821468627",
+          "author": "Michael Morelli (@morellifit)",
+          "text": "Thymosin Alpha-1 (TA-1), ARA-290, and KPV are anti-inflammatory peptides. Obesity is partly an inflammation problem, and chronic inflammation is what blocks fat loss in a lot of people. These peptides lower that inflammation.",
+          "engagement": null
+        }
+      ],
+      "informativeVideos": [],
+      "isPeptide": true,
+      "wiki": {
+        "lede": "ARA-290 (cibinetide) is an 11-amino-acid peptide derived from the helix B surface of erythropoietin (EPO). It was engineered to activate EPO's tissue-protective and anti-inflammatory signaling, mediated by the so-called innate repair receptor, without triggering the red-blood-cell production that makes EPO itself risky. Its main clinical investigation has been in neuropathic pain from sarcoidosis-associated small-fiber neuropathy, with additional study in diabetic neuropathy. Michael Morelli lists it among anti-inflammatory peptides alongside Thymosin Alpha-1 and KPV, framing chronic inflammation as a barrier to fat loss [1]. ARA-290 is not approved by the U.S. Food and Drug Administration for any indication; it remains investigational, with only small human trials, and is otherwise available as a gray-market research chemical.",
+        "sections": [
+          {
+            "id": "mechanism",
+            "title": "Mechanism of action",
+            "body": "Erythropoietin has two largely separable activities: stimulating red-blood-cell production through the classic homodimeric EPO receptor, and a tissue-protective, anti-inflammatory action mediated by a distinct receptor complex often called the innate repair receptor, a heterocomplex of the EPO receptor and the beta-common receptor (CD131). ARA-290 corresponds to residues on the aqueous face of helix B of EPO, a region that engages the tissue-protective receptor but not the hematopoietic one. By selectively activating this pathway, ARA-290 is intended to reproduce EPO's anti-apoptotic, pro-repair, and anti-inflammatory effects, including dampening of inflammatory cytokine signaling and support of nerve fiber repair, while avoiding the rise in hematocrit and thrombotic risk that limit EPO. Morelli describes ARA-290 simply as an anti-inflammatory peptide and argues that lowering chronic inflammation can help remove a brake on fat loss, though that metabolic framing is his own emphasis rather than the peptide's established clinical use [1]."
+          },
+          {
+            "id": "history",
+            "title": "History",
+            "body": "The peptide emerged from research in the 2000s by Anthony Cerami, Michael Brines, and colleagues, who demonstrated that erythropoietin's protective effects in nerve, heart, and other tissues are signaled through a receptor complex separate from the one that drives erythropoiesis. To isolate the protective effect, the group designed short peptides mimicking the helix B surface of EPO, producing helix B surface peptide (HBSP), its pyroglutamate-stabilized form pHBSP, and the clinical candidate cibinetide (ARA-290). The compound was advanced by Araim Pharmaceuticals and studied chiefly in sarcoidosis-associated small-fiber neuropathy, a painful condition with few effective treatments, as well as in diabetic peripheral neuropathic pain."
+          },
+          {
+            "id": "clinical-evidence",
+            "title": "Clinical evidence",
+            "body": "Human evidence for ARA-290 comes from a small number of early-phase, placebo-controlled trials, principally in patients with sarcoidosis who have small-fiber neuropathy. These studies reported improvements in patient-reported neuropathic-pain and symptom scores and, in some, measures of corneal small-nerve-fiber density, with tolerability comparable to placebo. The trials were modest in size and duration, and the compound has not progressed to large confirmatory Phase 3 studies or regulatory approval. Evidence for the broad anti-inflammatory and metabolic benefits that gray-market users seek, including any direct effect on body weight or fat loss, is essentially absent; Morelli's grouping of ARA-290 with other anti-inflammatory peptides is a mechanistic rationale rather than a claim backed by weight-loss trials [1]."
+          },
+          {
+            "id": "dosing",
+            "title": "Dosing and administration",
+            "body": "In clinical studies ARA-290 was given by subcutaneous injection, commonly in the range of 1-4 mg per dose, often daily for a period of weeks. As a small peptide it is cleared rapidly, with a short plasma half-life, which is why frequent dosing was used. There is no FDA-approved dose, and any protocols circulating online are extrapolations from these limited trials rather than validated regimens."
+          },
+          {
+            "id": "regulatory",
+            "title": "Regulatory status",
+            "body": "ARA-290 (cibinetide) is not approved by the FDA or other major regulators for any indication. It received orphan-drug designation in the United States and Europe for neuropathic pain associated with sarcoidosis and for diabetic neuropathic pain, a status that supports investigational development but is not an approval. It does not appear on the FDA's Section 503A compounding bulks list and was not part of the recent compounding actions that affected peptides such as BPC-157. Outside of clinical research it is available only as a gray-market research chemical."
+          },
+          {
+            "id": "safety",
+            "title": "Safety profile",
+            "body": "In the controlled trials reported to date, cibinetide was generally well tolerated, with adverse-event profiles similar to placebo. A central design goal, avoiding the erythropoietic and thrombotic effects of EPO, appears to have held: studies did not report clinically meaningful increases in hemoglobin or hematocrit. However, the total human exposure is small, long-term safety is uncharacterized, and immunogenicity and effects of chronic exogenous use are unknown. As with all gray-market peptides, the dominant real-world risk is sourcing, where products have been found impure, mislabeled, or contaminated."
+          },
+          {
+            "id": "morelli-protocol-notes",
+            "title": "Morelli's protocol notes",
+            "body": "In his long-form article 'Everything you need to know about peptides,' Morelli mentions ARA-290 only briefly, grouping it with Thymosin Alpha-1 and KPV as anti-inflammatory peptides within his broader 'mitochondrial group' discussion [1]. His framing is conceptual: he argues that obesity is partly an inflammation problem and that chronic inflammation 'is what blocks fat loss in a lot of people,' so peptides that lower inflammation could indirectly help [1]. Unlike compounds he describes using himself, such as Semax, Morelli does not report any personal ARA-290 dose, stack, cycle, or results, and he does not lay out a protocol for it. He presents no efficacy data and makes no specific dosing recommendation, so there is no Morelli-sourced personal-use protocol to report beyond this anti-inflammatory rationale [1]."
+          },
+          {
+            "id": "see-also",
+            "title": "See also",
+            "body": "[[thymosin-alpha-1|Thymosin Alpha-1]], [[kpv|KPV]], [[ll-37|LL-37]], [[bpc-157|BPC-157]]."
+          }
+        ],
+        "references": [
+          {
+            "id": 1,
+            "label": "Morelli - Everything you need to know about peptides",
+            "source": "morelli_x",
+            "url": "https://x.com/morellifit/status/2056409530821468627"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lipo-c",
+      "name": "LIPO-C",
+      "isPeptide": false,
+      "aliases": [
+        "Lipo-C",
+        "MIC injection",
+        "Lipotropic injection",
+        "MIC B12",
+        "Lipo-Mino"
+      ],
+      "category": "glp1",
+      "whatItDoes": "Compounded injectable blend of lipotropic vitamins and amino acids, classically methionine, inositol, and choline (the 'MIC' base), often combined with vitamin B12 and sometimes L-carnitine. It is marketed as supporting the liver's processing and export of fat rather than as a stand-alone fat-loss drug. There is no peptide or hormone in it.",
+      "scores": {
+        "humanResearch": 2,
+        "weightLoss": 2,
+        "muscleGrowth": null,
+        "sleep": null,
+        "recovery": null,
+        "hairSkin": null,
+        "cognitive": null,
+        "sideEffectSeverity": 2
+      },
+      "cycled": false,
+      "notableQuote": {
+        "text": "LIPO-C isn't a peptide either, but a blend of vitamins your liver uses to process fat. You can think of it as changing oil before you upgrade the engine.",
+        "transcript": "morelli_x"
+      },
+      "halfLifeOrDose": "No standardized formula or dose; clinics typically administer 0.5-1 mL subcutaneously or intramuscularly once or twice weekly. Component amounts vary by compounding pharmacy and there is no established pharmacokinetic profile for the blend.",
+      "transcripts": [],
+      "tier": "D",
+      "regulatoryStatus": "Not an FDA-approved drug. Sold as a compounded product through pharmacies and clinics; individual ingredients (B12, choline, inositol, methionine, L-carnitine) are recognized nutrients but the combined injectable has not been approved or proven for weight loss.",
+      "moleculeWeight": null,
+      "brandNames": [
+        "Lipo-C",
+        "Lipo-Mino",
+        "MIC B12"
+      ],
+      "molecularStructure": "Not a single molecule. A formulated mixture of lipotropic agents: methionine (an essential sulfur amino acid), inositol (a sugar alcohol / B-vitamin-like compound), and choline (an essential nutrient), commonly with cyanocobalamin or methylcobalamin (vitamin B12) and sometimes L-carnitine. Not an amino-acid chain or peptide.",
+      "history": "Lipotropic 'MIC' injections have been used in weight-loss and 'wellness' clinics in the United States since the mid-20th century, growing out of the idea that methionine, inositol, and choline help the liver mobilize and metabolize fat. The combination was popularized through medical weight-loss programs and later spread through medspas and telehealth, where it is frequently bundled with B12 'energy' shots. It predates the modern peptide and GLP-1 era and is grouped with fat-loss compounds mainly by marketing rather than by shared mechanism.",
+      "administration": "Subcutaneous or intramuscular injection, usually administered weekly or twice weekly at a clinic or self-injected; no oral form is standard.",
+      "legalStatus": "Legal when prepared by a licensed compounding pharmacy and administered under a prescription; the individual ingredients are widely available nutrients. The injectable blend is not a standardized, FDA-approved product, so formulation and quality depend on the compounder.",
+      "safetyProfile": "Generally well tolerated at typical clinic doses; the ingredients are nutrients with long histories of use. Reported issues are mostly mild and local (injection-site pain, redness, transient flushing or nausea) with rare allergic reactions. The main caveats are that benefits for fat loss are unproven and that sourcing from unregulated compounders introduces purity and dosing uncertainty.",
+      "recommendedVendors": [],
+      "news": [],
+      "viralPosts": [
+        {
+          "url": "https://x.com/morellifit/status/2056409530821468627",
+          "author": "Michael Morelli (@morellifit)",
+          "text": "LIPO-C isn't a peptide either, but a blend of vitamins your liver uses to process fat. You can think of it as changing oil before you upgrade the engine.",
+          "engagement": "562,938 views"
+        }
+      ],
+      "informativeVideos": [],
+      "wiki": {
+        "lede": "LIPO-C is a compounded injectable blend of lipotropic vitamins and amino acids, most commonly methionine, inositol, and choline (the 'MIC' base), frequently combined with vitamin B12 and sometimes L-carnitine. It is marketed in weight-loss and wellness clinics as supporting the liver's handling of fat. It is not a peptide or a hormone, and Morelli groups it with fat-loss 'peptides' only loosely, describing it as 'a blend of vitamins your liver uses to process fat' and likening it to 'changing oil before you upgrade the engine' [1]. LIPO-C is not an FDA-approved drug; the injectable combination has never been shown in controlled trials to cause weight loss, and its individual components are recognized nutrients rather than proven slimming agents.",
+        "sections": [
+          {
+            "id": "mechanism",
+            "title": "Mechanism of action",
+            "body": "LIPO-C contains so-called lipotropic agents, compounds traditionally thought to help the liver mobilize and export fat. Choline and inositol participate in the formation of phospholipids and lipoprotein particles that package and transport fat out of the liver, methionine is a sulfur amino acid and methyl donor involved in fat and homocysteine metabolism, and vitamin B12 and L-carnitine play roles in energy metabolism and the shuttling of fatty acids into mitochondria for oxidation. The theory is that supplying these nutrients optimizes hepatic fat handling. Morelli captures this framing by saying LIPO-C is what 'your liver uses to process fat,' and that it functions like an oil change to prime the system before more potent fat-loss tools are added, rather than as a fat-loss drug in its own right [1]. Importantly, this is a nutrient-support rationale, not a demonstrated pharmacological weight-loss mechanism; in well-nourished people there is little evidence that adding these nutrients accelerates fat loss."
+          },
+          {
+            "id": "history",
+            "title": "History",
+            "body": "Lipotropic injections built around methionine, inositol, and choline have been used in American medical weight-loss clinics since roughly the mid-20th century, arising from early hepatology research suggesting these nutrients prevent fat accumulation in the liver. The 'MIC' shot became a fixture of physician-supervised diet programs and, later, of medspas and telehealth weight-loss services, where it is often paired with B12 'energy' injections. LIPO-C predates the peptide and GLP-1 era entirely; its inclusion alongside compounds like AOD-9604 or 5-Amino-1MQ in fat-loss discussion reflects clinic marketing rather than a shared biological class [1]."
+          },
+          {
+            "id": "clinical-evidence",
+            "title": "Clinical evidence",
+            "body": "There is little rigorous clinical evidence that LIPO-C or generic MIC injections cause weight loss. No well-controlled randomized trial has demonstrated that the injectable blend produces fat loss beyond diet and exercise, and where these shots are used inside medical weight-loss programs any observed results are confounded by the accompanying calorie restriction and behavioral changes. Some individual ingredients have established roles (for example, B12 corrects deficiency, and choline is an essential nutrient), but correcting a deficiency is distinct from producing fat loss in people who are not deficient. The compound is best regarded as adjunctive and unproven for slimming, a characterization consistent with Morelli framing it as preparatory rather than a primary fat-loss agent [1]."
+          },
+          {
+            "id": "dosing",
+            "title": "Dosing and administration",
+            "body": "LIPO-C has no standardized formula. Compounding pharmacies and clinics mix the components in varying ratios, so the methionine, inositol, choline, B12, and any L-carnitine content differs between products. It is typically given as a 0.5-1 mL subcutaneous or intramuscular injection once or twice weekly, either at a clinic or self-administered. Because the formula is not standardized, there is no validated pharmacokinetic profile or evidence-based dose; protocols are clinic conventions rather than trial-derived figures."
+          },
+          {
+            "id": "regulatory",
+            "title": "Regulatory status",
+            "body": "LIPO-C is not an FDA-approved drug. It is dispensed as a compounded preparation through licensed pharmacies and administered under a prescription, with the individual ingredients being widely available nutrients. Because the injectable blend is compounded rather than manufactured as an approved product, its identity, purity, and concentration depend on the compounding pharmacy, and marketing claims of weight loss are not supported by FDA review. It is not a controlled substance and is not on anti-doping prohibited lists as a blend, though athletes should verify the status of individual components and the route of administration."
+          },
+          {
+            "id": "safety",
+            "title": "Safety profile",
+            "body": "At typical clinic doses LIPO-C is generally well tolerated because its components are nutrients with long histories of human use. The most common adverse effects are mild and local: injection-site pain, redness or bruising, and occasional transient flushing, nausea, or a metallic taste. Allergic reactions are uncommon but possible. The practical risks are twofold: the fat-loss benefit is unproven, so users may pay for and inject a product that does little, and sourcing from unregulated compounders introduces the usual concerns about sterility, purity, and accurate dosing. People with kidney disease or specific metabolic conditions should be cautious with large amino-acid or methyl-donor loads and consult a clinician."
+          },
+          {
+            "id": "morelli-protocol-notes",
+            "title": "Morelli's protocol notes",
+            "body": "Michael Morelli (@morellifit) lists LIPO-C in the fat-burning group of his long-form peptide overview but is explicit that it 'isn't a peptide either,' describing it as 'a blend of vitamins your liver uses to process fat' and comparing it to 'changing oil before you upgrade the engine' [1]. That metaphor frames LIPO-C as a preparatory, supportive step that primes hepatic fat metabolism before adding more active fat-loss tools, rather than as a driver of weight loss on its own. He does not publish a specific LIPO-C dose, injection schedule, stacking protocol, or quantified personal results for it in the available source material, and presents it as the least emphasized member of the fat-loss group relative to compounds such as AOD-9604, 5-Amino-1MQ, tesofensine, and cagrilintide [1]. Readers should treat the 'oil change' framing as an analogy rather than evidence of efficacy."
+          },
+          {
+            "id": "see-also",
+            "title": "See also",
+            "body": "[[aod-9604|AOD-9604]], [[5-amino-1mq|5-Amino-1MQ]], [[tesofensine|Tesofensine]], [[cagrilintide|Cagrilintide]], [[semaglutide|Semaglutide]], [[tirzepatide|Tirzepatide]]."
+          }
+        ],
+        "references": [
+          {
+            "id": 1,
+            "label": "Morelli - Everything you need to know about peptides",
+            "source": "morelli_x",
+            "url": "https://x.com/morellifit/status/2056409530821468627"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nad-plus",
+      "name": "NAD+",
+      "isPeptide": false,
+      "aliases": [
+        "Nicotinamide adenine dinucleotide",
+        "NAD",
+        "Coenzyme I",
+        "DPN (diphosphopyridine nucleotide, historical)"
+      ],
+      "category": "longevity",
+      "whatItDoes": "Nicotinamide adenine dinucleotide, a coenzyme present in every living cell that shuttles electrons in metabolism (as the NAD+/NADH redox couple) and serves as a consumable substrate for sirtuins, PARPs, and CD38. It is not a peptide. Tissue NAD+ levels fall with age, and the longevity field uses NAD+ itself or its precursors (NR, NMN, niacin) to attempt to restore them.",
+      "scores": {
+        "humanResearch": 4,
+        "weightLoss": null,
+        "muscleGrowth": null,
+        "sleep": null,
+        "recovery": 3,
+        "hairSkin": null,
+        "cognitive": 2,
+        "sideEffectSeverity": 2
+      },
+      "cycled": false,
+      "notableQuote": {
+        "text": "NAD+ is coenzyme your cells need to make energy, not a peptide. Levels drop as you age, so restoring it makes everything else work better.",
+        "transcript": "morelli_x"
+      },
+      "halfLifeOrDose": "No standardized therapeutic dose. IV NAD+ infusions are marketed at roughly 250-1000 mg per session; oral precursor regimens (nicotinamide riboside or NMN) are commonly dosed around 250-1000 mg/day in trials. Morelli does not publish a specific personal NAD+ dose.",
+      "transcripts": [],
+      "tier": "C",
+      "regulatoryStatus": "NAD+ itself is not an FDA-approved drug. It is sold as a research chemical and compounded for IV/injectable use, and its precursors are marketed as dietary supplements (NR) or, for NMN, as a substance the FDA has stated may be excluded from the supplement definition because it was investigated as a drug.",
+      "moleculeWeight": 663.43,
+      "brandNames": [
+        "Niagen (nicotinamide riboside precursor)",
+        "Tru Niagen (NR)",
+        "Basis (Elysium, NR + pterostilbene)"
+      ],
+      "molecularStructure": "A dinucleotide built from two nucleotides joined through their phosphate groups: one carrying an adenine base, the other a nicotinamide base. The functional nicotinamide ring accepts and donates a hydride ion, cycling between the oxidized form NAD+ and the reduced form NADH. A phosphorylated variant, NADP+/NADPH, serves anabolic and antioxidant reactions. Molecular formula C21H27N7O14P2.",
+      "history": "NAD was discovered in 1906 by Arthur Harden and William Young as a heat-stable 'cozymase' fraction required for yeast fermentation. Hans von Euler-Chelpin elucidated its structure (work recognized by the 1929 Nobel Prize in Chemistry), and Otto Warburg later showed its role in hydride transfer. In 1937 Conrad Elvehjem identified niacin (nicotinic acid), an NAD precursor, as the factor that cures pellagra. Modern interest in NAD+ as a longevity target grew from work in the 2000s on sirtuins (notably by Leonard Guarente and David Sinclair) and on the age-related decline of NAD+, which spurred development of precursor supplements such as nicotinamide riboside (NR) and nicotinamide mononucleotide (NMN).",
+      "administration": "Most commonly given as intravenous NAD+ infusions at clinics and as subcutaneous or intramuscular injections in the gray market. Oral NAD+ itself is poorly bioavailable, so supplementation usually relies on precursors (nicotinamide riboside, NMN, niacin, or nicotinamide) taken by mouth. Liposomal and intranasal formulations are also marketed but less studied.",
+      "legalStatus": "NAD+ is not an approved drug; it is used off-label via compounding pharmacies for IV and injectable preparations. Nicotinamide riboside is sold legally as a dietary supplement; NMN's status is contested in the United States after the FDA took the position that it was excluded from the dietary-supplement definition because it had been authorized for investigation as a new drug. Niacin and nicotinamide are widely available as vitamins.",
+      "safetyProfile": "Oral precursors (NR, NMN) have been well tolerated in short human trials at common doses, with mild gastrointestinal effects reported; high-dose nicotinic acid causes flushing and, chronically, can affect liver enzymes and glucose. IV NAD+ infusions frequently cause dose-dependent infusion reactions (chest tightness, nausea, cramping, flushing) if run too fast, which is why clinics infuse slowly. Long-term safety of raising NAD+ is not established, and there is a theoretical concern that boosting NAD+ could fuel the metabolism of existing cancers, so the longevity-versus-cancer trade-off remains unresolved.",
+      "recommendedVendors": [],
+      "news": [],
+      "viralPosts": [
+        {
+          "url": "https://x.com/morellifit/status/2056409530821468627",
+          "author": "Michael Morelli (@morellifit)",
+          "text": "NAD+ is coenzyme your cells need to make energy, not a peptide. Levels drop as you age, so restoring it makes everything else work better.",
+          "engagement": "562,939 views; 649 likes (parent article)"
+        }
+      ],
+      "informativeVideos": [],
+      "wiki": {
+        "lede": "NAD+ (nicotinamide adenine dinucleotide) is a coenzyme found in every living cell, not a peptide. It carries electrons in metabolism as the NAD+/NADH redox couple and is also consumed as a substrate by the sirtuin, PARP, and CD38 enzyme families. Tissue NAD+ levels decline with age, which has made restoring it a central theme of the longevity field, pursued either through intravenous NAD+ infusions or through oral precursors such as nicotinamide riboside (NR) and nicotinamide mononucleotide (NMN). Michael Morelli lists NAD+ in the 'support group' of his peptide overview and is explicit that it is 'coenzyme your cells need to make energy, not a peptide,' adding that because levels drop with age, 'restoring it makes everything else work better' [1]. NAD+ itself is not approved by the U.S. Food and Drug Administration as a drug; NR is sold as a dietary supplement, while NMN's supplement status in the United States is contested.",
+        "sections": [
+          {
+            "id": "mechanism",
+            "title": "Mechanism of action",
+            "body": "NAD+ has two distinct roles. As a redox cofactor it cycles between the oxidized form NAD+ and the reduced form NADH, accepting and donating a hydride ion in hundreds of reactions across glycolysis, the citric-acid cycle, fatty-acid oxidation, and oxidative phosphorylation; the phosphorylated NADP+/NADPH pair supports biosynthesis and antioxidant defense. Separately, NAD+ is consumed (not merely recycled) as a substrate by three enzyme families: sirtuins, which use it for protein deacetylation linked to stress resistance and metabolic regulation; PARPs, which use it during DNA repair; and CD38, a major NAD+-consuming enzyme that rises with age and inflammation. The age-related fall in NAD+ is attributed partly to increased consumption (notably by CD38) and partly to reduced salvage synthesis. Morelli frames the practical upshot in plain language: NAD+ is the coenzyme cells 'need to make energy,' so restoring declining levels is meant to make downstream processes 'work better' [1]."
+          },
+          {
+            "id": "history",
+            "title": "History",
+            "body": "NAD was discovered in 1906 by Arthur Harden and William Young, who found a heat-stable, dialysable 'cozymase' fraction needed for yeast fermentation. Its structure and role in hydrogen transfer were worked out over the following decades by Hans von Euler-Chelpin (Nobel Prize in Chemistry, 1929) and Otto Warburg. In 1937 Conrad Elvehjem showed that niacin, an NAD precursor, cures the deficiency disease pellagra. NAD+ re-entered prominence in the 2000s when sirtuin research by Leonard Guarente, David Sinclair, and others tied NAD+ availability to lifespan-related pathways, and when measurements showed NAD+ declining with age in multiple tissues. That work drove the development and marketing of NAD+-boosting precursors, especially nicotinamide riboside and NMN. Morelli does not recount this history in detail; he treats NAD+ as a familiar background coenzyme rather than a novel compound [1]."
+          },
+          {
+            "id": "clinical-evidence",
+            "title": "Clinical evidence",
+            "body": "The strongest human data concern oral precursors rather than infused NAD+ itself. Controlled trials of nicotinamide riboside and NMN have repeatedly shown that they raise blood NAD+ levels and are generally well tolerated, which establishes target engagement. Demonstrating that this translates into clinical anti-aging benefit, improved physical function, or extended healthspan has been far less consistent, and several trials have reported little or no functional improvement despite higher NAD+. Evidence for intravenous NAD+ as marketed by wellness clinics, for energy, addiction recovery, or rejuvenation, is largely anecdotal and not supported by rigorous controlled trials. Morelli's own claim is modest and qualitative: he says restoring NAD+ 'makes everything else work better,' without citing specific trials, dosages, or outcome statistics [1]. Readers should treat the precursor-to-benefit link as plausible but not clinically proven."
+          },
+          {
+            "id": "dosing",
+            "title": "Dosing and administration",
+            "body": "There is no standardized therapeutic dose. Intravenous NAD+ is marketed at roughly 250-1000 mg per session and must be infused slowly because rapid infusion provokes chest tightness, nausea, and cramping. Because oral NAD+ is poorly absorbed intact, supplementation typically uses precursors: nicotinamide riboside and NMN are commonly studied at about 250-1000 mg per day, while niacin and nicotinamide are used at vitamin doses. Subcutaneous NAD+ injections and intranasal or liposomal products also circulate in the gray market. Morelli does not publish a specific NAD+ dose, route, or schedule of his own [1]."
+          },
+          {
+            "id": "regulatory",
+            "title": "Regulatory status",
+            "body": "NAD+ itself is not an FDA-approved drug. Injectable and IV NAD+ are prepared through compounding pharmacies and used off-label, outside any approved indication. Among precursors, nicotinamide riboside is sold as a dietary supplement (for example under the Niagen brand), whereas NMN's status in the United States became contested after the FDA took the position that NMN was excluded from the dietary-supplement definition because it had previously been authorized for investigation as a new drug. Niacin and nicotinamide remain widely available vitamins. NAD+ is not the subject of the FDA peptide-compounding actions that affected agents such as BPC-157, because it is a coenzyme rather than a peptide."
+          },
+          {
+            "id": "safety",
+            "title": "Safety profile",
+            "body": "In short human trials, oral NR and NMN have been well tolerated at common doses, with mild gastrointestinal complaints the most frequent issue; high-dose nicotinic acid causes prostaglandin-mediated flushing and, used chronically at high doses, can affect liver enzymes and glucose handling. The characteristic problem with IV NAD+ is dose-rate-dependent infusion reactions, chest pressure, nausea, cramping, and flushing, which is why clinics run the infusions slowly over hours. Long-term safety of sustained NAD+ elevation is not established. A recurring theoretical concern, shared with other pro-metabolic interventions, is that increasing NAD+ availability could in principle support the growth of an existing cancer, leaving an unresolved longevity-versus-cancer trade-off. As with any compounded or gray-market product, sourcing quality (purity, sterility, correct labeling) is a practical risk."
+          },
+          {
+            "id": "morelli-protocol-notes",
+            "title": "Morelli's protocol notes",
+            "body": "In his long-form article 'Everything you need to know about peptides,' Morelli files NAD+ under 'the support group,' compounds that 'don't burn fat' but 'keep the rest of you running so you can do the things that do,' alongside Semax, Selank, GHK-Cu, and TB-500 [1]. He is careful to point out that NAD+ is not a peptide but a coenzyme, and his rationale is the age-related decline: levels 'drop as you age, so restoring it makes everything else work better' [1]. Unlike Semax, which he reports using daily, Morelli does not describe a specific personal NAD+ dose, route, cycling schedule, stack, or measured result; his treatment of it is a brief, qualitative mention rather than a detailed protocol [1]. He positions NAD+ as a supportive background optimizer rather than a primary lever, consistent with his broader advice to add one compound at a time and track what it actually does [1]."
+          },
+          {
+            "id": "see-also",
+            "title": "See also",
+            "body": "[[mots-c|MOTS-c]], [[ss-31|SS-31 (Elamipretide)]], [[epitalon|Epitalon]], [[mk-677|MK-677]], [[methylene-blue|Methylene blue]]."
+          }
+        ],
+        "references": [
+          {
+            "id": 1,
+            "label": "Morelli - Everything you need to know about peptides",
+            "source": "morelli_x",
+            "url": "https://x.com/morellifit/status/2056409530821468627"
           }
         ]
       }

@@ -321,7 +321,8 @@
       const cx = xToPx(xv) + Math.cos(angle) * r;
       const cy = yToPx(yv) + Math.sin(angle) * r;
       const cat = catById(p.category);
-      svg += `<g><circle class="dot" cx="${cx}" cy="${cy}" r="7" fill="${cat.color}" fill-opacity="0.8" stroke="${cat.color}" data-id="${p.id}"></circle><text class="dot-label" x="${cx + 10}" y="${cy + 3}">${p.name}</text></g>`;
+      const npRing = p.isPeptide === false ? `<circle cx="${cx}" cy="${cy}" r="10.5" fill="none" stroke="#FF7A00" stroke-width="2"><title>Not technically a peptide</title></circle>` : "";
+      svg += `<g>${npRing}<circle class="dot" cx="${cx}" cy="${cy}" r="7" fill="${cat.color}" fill-opacity="0.8" stroke="${cat.color}" data-id="${p.id}"></circle><text class="dot-label" x="${cx + 10}" y="${cy + 3}">${p.name}</text></g>`;
     });
     byId("vector-map").innerHTML = svg;
     document.querySelectorAll(".dot").forEach((d) => d.addEventListener("click", () => openModal(d.dataset.id)));
@@ -574,12 +575,13 @@ ${transcripts ? `<div class="modal-section"><div class="modal-section-title">Tra
     const groups = CATS.map((c) => ({ ...c, items: PEPTIDES.filter((p) => p.category === c.id).sort((a,b) => a.name.localeCompare(b.name)) }));
     const search = (byId("pedia-search")?.value || "").toLowerCase().trim();
     const filtered = (peps) => search ? peps.filter((p) => (p.name + " " + (p.aliases||[]).join(" ")).toLowerCase().includes(search)) : peps;
-    byId("pedia-nav").innerHTML = groups.map((g) => {
+    const legend = `<div class="pedia-nav-legend"><span class="nonpeptide-dot"></span> not technically a peptide</div>`;
+    byId("pedia-nav").innerHTML = legend + groups.map((g) => {
       const items = filtered(g.items);
       if (!items.length) return "";
       return `
 <div class="pedia-nav-cat" style="color:${g.color === '#FFB000' ? '#a25a00' : g.color === '#39FF14' ? '#1a8a05' : g.color === '#00E5FF' ? '#0090a8' : g.color === '#B26BFF' ? '#5b2ba0' : '#a01b4d'}">${g.name}</div>
-${items.map((p) => `<a class="pedia-nav-link${p.id === activeId ? ' active' : ''}" href="#/pedia/${p.id}" data-id="${p.id}">${p.name}<span class="pedia-nav-tier">${p.tier || ""}</span></a>`).join("")}`;
+${items.map((p) => `<a class="pedia-nav-link${p.id === activeId ? ' active' : ''}" href="#/pedia/${p.id}" data-id="${p.id}">${p.name}${p.isPeptide === false ? '<span class="nonpeptide-dot" title="Not technically a peptide (small molecule)"></span>' : ''}<span class="pedia-nav-tier">${p.tier || ""}</span></a>`).join("")}`;
     }).join("");
     document.querySelectorAll(".pedia-nav-link").forEach((a) => {
       a.addEventListener("click", (e) => {
@@ -645,6 +647,7 @@ ${items.map((p) => `<a class="pedia-nav-link${p.id === activeId ? ' active' : ''
   ${p.aliases && p.aliases.length ? `<div class="pedia-infobox-row"><div class="pedia-infobox-label">Also known as</div><div class="pedia-infobox-value">${p.aliases.join(", ")}</div></div>` : ""}
   ${p.brandNames && p.brandNames.length ? `<div class="pedia-infobox-row"><div class="pedia-infobox-label">Brand names</div><div class="pedia-infobox-value">${p.brandNames.join(", ")}</div></div>` : ""}
   <div class="pedia-infobox-row"><div class="pedia-infobox-label">Class</div><div class="pedia-infobox-value">${cat.name}</div></div>
+  ${p.isPeptide === false ? `<div class="pedia-infobox-row"><div class="pedia-infobox-label">Note</div><div class="pedia-infobox-value"><span class="nonpeptide-dot"></span> Not technically a peptide — small molecule / non-peptide commonly grouped with peptides.</div></div>` : ""}
   ${p.molecularStructure ? `<div class="pedia-infobox-row"><div class="pedia-infobox-label">Structure</div><div class="pedia-infobox-value">${p.molecularStructure}</div></div>` : ""}
   ${p.moleculeWeight ? `<div class="pedia-infobox-row"><div class="pedia-infobox-label">Mol. weight</div><div class="pedia-infobox-value">${p.moleculeWeight} Da</div></div>` : ""}
   ${p.administration ? `<div class="pedia-infobox-row"><div class="pedia-infobox-label">Administration</div><div class="pedia-infobox-value">${p.administration}</div></div>` : ""}
@@ -669,9 +672,16 @@ ${items.map((p) => `<a class="pedia-nav-link${p.id === activeId ? ' active' : ''
   </ol>
 </section>` : "");
 
+    // Viral posts (e.g. Michael Morelli / X threads cited as a source)
+    const viral = p.viralPosts && p.viralPosts.length ? `
+<section class="pedia-viral">
+  <h2>Viral posts</h2>
+  <ul>${p.viralPosts.map((v) => `<li><a href="${v.url || '#'}" target="_blank" rel="noopener">${safeHTML(v.author || "X post")}</a>${v.text ? `: “${safeHTML(v.text)}”` : ""}${v.engagement ? ` <span class="pedia-viral-eng">(${safeHTML(v.engagement)})</span>` : ""}</li>`).join("")}</ul>
+</section>` : "";
+
     byId("pedia-article").innerHTML = `
 <h1>${p.name}</h1>
-<p class="pedia-subtitle">${p.aliases && p.aliases.length ? "Also known as " + p.aliases.join(", ") + ". " : ""}${cat.name}.</p>
+<p class="pedia-subtitle">${p.aliases && p.aliases.length ? "Also known as " + p.aliases.join(", ") + ". " : ""}${cat.name}.${p.isPeptide === false ? ` <span class="nonpeptide-dot"></span> <span class="nonpeptide-note">Not technically a peptide.</span>` : ""}</p>
 ${cheap}
 ${stub}
 <div class="pedia-layout">
@@ -680,6 +690,7 @@ ${stub}
     ${toc}
     ${sectionsHtml}
     ${refs}
+    ${viral}
   </div>
   ${infobox}
 </div>
