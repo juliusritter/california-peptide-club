@@ -6,6 +6,10 @@
   const STACKS = D.stacks;
   const HISTORY = D.history;
   const QUOTES = D.quotes;
+  // "concepts" entries are explainer pages (definitions, regulation, sourcing, etc.) that
+  // live only in the Pedia (wiki) — they are not peptides and stay off the topology map.
+  const MAP_CATS = CATS.filter((c) => c.id !== "concepts");
+  const MAP_PEPTIDES = PEPTIDES.filter((p) => p.category !== "concepts");
   const byId = (id) => document.getElementById(id);
   const catById = (id) => CATS.find((c) => c.id === id);
   const pepById = (id) => PEPTIDES.find((p) => p.id === id);
@@ -66,7 +70,7 @@
 
   /* ================== LEGEND ================== */
   function renderLegendCats() {
-    byId("legend-cats").innerHTML = CATS.map(
+    byId("legend-cats").innerHTML = MAP_CATS.map(
       (c) => `<div class="legend-cat-row"><span class="legend-cat-dot" style="background:${c.color}"></span>${c.name}</div>`
     ).join("");
   }
@@ -133,7 +137,7 @@
       glp1:      { fx: W * 0.76, fy: H * 0.80 },
     };
 
-    const nodes = PEPTIDES.map((p) => {
+    const nodes = MAP_PEPTIDES.map((p) => {
       const cat = catById(p.category);
       const tier = p.tier || "C";
       const r = ({ S: 32, A: 28, B: 24, C: 20, D: 18, F: 16 }[tier] || 20);
@@ -232,8 +236,8 @@
 
   /* ================== CATEGORIES (rich detail below the map) ================== */
   function renderCategories() {
-    const html = CATS.map((cat) => {
-      const peps = PEPTIDES.filter((p) => p.category === cat.id);
+    const html = MAP_CATS.map((cat) => {
+      const peps = MAP_PEPTIDES.filter((p) => p.category === cat.id);
       const vials = peps
         .map((p) => {
           const fill = p.scores && typeof p.scores.humanResearch === "number"
@@ -580,7 +584,7 @@ ${transcripts ? `<div class="modal-section"><div class="modal-section-title">Tra
       const items = filtered(g.items);
       if (!items.length) return "";
       return `
-<div class="pedia-nav-cat" style="color:${g.color === '#FFB000' ? '#a25a00' : g.color === '#39FF14' ? '#1a8a05' : g.color === '#00E5FF' ? '#0090a8' : g.color === '#B26BFF' ? '#5b2ba0' : '#a01b4d'}">${g.name}</div>
+<div class="pedia-nav-cat" style="color:${g.color === '#FFB000' ? '#a25a00' : g.color === '#39FF14' ? '#1a8a05' : g.color === '#00E5FF' ? '#0090a8' : g.color === '#B26BFF' ? '#5b2ba0' : g.color === '#8B95A8' ? '#5b6472' : '#a01b4d'}">${g.name}</div>
 ${items.map((p) => `<a class="pedia-nav-link${p.id === activeId ? ' active' : ''}" href="#/pedia/${p.id}" data-id="${p.id}">${p.name}${p.isPeptide === false ? '<span class="nonpeptide-dot" title="Not technically a peptide (small molecule)"></span>' : ''}<span class="pedia-nav-tier">${p.tier || ""}</span></a>`).join("")}`;
     }).join("");
     document.querySelectorAll(".pedia-nav-link").forEach((a) => {
@@ -616,6 +620,7 @@ ${items.map((p) => `<a class="pedia-nav-link${p.id === activeId ? ' active' : ''
     }
     const cat = catById(p.category);
     const wiki = p.wiki; // may be undefined if agent hasn't run yet
+    const isConcept = p.category === "concepts";
     const cheap = GLP1_IDS.has(p.id) ? `
 <div class="pedia-stub">
   <strong>How to get cheap Ozempic.</strong> Crémieux maintains the canonical sourcing guide for affordable GLP-1s: <a href="${CHEAP_OZEMPIC_URL}" target="_blank" rel="noopener">cremieux.xyz/p/how-to-get-cheap-ozempic</a>.
@@ -641,9 +646,9 @@ ${items.map((p) => `<a class="pedia-nav-link${p.id === activeId ? ' active' : ''
     const infobox = `
 <aside class="pedia-infobox">
   <h4>${p.name}</h4>
-  <div class="pedia-infobox-vial">
+  ${isConcept ? "" : `<div class="pedia-infobox-vial">
     ${vialSvg(cat.color, p.scores?.humanResearch ? Math.max(0.18, p.scores.humanResearch / 10) : 0.25)}
-  </div>
+  </div>`}
   ${p.aliases && p.aliases.length ? `<div class="pedia-infobox-row"><div class="pedia-infobox-label">Also known as</div><div class="pedia-infobox-value">${p.aliases.join(", ")}</div></div>` : ""}
   ${p.brandNames && p.brandNames.length ? `<div class="pedia-infobox-row"><div class="pedia-infobox-label">Brand names</div><div class="pedia-infobox-value">${p.brandNames.join(", ")}</div></div>` : ""}
   <div class="pedia-infobox-row"><div class="pedia-infobox-label">Class</div><div class="pedia-infobox-value">${cat.name}</div></div>
@@ -653,8 +658,8 @@ ${items.map((p) => `<a class="pedia-nav-link${p.id === activeId ? ' active' : ''
   ${p.administration ? `<div class="pedia-infobox-row"><div class="pedia-infobox-label">Administration</div><div class="pedia-infobox-value">${p.administration}</div></div>` : ""}
   ${p.halfLifeOrDose ? `<div class="pedia-infobox-row"><div class="pedia-infobox-label">Half-life / dose</div><div class="pedia-infobox-value">${p.halfLifeOrDose}</div></div>` : ""}
   ${p.legalStatus || p.regulatoryStatus ? `<div class="pedia-infobox-row"><div class="pedia-infobox-label">Legal status</div><div class="pedia-infobox-value">${p.legalStatus || p.regulatoryStatus}</div></div>` : ""}
-  <div class="pedia-infobox-row"><div class="pedia-infobox-label">Tier (Tatem)</div><div class="pedia-infobox-value"><span class="tier-badge tier-${p.tier || "C"}">${p.tier || "C"}</span></div></div>
-  <div class="pedia-infobox-row"><div class="pedia-infobox-label">Cycled</div><div class="pedia-infobox-value">${p.cycled ? "Yes ↻" : "No"}</div></div>
+  ${isConcept ? "" : `<div class="pedia-infobox-row"><div class="pedia-infobox-label">Tier (Tatem)</div><div class="pedia-infobox-value"><span class="tier-badge tier-${p.tier || "C"}">${p.tier || "C"}</span></div></div>
+  <div class="pedia-infobox-row"><div class="pedia-infobox-label">Cycled</div><div class="pedia-infobox-value">${p.cycled ? "Yes ↻" : "No"}</div></div>`}
 </aside>`;
 
     // References
@@ -848,7 +853,7 @@ ${stub}
   /* ================== FOOT META ================== */
   function renderFootMeta() {
     byId("foot-meta").textContent =
-      `${PEPTIDES.length} peptides · ${CATS.length} groups · ${STACKS.length} stacks · ${HISTORY.length} milestones`;
+      `${MAP_PEPTIDES.length} peptides · ${MAP_CATS.length} groups · ${STACKS.length} stacks · ${HISTORY.length} milestones`;
   }
 
   /* ================== INIT ================== */

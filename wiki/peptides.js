@@ -1,6 +1,14 @@
 window.PEPTIDE_DATA = {
   "categories": [
     {
+      "id": "concepts",
+      "name": "Foundations & Frameworks",
+      "color": "#8B95A8",
+      "description": "Conceptual explainer pages — what a peptide is, the U.S. regulatory and legal landscape, sourcing and quality, administration routes, and the major stack frameworks. Drawn primarily from the Huberman Lab episode with Dr. Abud Bakri.",
+      "tatemGroup": "Foundations",
+      "commonStacks": []
+    },
+    {
       "id": "ghs",
       "name": "Growth Hormone & IGF-1 Axis",
       "color": "#00E5FF",
@@ -273,7 +281,7 @@ window.PEPTIDE_DATA = {
           {
             "id": "safety",
             "title": "Safety profile",
-            "body": "Pre-clinical safety evaluations in mice, rats, rabbits, and dogs found no serious toxicity, no genotoxicity, and no embryo-fetal toxicity; an LD\u2081 was never reached [1]. The principal theoretical concern is BPC-157's pro-angiogenic activity: because tumours require new blood vessels to grow, both Tatem and Froese flag a hypothetical risk that BPC-157 could accelerate an undiagnosed cancer, although there is no evidence to date that it does so [1][8][5]. In practice the dominant safety risk is gray-market sourcing: independent testing has found peptides with arsenic, lead, endotoxins, or wrong amino-acid sequences and purities as low as 5 % [1]."
+            "body": "Pre-clinical safety evaluations in mice, rats, rabbits, and dogs found no serious toxicity, no genotoxicity, and no embryo-fetal toxicity; an LD₁ was never reached [1]. The principal theoretical concern is BPC-157's pro-angiogenic activity: because tumours require new blood vessels to grow, both Tatem and Froese flag a hypothetical risk that BPC-157 could accelerate an undiagnosed cancer, although there is no evidence to date that it does so [1][8][5]. In practice the dominant safety risk is gray-market sourcing: independent testing has found peptides with arsenic, lead, endotoxins, or wrong amino-acid sequences and purities as low as 5 % [1]."
           },
           {
             "id": "stacks",
@@ -284,6 +292,11 @@ window.PEPTIDE_DATA = {
             "id": "morelli-notes",
             "title": "Morelli's notes",
             "body": "Michael Morelli, who reports testing peptides on himself and more than 500 clients over seven years, describes BPC-157 as 'the healing peptide' and concedes that 'no one fully understands what it does,' while maintaining that it speeds healing of essentially every kind of tissue [11]. He cites an observational pattern rather than trial data, saying he has heard hundreds of accounts of people with years of chronic pain whose pain vanished after taking BPC-157 [11]. In his usage framework, he positions BPC-157 with TB-500 as the first intervention for anyone who has 'beaten up' their body, ahead of any other compound, and calls the BPC-157 plus TB-500 combination the best recovery stack he has tested [11]. For lean individuals optimizing rather than recovering from injury, he pairs BPC-157 for recovery with CJC-1295 and ipamorelin for the growth-hormone axis [11]."
+          },
+          {
+            "id": "huberman-bakri",
+            "title": "On the Huberman Lab podcast (Dr. Abud Bakri)",
+            "body": "Dr. Abud Bakri reframes BPC-157 as fundamentally a gastric peptide — a 15-amino-acid fragment of the roughly 40-kDa 'body protection compound' protein found in gastric juice — rather than the musculoskeletal agent it is marketed as; it was the Croatian group's Achilles-tendon mouse paper that exploded bodybuilder interest, even though the original purpose was protecting the gut lining [12]. He stresses that almost all data come from that single Croatian lab (Sikiric's), that essentially one human study exists, and that the only human trials were two small early-2000s rectal-enema studies in ulcerative colitis (doses up to ~80 mg, the Phase 2 around 40 patients, with only abstracts published) [12]. There is no known LD50 — animals tolerated roughly 1,000 times the dose — and orally or rectally dosed BPC does not appear to reach the bloodstream, while injected BPC does [12]. Bakri considers the neuropsychiatric and gut-brain effects the most interesting (mice get less drunk, users report blunted Adderall and reduced cravings, and Reddit reports anhedonia), and notes the main theoretical safety concern is pro-angiogenic VEGF signalling that could in principle feed an existing tumour — though in a melanoma cell line BPC actually decreased VEGF, and reports of worsening hematomas and facial angiomas fit the angiogenesis mechanism [12]. He clarifies that the relabeled 'PDA' (pentadecapeptide arginate) is the same compound, recounts healing a grade-2 tricep tear in 3–4 weeks with gram-level local dosing (Huberman separately resolved a trap pull with ~200 micrograms), and dismisses the famous Olympic-Achilles story as unverified hearsay [12]."
           },
           {
             "id": "see-also",
@@ -357,6 +370,12 @@ window.PEPTIDE_DATA = {
             "label": "Morelli - Everything you need to know about peptides (X)",
             "source": "morelli_x",
             "url": "https://x.com/morellifit/status/2056409530821468627"
+          },
+          {
+            "id": 12,
+            "label": "Huberman Lab — Dr. Abud Bakri: Peptides, The Science, Uses & Safety",
+            "source": "huberman_bakri_peptides",
+            "url": "https://www.youtube.com/watch?v=_DfqnpSbMfE"
           }
         ]
       },
@@ -455,6 +474,11 @@ window.PEPTIDE_DATA = {
             "body": "TB-500 is almost always used with BPC-157 in the Wolverine stack. Adding GHK-Cu produces the Glow stack, and adding KPV on top of that produces the Close (or four-peptide healing) stack [7][6]."
           },
           {
+            "id": "huberman-bakri",
+            "title": "On the Huberman Lab podcast (Dr. Abud Bakri)",
+            "body": "Dr. Abud Bakri explains that TB-500 is the athlete's form of thymosin beta-4, a 43-amino-acid peptide that acts on the actin cytoskeleton to upregulate cell movement — useful because immune cells must migrate and reorganise quickly [8]. It was discovered in the Goldstein lab from 'thymosin fraction 5,' the same giant thymic preparation that yielded [[thymosin-alpha-1|thymosin alpha-1]], and it is not exclusive to the thymus [8]. Bakri notes thymosin beta-4 / TB-500 is a common doping agent in horse racing, and that it is paired with [[bpc-157|BPC-157]] in the so-called Wolverine stack specifically because the two together enhance cell migration at an injury site [8]. Like BPC-157, it has no clearly identified classic receptor, placing it in his 'no known receptor' bucket of peptides [8]."
+          },
+          {
             "id": "see-also",
             "title": "See also",
             "body": "[[bpc-157|BPC-157]], [[ghk-cu|GHK-Cu]], [[kpv|KPV]]."
@@ -502,6 +526,12 @@ window.PEPTIDE_DATA = {
             "label": "Froese - Four-Peptide Healing Stack",
             "source": "froese_healing_stack_4.txt",
             "url": "https://www.youtube.com/watch?v=jcO1yJ1bHvo"
+          },
+          {
+            "id": 8,
+            "label": "Huberman Lab — Dr. Abud Bakri: Peptides, The Science, Uses & Safety",
+            "source": "huberman_bakri_peptides",
+            "url": "https://www.youtube.com/watch?v=_DfqnpSbMfE"
           }
         ]
       },
@@ -601,6 +631,11 @@ window.PEPTIDE_DATA = {
             "body": "GHK-Cu is the third component of the Glow stack (BPC-157 + TB-500 + GHK-Cu) and the four-peptide healing stack (BPC-157 + TB-500 + GHK-Cu + KPV) [6][4]."
           },
           {
+            "id": "huberman-bakri",
+            "title": "On the Huberman Lab podcast (Dr. Abud Bakri)",
+            "body": "Dr. Abud Bakri describes GHK-Cu as a glycine-histidine-lysine tripeptide carrying a copper ion, found in type-1 collagen fibres throughout skin, hair, and connective tissue — in effect the body's 'collagen regulator,' upregulating both the synthesis and the breakdown of collagen (you need both for proper remodeling) [7]. It was discovered by the American researcher Loren Pickart around the mid-1970s, with serum levels very high in youth (around 200 ng) and falling into the 60s by age 65, a decline thought to underlie youthful skin [7]. Topically it has 30–40 years of use and compares favourably with retinol and vitamin-C creams, and appears synergistic with red / near-infrared light; a Chinese group is studying it for lung regeneration (with hype for COPD and long COVID), while a hair study was not better than minoxidil [7]. Practically, Bakri notes GHK-Cu should be blue from the copper — but blue alone is not proof of quality — that the injectable form is not FDA-approved and likely belongs to a 'second round' of peptide review, and that people should not inject it into the face [7]. The market skews heavily female and now 'looks-maxing' male [7]."
+          },
+          {
             "id": "see-also",
             "title": "See also",
             "body": "[[bpc-157|BPC-157]], [[tb-500|TB-500]], [[kpv|KPV]]."
@@ -642,6 +677,12 @@ window.PEPTIDE_DATA = {
             "label": "Froese - Four-Peptide Healing Stack",
             "source": "froese_healing_stack_4.txt",
             "url": "https://www.youtube.com/watch?v=jcO1yJ1bHvo"
+          },
+          {
+            "id": 7,
+            "label": "Huberman Lab — Dr. Abud Bakri: Peptides, The Science, Uses & Safety",
+            "source": "huberman_bakri_peptides",
+            "url": "https://www.youtube.com/watch?v=_DfqnpSbMfE"
           }
         ]
       },
@@ -701,17 +742,17 @@ window.PEPTIDE_DATA = {
         }
       ],
       "wiki": {
-        "lede": "KPV is a synthetic tripeptide composed of lysine, proline, and valine. It corresponds to amino-acid positions 11-13 of the human hormone alpha-melanocyte-stimulating hormone (\u03b1-MSH) and retains the parent hormone's anti-inflammatory activity while losing affinity for melanocortin receptors [1]. KPV is studied primarily for inflammatory bowel disease, wound healing, and inflammatory skin conditions. It is not approved by the FDA for any indication and was referred to the Pharmacy Compounding Advisory Committee on 23 July 2026 for review of wound healing and inflammatory conditions [1][2].",
+        "lede": "KPV is a synthetic tripeptide composed of lysine, proline, and valine. It corresponds to amino-acid positions 11-13 of the human hormone alpha-melanocyte-stimulating hormone (α-MSH) and retains the parent hormone's anti-inflammatory activity while losing affinity for melanocortin receptors [1]. KPV is studied primarily for inflammatory bowel disease, wound healing, and inflammatory skin conditions. It is not approved by the FDA for any indication and was referred to the Pharmacy Compounding Advisory Committee on 23 July 2026 for review of wound healing and inflammatory conditions [1][2].",
         "sections": [
           {
             "id": "mechanism",
             "title": "Mechanism of action",
-            "body": "KPV does not bind melanocortin receptors; experiments in MC1R-knockout mice show full anti-inflammatory activity is preserved [1]. It works inside the cell by suppressing the master inflammatory transcription factor NF-\u03baB and the MAPK pathway, lowering pro-inflammatory cytokines TNF-\u03b1 and IL-1\u03b2 while raising IL-10 [1][3]. KPV is also recognized by the PEPT1 di- and tri-peptide transporter, which is upregulated in inflamed colonic epithelium; oral KPV is therefore concentrated at sites of gut inflammation in a disease-dependent manner [1]."
+            "body": "KPV does not bind melanocortin receptors; experiments in MC1R-knockout mice show full anti-inflammatory activity is preserved [1]. It works inside the cell by suppressing the master inflammatory transcription factor NF-κB and the MAPK pathway, lowering pro-inflammatory cytokines TNF-α and IL-1β while raising IL-10 [1][3]. KPV is also recognized by the PEPT1 di- and tri-peptide transporter, which is upregulated in inflamed colonic epithelium; oral KPV is therefore concentrated at sites of gut inflammation in a disease-dependent manner [1]."
           },
           {
             "id": "history",
             "title": "History",
-            "body": "KPV emerged from decades of melanocortin research in the 1980s and 1990s, when groups led by Thomas Luger, Markus B\u00f6hm, and Anna Catania mapped which fragments of \u03b1-MSH carried tanning activity (positions 6-9) and which carried independent anti-inflammatory activity (positions 11-13) [1]."
+            "body": "KPV emerged from decades of melanocortin research in the 1980s and 1990s, when groups led by Thomas Luger, Markus Böhm, and Anna Catania mapped which fragments of α-MSH carried tanning activity (positions 6-9) and which carried independent anti-inflammatory activity (positions 11-13) [1]."
           },
           {
             "id": "clinical-evidence",
@@ -721,7 +762,7 @@ window.PEPTIDE_DATA = {
           {
             "id": "dosing",
             "title": "Dosing and administration",
-            "body": "KPV can be taken orally because of PEPT1-mediated absorption; this is unusual for a peptide and is the basis of its gut-targeting effect. Subcutaneous injection is preferred for systemic conditions such as inflammatory skin disease. Practitioner protocols cited by Tatem use 200-500 \u03bcg orally per day on an empty stomach, but no protocol has been validated in clinical trials [1]."
+            "body": "KPV can be taken orally because of PEPT1-mediated absorption; this is unusual for a peptide and is the basis of its gut-targeting effect. Subcutaneous injection is preferred for systemic conditions such as inflammatory skin disease. Practitioner protocols cited by Tatem use 200-500 μg orally per day on an empty stomach, but no protocol has been validated in clinical trials [1]."
           },
           {
             "id": "regulatory",
@@ -731,7 +772,7 @@ window.PEPTIDE_DATA = {
           {
             "id": "safety",
             "title": "Safety profile",
-            "body": "Reported side effects from anecdotal use are mild and local, dominated by injection-site reactions and short-lived GI adjustment with oral dosing [1]. Theoretical concerns include chronic immunosuppression: KPV durably suppresses NF-\u03baB, and long-term suppression of inflammatory pathways could in principle impair immune surveillance, although no clinical signal of this has been reported [1]."
+            "body": "Reported side effects from anecdotal use are mild and local, dominated by injection-site reactions and short-lived GI adjustment with oral dosing [1]. Theoretical concerns include chronic immunosuppression: KPV durably suppresses NF-κB, and long-term suppression of inflammatory pathways could in principle impair immune surveillance, although no clinical signal of this has been reported [1]."
           },
           {
             "id": "stacks",
@@ -1193,6 +1234,11 @@ window.PEPTIDE_DATA = {
             "body": "MK-677 is sometimes combined with anabolic agents during deliberate bulking phases. Dr. Mike Israetel describes users layering it on top of testosterone, growth hormone, or low-dose ligandrol; co-administration with tirzepatide and metformin is recommended to manage blood-sugar and appetite extremes [3]."
           },
           {
+            "id": "huberman-bakri",
+            "title": "On the Huberman Lab podcast (Dr. Abud Bakri)",
+            "body": "Dr. Abud Bakri is careful to note that MK-677 (ibutamoren) is not actually a peptide — it is a non-peptide ghrelin agonist — and is not FDA-approved, but it is orally available as a pill, which drives its popularity [4]. Among secretagogues it 'bleeds out' the most growth hormone, but does so in a non-pulsatile way and with the most off-target effects (ghrelin, prolactin, cortisol are all neighbours at the pituitary), plus the strongest hunger stimulation [4]. The open question he raises is whether MK-677's many small daytime GH pulses are better or worse than the single large pulse during slow-wave sleep that natural secretion and GHRH analogues like [[tesamorelin|tesamorelin]] favour [4]. Like the rest of the GH axis, it worsens insulin sensitivity and tends to raise A1C [4]."
+          },
+          {
             "id": "see-also",
             "title": "See also",
             "body": "[[ipamorelin|Ipamorelin]], [[cjc-1295|CJC-1295]], [[growth-hormone|Growth Hormone (HGH)]], [[tirzepatide|Tirzepatide]]."
@@ -1216,6 +1262,12 @@ window.PEPTIDE_DATA = {
             "label": "Dr. Mike (RP Strength) - MK-677",
             "source": "mk677_b.txt",
             "url": "https://www.youtube.com/watch?v=Xi77xSdVmic"
+          },
+          {
+            "id": 4,
+            "label": "Huberman Lab — Dr. Abud Bakri: Peptides, The Science, Uses & Safety",
+            "source": "huberman_bakri_peptides",
+            "url": "https://www.youtube.com/watch?v=_DfqnpSbMfE"
           }
         ]
       },
@@ -1308,6 +1360,11 @@ window.PEPTIDE_DATA = {
             "body": "Tesamorelin is sometimes combined with ipamorelin in protocols intended to magnify GH pulses; it is rarely needed in combination because its 24-hour effect duration is already long [3]."
           },
           {
+            "id": "huberman-bakri",
+            "title": "On the Huberman Lab podcast (Dr. Abud Bakri)",
+            "body": "Dr. Abud Bakri classes tesamorelin as a GHRH analogue — an FDA-approved growth-hormone secretagogue (for HIV-associated lipodystrophy) with higher fidelity and fewer off-target ghrelin effects than [[mk-677|MK-677]] [6]. Combined with ipamorelin it produces a large growth-hormone response, pushing IGF-1 into the 380s–390s (puberty-level), though at the cost of more hunger and worse insulin sensitivity [6]. He stresses that tesamorelin should never be run without checking IGF-1, situates it against weaker [[sermorelin|sermorelin]] and the oral non-peptide MK-677, and notes growth-hormone production drops sharply in the 30s ('somatopause'), which is the rationale many use for secretagogues [6]. It is the affordable growth-hormone leg of the celebrity [[trinity-stack|trinity stack]] [6]."
+          },
+          {
             "id": "see-also",
             "title": "See also",
             "body": "[[sermorelin|Sermorelin]], [[cjc-1295|CJC-1295]], [[ipamorelin|Ipamorelin]], [[growth-hormone|Growth Hormone (HGH)]]."
@@ -1343,6 +1400,12 @@ window.PEPTIDE_DATA = {
             "label": "Froese - Cancer Risk From Popular Peptides",
             "source": "froese_cancer_risk.txt",
             "url": "https://www.youtube.com/watch?v=M3TWSopJ8Pk"
+          },
+          {
+            "id": 6,
+            "label": "Huberman Lab — Dr. Abud Bakri: Peptides, The Science, Uses & Safety",
+            "source": "huberman_bakri_peptides",
+            "url": "https://www.youtube.com/watch?v=_DfqnpSbMfE"
           }
         ]
       },
@@ -2077,6 +2140,11 @@ window.PEPTIDE_DATA = {
             "body": "Epitalon is sometimes used alongside DSIP and Pinealon in sleep-and-longevity protocols [2]."
           },
           {
+            "id": "huberman-bakri",
+            "title": "On the Huberman Lab podcast (Dr. Abud Bakri)",
+            "body": "Dr. Abud Bakri presents epitalon (sequence AEDG) as the pineal-derived member of Vladimir Khavinson's [[bioregulators|Russian bioregulators]] [7]. Khavinson's whole-pineal drug epithalamin restored melatonin production in aged (but not young) monkeys — later replicated in humans — and epitalon increases the expression of clock genes measured in peripheral lymphocytes, producing a more rhythmic pattern with higher morning cortisol [7]. Of particular interest to Huberman's own optic-nerve work, there are mouse papers using epitalon against the neurodegeneration of retinitis pigmentosa and glaucoma that he calls 'a real effect,' with the peptide appearing to maintain or restore DNA-repair machinery rather than acting through a vague receptor; Bakri speculates a melanopsin angle that could make morning sunlight more effective [7]. Epitalon was also central to Khavinson's 15-year nursing-home study (paired with the thymus peptide thymalin) that reported significantly lower mortality [7]."
+          },
+          {
             "id": "see-also",
             "title": "See also",
             "body": "[[dsip|DSIP]], [[mots-c|MOTS-c]], [[selank|Selank]], [[semax|Semax]]."
@@ -2118,6 +2186,12 @@ window.PEPTIDE_DATA = {
             "label": "Froese - 11 Peptides Greenlit by FDA",
             "source": "froese_11_fda_peptides.txt",
             "url": "https://www.youtube.com/watch?v=s-Bf12PUgZ4"
+          },
+          {
+            "id": 7,
+            "label": "Huberman Lab — Dr. Abud Bakri: Peptides, The Science, Uses & Safety",
+            "source": "huberman_bakri_peptides",
+            "url": "https://www.youtube.com/watch?v=_DfqnpSbMfE"
           }
         ]
       },
@@ -3175,6 +3249,11 @@ window.PEPTIDE_DATA = {
             "body": "Thymosin alpha-1 is sometimes used alongside KPV and BPC-157 in immune-and-recovery stacks [2]."
           },
           {
+            "id": "huberman-bakri",
+            "title": "On the Huberman Lab podcast (Dr. Abud Bakri)",
+            "body": "Dr. Abud Bakri describes thymosin alpha-1 as an appropriately named thymic hormone (at least 21 amino acids) that is 'jet fuel for T-cells' — it boosts T-cell development in the thymus, drives their proliferation outside it, and makes them better at attacking pathogens [6]. It was FDA-approved as Zadaxin for children born without a functioning thymus (e.g., DiGeorge syndrome), though Bakri notes that approval may no longer exist and people try to 'grandfather' it into the peptide conversation; abroad it is approved as an adjuvant for hepatitis B, hepatitis C, and various cancers, while the sepsis literature is unimpressive [6]. It was discovered in the Goldstein lab from 'thymosin fraction 5,' the same preparation that yielded [[tb-500|thymosin beta-4 / TB-500]] [6]. As a personal anecdote, Bakri uses thymosin alpha-1 at roughly 2.5 mg twice weekly as prophylaxis when travelling and during hospital 'ward season,' reporting he avoided colds and flu the first year he tried it [6]."
+          },
+          {
             "id": "see-also",
             "title": "See also",
             "body": "[[kpv|KPV]], [[ll-37|LL-37]], [[bpc-157|BPC-157]]."
@@ -3210,6 +3289,12 @@ window.PEPTIDE_DATA = {
             "label": "Tatem - GHK-Cu Deep Dive",
             "source": "ghk_cu.txt",
             "url": "https://www.youtube.com/watch?v=52sPkAe7xFc"
+          },
+          {
+            "id": 6,
+            "label": "Huberman Lab — Dr. Abud Bakri: Peptides, The Science, Uses & Safety",
+            "source": "huberman_bakri_peptides",
+            "url": "https://www.youtube.com/watch?v=_DfqnpSbMfE"
           }
         ]
       },
@@ -3920,6 +4005,11 @@ window.PEPTIDE_DATA = {
             "body": "Morelli frames semaglutide as the molecule that \"started the peptide revolution\" and as \"the most studied weight loss drug in history,\" recommending it as the default entry point for anyone with substantial weight to lose: \"If GLP-1 fits your goal, this is the safest peptide to start\" [7]. He describes its effect experientially, noting that people on it \"just aren't hungry anymore\" because the hunger signal itself has been suppressed [7]. For tapering off, Morelli reports that he personally uses tesofensine to cycle off GLP-1s, treating it as a transition tool rather than running semaglutide indefinitely [7]. He also points to the cagrilintide combination (CagriSema) as a way to push results toward roughly 16% weight loss by adding an amylin-driven satiety mechanism [7]."
           },
           {
+            "id": "huberman-bakri",
+            "title": "On the Huberman Lab podcast (Dr. Abud Bakri)",
+            "body": "Dr. Abud Bakri places semaglutide (Ozempic for diabetes, Wegovy for weight loss) in the lineage of animal-derived drugs — GLP-1 was discovered in the saliva of the Gila monster, with pharma engineering a longer half-life than the short-acting native hormone [8]. Bodybuilders pioneered GLP-1 use in the late 2010s before weight-loss approval, and the newer drugs deliver roughly 10–20% body-weight loss versus 5–10% for older agents [8]. Bakri discusses the reported 'low drive'/anhedonia complaints — often confounded by low blood pressure, too little food, electrolytes or micronutrients, low blood sugar, and loss of the social pleasure of eating — and recommends a 'training-wheels' lowest-effective-dose approach [8]. He also covers the 'Ozempic babies' fertility phenomenon (weight loss restoring fertility via leptin), Sam Altman's described GLP-1 'overdose' traced to a compounding issue, and his own cautionary tale of projectile vomiting after self-injecting ~1 mg when the standard start is 0.25 mg [8]. With roughly 115 million U.S. adults pre-diabetic, he is cautiously optimistic that GLP-1s could bend the chronic-disease curve [8]."
+          },
+          {
             "id": "see-also",
             "title": "See also",
             "body": "[[tirzepatide|Tirzepatide]], [[retatrutide|Retatrutide]], [[insulin|Insulin]], [[mots-c|MOTS-c]]."
@@ -3967,6 +4057,12 @@ window.PEPTIDE_DATA = {
             "label": "Morelli - Everything you need to know about peptides (X)",
             "source": "morelli_x",
             "url": "https://x.com/morellifit/status/2056409530821468627"
+          },
+          {
+            "id": 8,
+            "label": "Huberman Lab — Dr. Abud Bakri: Peptides, The Science, Uses & Safety",
+            "source": "huberman_bakri_peptides",
+            "url": "https://www.youtube.com/watch?v=_DfqnpSbMfE"
           }
         ]
       },
@@ -4078,6 +4174,11 @@ window.PEPTIDE_DATA = {
             "body": "Michael Morelli, who reports testing peptides on himself and more than 500 clients over seven years, frames tirzepatide as 'semaglutide's stronger version' owing to its dual GLP-1 plus GIP receptor activity, citing roughly 22% body-weight loss with about a third of patients losing 25% or more [8]. In his usage framework he names a GLP-1 such as semaglutide or tirzepatide as the safest and most-researched starting point for someone with substantial weight to lose, and suggests adding MOTS-c to amplify the cellular side of the protocol [8]. Morelli also treats tirzepatide as something he runs in defined cycles rather than continuously, describing tesofensine as the oral compound he uses to cycle off GLP-1s and saying he stacks tesofensine while on a tirzepatide or retatrutide cycle, with his current routine pairing tirzepatide with MOTS-c [8]. These are his personal protocol observations rather than controlled trial data."
           },
           {
+            "id": "huberman-bakri",
+            "title": "On the Huberman Lab podcast (Dr. Abud Bakri)",
+            "body": "Dr. Abud Bakri notes that tirzepatide is sold as Mounjaro for diabetes and Zepbound for weight loss — a separate brand that helps extend patent life — and that it is a dual agonist hitting both the GLP-1 and GIP receptors [9]. He situates it within the GLP-1 wave delivering ~10–20% weight loss, and highlights the pricing shift driven by Trump-administration pressure: tirzepatide is now available for roughly $300/month through websites, down from about $1,500 [9]. As with other GLP-1s, he emphasises slow titration and physician monitoring, and frames it alongside [[semaglutide|semaglutide]] and [[retatrutide|retatrutide]] as variations on the same incretin theme [9]. It is also one of the legs of the celebrity [[trinity-stack|trinity stack]] [9]."
+          },
+          {
             "id": "see-also",
             "title": "See also",
             "body": "[[semaglutide|Semaglutide]], [[retatrutide|Retatrutide]], [[mk-677|MK-677]], [[insulin|Insulin]]."
@@ -4131,6 +4232,12 @@ window.PEPTIDE_DATA = {
             "label": "Morelli - Everything you need to know about peptides (X)",
             "source": "morelli_x",
             "url": "https://x.com/morellifit/status/2056409530821468627"
+          },
+          {
+            "id": 9,
+            "label": "Huberman Lab — Dr. Abud Bakri: Peptides, The Science, Uses & Safety",
+            "source": "huberman_bakri_peptides",
+            "url": "https://www.youtube.com/watch?v=_DfqnpSbMfE"
           }
         ]
       },
@@ -4238,6 +4345,11 @@ window.PEPTIDE_DATA = {
             "body": "Michael Morelli treats retatrutide as a cycled compound rather than a continuous therapy, and describes a specific off-cycle bridge protocol for the period after coming off a GLP-1 like retatrutide [7]. During that off-cycle he runs SLU-PP-332 at 1 mg/day alongside 5-amino-1MQ to sustain fat oxidation without the appetite suppression of an incretin drug [7]. He rotates tesofensine into this scheme as an either-or alternative to SLU-PP-332, and separately stacks tesofensine while he is actively on a tirzepatide or retatrutide cycle [7]. He characterizes retatrutide as the strongest of the GLP-1 class and the hottest peptide in the world, citing late-stage trials in which subjects lost nearly 29% of body weight along with clearing of liver fat [7]."
           },
           {
+            "id": "huberman-bakri",
+            "title": "On the Huberman Lab podcast (Dr. Abud Bakri)",
+            "body": "Dr. Abud Bakri describes retatrutide as the newest and most potent of the GLP-1 family — a triple agonist hitting GLP-1, GIP, and glucagon receptors, with data pointing toward roughly 30% body-weight loss [8]. The most striking discussion is about patents: retatrutide has 39 amino acids, and because a 'biologic' classification requires more than 40, Eli Lilly is trying to have it classed as a biologic, which would extend its patent to roughly 15 years (versus ~5–7 for a small peptide) and make it far harder for compounders to copy — even though those compounders already have the formula and can obtain API from China [8]. Huberman predicts retatrutide could anchor a trillion-dollar industry as Lilly finds additional approved uses to protect the patent [8]. Bakri raises the open question of very young people using it long-term, and frames it as a leg of the [[trinity-stack|trinity stack]] [8]."
+          },
+          {
             "id": "see-also",
             "title": "See also",
             "body": "[[semaglutide|Semaglutide]], [[tirzepatide|Tirzepatide]], [[insulin|Insulin]], [[tesamorelin|Tesamorelin]]."
@@ -4285,6 +4397,12 @@ window.PEPTIDE_DATA = {
             "label": "Morelli - SLU-PP-332 thread (X)",
             "source": "morelli_x",
             "url": "https://x.com/morellifit/status/2054366377637732367"
+          },
+          {
+            "id": 8,
+            "label": "Huberman Lab — Dr. Abud Bakri: Peptides, The Science, Uses & Safety",
+            "source": "huberman_bakri_peptides",
+            "url": "https://www.youtube.com/watch?v=_DfqnpSbMfE"
           }
         ]
       },
@@ -4665,7 +4783,7 @@ window.PEPTIDE_DATA = {
       },
       "cycled": true,
       "notableQuote": {
-        "text": "SLU-PP-332 peptide is the closest thing currently available to an exercise pill. It works by activating the same nuclear receptors (specifically ERR\u03b1, \u03b2, and \u03b3) that endurance training does.",
+        "text": "SLU-PP-332 peptide is the closest thing currently available to an exercise pill. It works by activating the same nuclear receptors (specifically ERRα, β, and γ) that endurance training does.",
         "transcript": "morelli_x"
       },
       "halfLifeOrDose": "No established human dose; SLU-PP-332 has poor oral bioavailability and a short plasma half-life in rodents, and was dosed by injection in the published mouse studies. Morelli reports self-administering 1 mg/day [1].",
@@ -4685,7 +4803,7 @@ window.PEPTIDE_DATA = {
         {
           "url": "https://x.com/morellifit/status/2054366377637732367",
           "author": "Michael Morelli (@morellifit)",
-          "text": "SLU-PP-332 peptide is the closest thing currently available to an exercise pill. It works by activating the same nuclear receptors (specifically ERR\u03b1, \u03b2, and \u03b3) that endurance training does... In mouse studies, a single daily dose increased running time by about 70%. In obese mice, it led to a 12% loss in body weight over 28 days. These results happened without any changes to appetite or food intake.",
+          "text": "SLU-PP-332 peptide is the closest thing currently available to an exercise pill. It works by activating the same nuclear receptors (specifically ERRα, β, and γ) that endurance training does... In mouse studies, a single daily dose increased running time by about 70%. In obese mice, it led to a 12% loss in body weight over 28 days. These results happened without any changes to appetite or food intake.",
           "engagement": null
         }
       ],
@@ -6208,6 +6326,321 @@ window.PEPTIDE_DATA = {
             "label": "Morelli - Everything you need to know about peptides",
             "source": "morelli_x",
             "url": "https://x.com/morellifit/status/2056409530821468627"
+          }
+        ]
+      }
+    },
+    {
+      "id": "what-is-a-peptide",
+      "name": "What Is a Peptide?",
+      "aliases": [],
+      "category": "concepts",
+      "whatItDoes": "A peptide is a short chain of amino acids — one of the body's signalling 'languages.' This page covers the analogies, the receptor / no-receptor framework, animal- vs plant-derived medicine, and why 'peptide' is a poor functional category.",
+      "scores": {},
+      "wiki": {
+        "lede": "A peptide is a short chain of amino acids — the same building blocks that make proteins, just far fewer of them. On the Huberman Lab podcast, internal-medicine physician Dr. Abud Bakri frames peptides as “one of the languages of the human body”: the cell's information flows from DNA to RNA to proteins, and proteins can be broken down into polypeptides and peptides, which (alongside steroid hormones) are how cells talk to one another [1]. The word covers a huge range of molecules, from the dipeptide carnosine to the 39-amino-acid drug [[retatrutide|retatrutide]], which is why Bakri argues it is almost useless as a functional category [1].",
+        "sections": [
+          {
+            "id": "a-language-of-the-body",
+            "title": "A language of the body",
+            "body": "Bakri's core analogy is linguistic: peptides and steroid hormones are two of the body's signalling languages [1]. If amino acids are letters, then short peptides are words, longer polypeptides are sentences, and full proteins are paragraphs — all written from the same alphabet of roughly twenty standard amino acids. The body manufactures these signals constantly to coordinate growth, repair, immunity, appetite, and circadian timing. Many therapeutic peptides are simply copies, fragments, or engineered versions of signals the body already uses — insulin, the [[semaglutide|GLP-1]] analogues, and the growth-hormone secretagogues are all examples [1]."
+          },
+          {
+            "id": "receptor-framework",
+            "title": "The receptor / no-receptor framework",
+            "body": "Bakri's most useful clinical distinction splits peptides into those with a known receptor and those without [1]. Peptides with a clear receptor — the GLP-1 drugs are the canonical case — produce strong, predictable clinical effects because the target is understood. Peptides with no identified receptor — [[bpc-157|BPC-157]], [[tb-500|TB-500]] and thymosin beta-4 among them — have obscure, harder-to-predict mechanisms [1]. A molecule can still act without a classic membrane receptor: by modifying or linking existing proteins for more favourable gene transcription, or by epigenetic modification. The so-called Russian peptides are described as epigenetic modifiers that bind into the groove of DNA at specific spots to open or close chromatin and gate gene expression — modelled much like a steroid hormone entering the nucleus to switch on a program of genes [1]."
+          },
+          {
+            "id": "animal-vs-plant",
+            "title": "Animal- vs plant-derived medicine",
+            "body": "Bakri places peptides in a longer arc of drug discovery. For thousands of years humans looked for medicines in plants — aspirin, metformin, and (from fungi) the statins all trace to that tradition. Over roughly the last 150 years the search moved into animal tissues, and most of the famous peptides came out of that hunt: [[bpc-157|BPC-157]] from gastric juice, [[ghk-cu|GHK-Cu]] from collagen, the GLP-1 family from the saliva of the Gila monster, and the thymic and Russian bioregulator peptides from organ extracts [1]. The earliest tissue-signature peptides, carnosine and carnitine, were found in cattle muscle by Vladimir Gulevich in the late 1800s — the origin of the idea that gut peptides have gut effects and muscle peptides have muscle effects [1]."
+          },
+          {
+            "id": "poor-category",
+            "title": "Why 'peptide' is a poor category",
+            "body": "Bakri argues that 'peptide' describes structure, not function, and so lumps together molecules with nothing in common: carnosine and retatrutide are both peptides but behave nothing alike, whereas oral [[semaglutide|semaglutide]] (a peptide) and orforglipron (not a peptide) are both GLP-1 drugs and far more similar to each other [1]. This mirrors how medicine usually names drug classes by what they do rather than by molecular scaffold — statins, beta-blockers, ACE inhibitors, SSRIs, and proton-pump inhibitors are all functional labels. Huberman half-jokingly proposes Bakri lead a peptide 'nomenclature committee' to impose order, the way gene names were standardised after early chaos; suggested functional buckets include receptor vs no-receptor, regenerative peptides, and immunogenic peptides such as [[thymosin-alpha-1|thymosin alpha-1]] and TB-500 [1]."
+          },
+          {
+            "id": "see-also",
+            "title": "See also",
+            "body": "[[bioregulators|Bioregulators (Russian / Khavinson peptides)]], [[peptide-regulation|Peptide Regulation & Legal Landscape]], [[peptide-administration|Injection & Administration Methods]], [[peptide-sourcing-quality|Sourcing & Quality]]."
+          }
+        ],
+        "references": [
+          {
+            "id": 1,
+            "label": "Huberman Lab — Dr. Abud Bakri: Peptides, The Science, Uses & Safety",
+            "source": "huberman_bakri_peptides",
+            "url": "https://www.youtube.com/watch?v=_DfqnpSbMfE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "peptide-regulation",
+      "name": "Peptide Regulation & Legal Landscape (U.S.)",
+      "aliases": [
+        "FDA compounding categories",
+        "peptide legality"
+      ],
+      "category": "concepts",
+      "whatItDoes": "How peptides are regulated in the United States: FDA compounding Categories 1/2/3, the BPC-157 timeline, the PDA relabeling workaround, state medical boards vs the FDA, telehealth law, WADA status, and the supplement-vs-medication debate.",
+      "scores": {},
+      "wiki": {
+        "lede": "Most popular peptides are not FDA-approved drugs, which places them in a shifting and confusing legal space. On the Huberman Lab podcast, Dr. Abud Bakri walks through how the U.S. system actually works — the FDA's compounding categories, the see-saw history of [[bpc-157|BPC-157]], the relabeling workarounds, and the fact that a state medical board can forbid what the FDA permits [1].",
+        "sections": [
+          {
+            "id": "compounding-categories",
+            "title": "FDA compounding categories",
+            "body": "Because peptides like BPC-157 were never FDA-approved, their legal route runs through compounding pharmacies, which the FDA sorts into lists. Category 1 means the FDA is comfortable allowing the substance to be compounded even though it is not approved, so physicians can prescribe it through a compounding pharmacy. Category 2 means 'do not compound.' Category 3 is the third bucket in that same 1/2/3 system [1]. Movement between these lists, rather than any formal drug approval, is what determines whether a clinician can legally prescribe a given peptide in a given year [1]."
+          },
+          {
+            "id": "bpc-157-timeline",
+            "title": "The BPC-157 see-saw",
+            "body": "BPC-157 illustrates how unstable this is. From roughly 2017 to 2024 it was prescribed widely in alternative-medicine and anti-aging practices. In late 2024 the acetate form of BPC-157, along with around twenty other peptides, was moved to the Category 2 'do-not-compound' list. Then in April 2025 BPC-157 was removed from Category 2 — but it had not yet been placed back on Category 1, leaving it in a gap where physicians still could not formally prescribe it through compounding [1]. (Dates are as stated on the podcast; the FDA's published review schedule should be checked for the current status.)"
+          },
+          {
+            "id": "pda-workaround",
+            "title": "The PDA relabeling workaround",
+            "body": "While BPC-157 acetate sat on the restricted list, compounders relabeled the compound as PDA — pentadecapeptide arginate — which Bakri stresses is the same exact thing; one is an acetate salt and one an arginate salt [1]. Many people are now prescribed 'PDA' rather than 'BPC-157,' a naming move that sidesteps the specific form that was banned [1]. See [[bpc-157|BPC-157]] for the compound itself."
+          },
+          {
+            "id": "boards-vs-fda",
+            "title": "State boards & telehealth override the FDA",
+            "body": "Even when the FDA permits compounding, a state medical board can prohibit prescribing non-FDA-approved peptides 'no matter what.' Bakri, licensed in many states, received a letter from one state's board telling him he could not prescribe non-approved peptides to the public there [1]. For telehealth the law applies where the patient is located, not where the doctor is: a New York physician licensed in California who prescribes a banned peptide to a California patient answers to the California board [1]. Some states are actively cracking down, and prescribers learn which states to avoid [1]."
+          },
+          {
+            "id": "supplement-vs-med",
+            "title": "Supplement vs medication",
+            "body": "A central unresolved question is whether oral peptides are supplements or medications. BPC-157 is already sold as an oral supplement despite never being approved as a medicine; figures such as RFK Jr. have argued peptides should be treated as supplements rather than drugs, a position the FDA itself may not share [1]. Bakri's analogy is B12: an oral B12 supplement is sold freely while injectable B12 requires a prescription — and it is not yet clear whether a similar oral-vs-injectable line will be drawn for peptides [1]. He expects more clarity, and a likely staged return of peptides to Category 1 (a 'first round' of about seven peptides including BPC-157 and [[tb-500|TB-500]], and a probable 'second round' including [[ghk-cu|GHK-Cu]]), over the coming years [1]."
+          },
+          {
+            "id": "doping-patents",
+            "title": "Anti-doping status & patents",
+            "body": "BPC-157 is on the World Anti-Doping Agency prohibited list, and a 2024 paper showed testers can detect fragments of its sequence [1]. Patents are a tangle: multiple BPC-157 patents exist depending on the salt, one passed to the generic maker Teva (which has no interest in developing it), another expires in roughly a decade and may still be held by Dr. Predrag Sikiric in Croatia. Bakri notes the patents are nearly worthless because adding or modifying a single amino acid creates a legally 'different' compound — the same problem Eli Lilly faces with [[retatrutide|retatrutide]] [1]."
+          },
+          {
+            "id": "see-also",
+            "title": "See also",
+            "body": "[[peptide-sourcing-quality|Sourcing & Quality]], [[what-is-a-peptide|What Is a Peptide?]], [[bpc-157|BPC-157]]."
+          }
+        ],
+        "references": [
+          {
+            "id": 1,
+            "label": "Huberman Lab — Dr. Abud Bakri: Peptides, The Science, Uses & Safety",
+            "source": "huberman_bakri_peptides",
+            "url": "https://www.youtube.com/watch?v=_DfqnpSbMfE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "peptide-sourcing-quality",
+      "name": "Sourcing & Quality: Pharma, Compounding, Gray & Black Market",
+      "aliases": [
+        "peptide sourcing",
+        "research-grade peptides",
+        "gray market peptides"
+      ],
+      "category": "concepts",
+      "whatItDoes": "Where peptides actually come from and how quality varies: all APIs from China, the four stringency tiers (pharma / compounding / gray / black market), pricing economics, clinician markups, liability, and who is buying.",
+      "scores": {},
+      "wiki": {
+        "lede": "Quality is the dominant practical risk with peptides, and it depends entirely on where you get them. On the Huberman Lab podcast, Dr. Abud Bakri lays out a spectrum running from big pharma down to the literal black market, and notes that the active ingredient for nearly all of them starts in the same place [1].",
+        "sections": [
+          {
+            "id": "all-china",
+            "title": "Almost all APIs come from China",
+            "body": "Bakri is blunt that 'there are no American-made peptides' — the active pharmaceutical ingredients, including for [[semaglutide|semaglutide]] and [[retatrutide|retatrutide]], are synthesized in China and then finished or packaged in the United States, because synthesizing them domestically is far more expensive [1]. Eli Lilly is reportedly opening Chinese factories, and building a true 'American peptide' supply is described as the next arms race [1]. This shared origin is why a crypto figure like Robert Breedlove could test gray-market and compounding-pharmacy peptides and find them identical — though Bakri cautions against over-generalising from a single non-physician's anecdote [1]."
+          },
+          {
+            "id": "four-tiers",
+            "title": "The four stringency tiers",
+            "body": "Bakri sorts the market into four bins of decreasing reliability [1]. Big pharma (Novo Nordisk, Eli Lilly) is the most stringent — non-generic product packaging is as clean and pure as it gets. Compounding pharmacies vary widely from excellent to lousy; the good ones do sterility testing and quality control, and they typically add a small extra ingredient such as B12 or B6 to satisfy the rule that compounding requires either a drug shortage or a unique patient need (named examples include Revive, 'Upstate,' and 'Tailor Made'). The gray market — sold 'for research purposes only, not for human or animal use' — ranges from excellent to dreadful and is unknown batch-to-batch; one man went viral after his skin darkened because he was injecting melanotan rather than retatrutide. The black market is buying directly from China, from a contact on WhatsApp, or from someone synthesising 'in their bathtub' — 'do not do this' [1]."
+          },
+          {
+            "id": "economics",
+            "title": "Pricing & economics",
+            "body": "The price spreads are enormous. A U.S. pharmacy Ozempic pen ran about $1,500 while the same drug from a Mexican pharmacy an hour's drive away was about $150 — a tenfold difference [1]. A vial of BPC costs roughly $5 to make and can sell for under $2 from a Chinese source or many times that elsewhere. Bakri estimates $5–10 billion was spent on gray-market peptides in the U.S. in 2025, and Trump-administration pricing pressure has pushed [[tirzepatide|tirzepatide]] to around $300/month (down from ~$1,500) with the orforglipron pill around $150/month [1]."
+          },
+          {
+            "id": "markups-liability",
+            "title": "Clinician markups & liability",
+            "body": "Bakri flags clinician markups as a bad practice: with compounding, the pharmacy quotes the clinician a price (say $150 for a vial of semaglutide) and the clinician 'sells' it — legally an administrative fee — to the patient for $200–$800, pocketing the difference, which he believes is illegal in most states [1]. Patients have every right to ask what the clinician paid versus what they are being charged. On liability, no standard malpractice insurer covers non-FDA-approved peptides; if a patient is harmed they would typically sue all three parties — the physician, the compounding pharmacy, and whoever recommended it [1]."
+          },
+          {
+            "id": "who-buys",
+            "title": "Who is buying",
+            "body": "More than half the peptide market is female, driven by [[ghk-cu|GHK-Cu]], collagen, and skin rejuvenation; Huberman thinks it may already exceed the male market financially [1]. 'Soccer moms' have become peptide affiliates in the mould of Amway or Herbalife, and Bakri jokes the best job in 2025 was peptide affiliate — some made a year's salary in a month selling peptides on TikTok [1]. The cultural on-ramp was the GLP-1 pen, which made self-injection feel routine ('hurts less than a mosquito bite') and primed a wider peptide curiosity [1]."
+          },
+          {
+            "id": "see-also",
+            "title": "See also",
+            "body": "[[peptide-regulation|Peptide Regulation & Legal Landscape]], [[peptide-administration|Injection & Administration Methods]]."
+          }
+        ],
+        "references": [
+          {
+            "id": 1,
+            "label": "Huberman Lab — Dr. Abud Bakri: Peptides, The Science, Uses & Safety",
+            "source": "huberman_bakri_peptides",
+            "url": "https://www.youtube.com/watch?v=_DfqnpSbMfE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "peptide-administration",
+      "name": "Injection & Administration Methods",
+      "aliases": [
+        "how to inject peptides",
+        "peptide routes",
+        "subcutaneous injection"
+      ],
+      "category": "concepts",
+      "whatItDoes": "The routes peptides are taken — subcutaneous, intramuscular, local vs systemic, oral, rectal, intranasal, topical — and why route matters (e.g., oral BPC stays local). Educational only, not medical advice.",
+      "scores": {},
+      "wiki": {
+        "lede": "How a peptide is administered changes what it does, where it goes, and how risky it is. The Huberman Lab episode with Dr. Abud Bakri covers the main routes and several route-specific surprises — most notably that oral and rectal [[bpc-157|BPC-157]] do not appear to reach the bloodstream while injected BPC does [1]. This page is educational, not medical advice.",
+        "sections": [
+          {
+            "id": "routes",
+            "title": "The main routes",
+            "body": "Most injectable peptides are given subcutaneously — a tiny insulin-style pin into fat, which Bakri and Huberman describe as nearly painless ('hurts less than a mosquito bite') [1]. Intramuscular injection and local injection directly at an injury site are also used, though even a local injection transfers systemically to some degree, which makes one-limb-versus-other-limb control experiments hard [1]. Beyond injection, peptides are taken orally (capsules or troches), rectally (the early BPC ulcerative-colitis trials used enemas), intranasally (the Russian nootropics selank and semax), and topically ([[ghk-cu|GHK-Cu]] in skin creams) [1]."
+          },
+          {
+            "id": "route-matters",
+            "title": "Why the route matters",
+            "body": "Route determines systemic exposure. When BPC-157 is given orally or rectally it is not detected in the blood — either broken down quickly or held locally in gastric tissue — whereas injected BPC clearly goes systemic; aspirin, by contrast, shows up in blood whichever way it is taken [1]. This is why oral BPC is used for gut indications and injected BPC for tissue repair. Small peptides can also be engineered or selected for oral absorption: the tripeptide pinealon is orally available via PEPT ('pep') transporters and is small enough that it likely crosses the blood-brain barrier [1]. GLP-1 drugs exist as both injectables and, increasingly, pills (orforglipron) [1]."
+          },
+          {
+            "id": "mechanics",
+            "title": "Practical mechanics & dosing",
+            "body": "Research peptides typically arrive as a lyophilised (freeze-dried) powder that is reconstituted with bacteriostatic water before use, and doses are commonly measured in micrograms or milligrams — a distinction that matters enormously. Bakri notes that human doses are often guesses: people dose to whatever fits in a vial from a peptide website, and he doubts the ~250 microgram starting dose an orthopedic group planned for a BPC trial would even show an effect, while he himself used gram-level doses for his own tricep tear [1]. With GLP-1s, titrating slowly is critical — he describes severe vomiting after self-injecting ~1 mg of Ozempic when the standard start is 0.25 mg [1]."
+          },
+          {
+            "id": "safety",
+            "title": "Safety & sterility",
+            "body": "Sterility and site selection are the practical safety levers. Bakri is comfortable with sterile injections into the belly but specifically warns against injecting GHK-Cu or other peptides into the face, and is wary of non-experts injecting around delicate tissues [1]. Because gray-market product can be contaminated or mislabeled, the injection itself is often less risky than what is in the vial — see [[peptide-sourcing-quality|Sourcing & Quality]]. The GLP-1 self-injection pen is credited with destigmatising injecting altogether and opening the door to broader peptide use [1]."
+          },
+          {
+            "id": "see-also",
+            "title": "See also",
+            "body": "[[peptide-sourcing-quality|Sourcing & Quality]], [[what-is-a-peptide|What Is a Peptide?]], [[bpc-157|BPC-157]], [[ghk-cu|GHK-Cu]]."
+          }
+        ],
+        "references": [
+          {
+            "id": 1,
+            "label": "Huberman Lab — Dr. Abud Bakri: Peptides, The Science, Uses & Safety",
+            "source": "huberman_bakri_peptides",
+            "url": "https://www.youtube.com/watch?v=_DfqnpSbMfE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "bioregulators",
+      "name": "Bioregulators (Russian / Khavinson Peptides)",
+      "aliases": [
+        "Khavinson peptides",
+        "Russian peptides",
+        "peptide bioregulators"
+      ],
+      "category": "concepts",
+      "whatItDoes": "The short-peptide 'bioregulator' framework developed by Vladimir Khavinson: organ-specific peptides (epitalon, pinealon, thymalin, etc.) said to bind DNA and restore youthful gene expression, dosed in short annual courses. Mostly Russian-language data.",
+      "scores": {},
+      "wiki": {
+        "lede": "The 'bioregulators' are a family of very short peptides developed in the Soviet Union by Vladimir Khavinson, each derived from a specific organ and claimed to restore youthful function by acting on gene expression. On the Huberman Lab podcast, Dr. Abud Bakri presents the framework and its standout 15-year longevity study, while flagging that nearly all the data are Russian-language and carry the usual caveats [1].",
+        "sections": [
+          {
+            "id": "origin",
+            "title": "Origins (Khavinson lineage)",
+            "body": "Concerned that the United States might target soldiers' eyes with lasers, the Soviet Union tasked Vladimir Khavinson with finding peptides to protect the eyes and counter accelerated aging [1]. He worked from the observation that submariners and astronauts return from long missions looking 10–20 years older, with disrupted circadian rhythms and weakened immunity; earlier literature had used pineal-gland and thymus extracts to undo such effects. Khavinson ground up these extracts, injected them, reversed aging signs in animals, and then sequenced the individual active peptides — epitalon from the pineal, thymalin from the thymus, and others he named vilon, thymogen, and cristagen [1]. Brennan Henry has translated thousands of these Russian papers into English [1]."
+          },
+          {
+            "id": "theory",
+            "title": "The bioregulator theory",
+            "body": "The central idea is that the body naturally makes these di-, tri-, and tetrapeptides when young, that their quantity and function decline with age, and that replenishing them restores aspects of youthfulness [1]. Mechanistically they are described as binding into the groove of DNA at key regions to expose promoter regions and assist transcription — acting 'a little bit like a transcription factor' rather than through a classic membrane receptor [1]. A defining feature is that the benefits are said to accrue while you are OFF the compound: rather than a weekly drug, you take a short course and the effect persists, which is why they are typically dosed in brief annual cycles [1]."
+          },
+          {
+            "id": "key-peptides",
+            "title": "Key bioregulators",
+            "body": "[[epitalon|Epitalon]] (sequence AEDG) comes from the pineal gland and is tied to melatonin and clock-gene rhythm. Pinealon (the tripeptide EDR) is, confusingly, derived from a brain-cortex extract called cortexin rather than the pineal, and is used as an anti-stress and cognitive-performance compound — sold orally in Kazakhstan, with reported effects on alertness, REM sleep, and small blood-sugar drops via PPAR-alpha/gamma [1]. Thymalin is a thymic polypeptide mix (not to be confused with the French-discovered hormone thymulin), and Khavinson also named organ peptides such as cardiogen, ligen, and ovagen [1]."
+          },
+          {
+            "id": "longevity-study",
+            "title": "The 15-year longevity study",
+            "body": "Bakri's standout example is a 15-year study in nursing-home patients in which one group received epithalamin (whole pineal extract) plus the thymus peptide thymalin, injected as a short course of roughly 10–20 days per year for fifteen years [1]. The treated group showed significantly lower mortality from cardiovascular disease, infection, and cancer. Bakri calls it the most interesting longevity study he has seen if the data hold — small annual dosing yielding year-round, accrued benefit — while repeating the Russian-study caveat [1]."
+          },
+          {
+            "id": "dosing-safety",
+            "title": "Dosing & safety cautions",
+            "body": "Reported doses are tiny: Khavinson's literature describes 10–100 micrograms of pure peptide, or around 10 mg of a peptide mixture (e.g., ~10 mg of desiccated brain yielding a few hundred micrograms of pinealon); oral pinealon settles around 0.5–3 mg [1]. The major safety caution is that consuming animal brain or desiccated-brain products raises the risk of prion disease (Creutzfeldt-Jakob / 'mad cow') — Bakri's first ward patient in medical school had degenerative brain disease from it, and the early-2000s prion scare set animal-tissue peptide research back dramatically: 'do not consume brains' [1]."
+          },
+          {
+            "id": "see-also",
+            "title": "See also",
+            "body": "[[epitalon|Epitalon]], [[thymosin-alpha-1|Thymosin alpha-1]], [[what-is-a-peptide|What Is a Peptide?]]."
+          }
+        ],
+        "references": [
+          {
+            "id": 1,
+            "label": "Huberman Lab — Dr. Abud Bakri: Peptides, The Science, Uses & Safety",
+            "source": "huberman_bakri_peptides",
+            "url": "https://www.youtube.com/watch?v=_DfqnpSbMfE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "trinity-stack",
+      "name": "The Celebrity \"Trinity\" Stack",
+      "aliases": [
+        "celebrity protocol",
+        "CEO stack",
+        "trinity stack"
+      ],
+      "category": "concepts",
+      "whatItDoes": "The three-part protocol (GLP-1 + growth-hormone secretagogue + androgen modulation) used to drive rapid fat loss and muscle gain in CEOs and celebrities. Powerful but with real metabolic and growth-factor risks.",
+      "scores": {},
+      "wiki": {
+        "lede": "The 'trinity stack' is the combination Dr. Abud Bakri describes as the celebrity and CEO protocol for getting very lean and muscular quickly: a GLP-1, a growth-hormone leg, and androgen modulation run together [1]. It produces the dramatic body transformations seen in public figures — and, as Bakri puts it, whether it is healthy long-term, 'we'll find out' [1].",
+        "sections": [
+          {
+            "id": "three-legs",
+            "title": "The three legs",
+            "body": "The stack pairs three levers [1]. First, a GLP-1 such as [[tirzepatide|tirzepatide]] or [[retatrutide|retatrutide]] as the insulin-sensitivity and appetite tool. Second, a growth-hormone leg — either growth hormone itself or, more affordably, a secretagogue such as [[tesamorelin|tesamorelin]] with ipamorelin — for recovery, body composition, and the 'GH look.' Third, androgen modulation, typically testosterone (sometimes with an oral anabolic). Together these drive rapid simultaneous fat loss and muscle gain over a short period [1]."
+          },
+          {
+            "id": "rationale",
+            "title": "Why it works",
+            "body": "Each leg attacks body composition from a different angle: the GLP-1 suppresses appetite and improves insulin sensitivity, the GH axis improves recovery and favours lean mass and 'youthful' skin and sleep, and androgens drive muscle protein synthesis [1]. The GLP-1's insulin-sensitising effect also partly offsets a known downside of the GH leg — growth hormone and its secretagogues worsen insulin sensitivity and tend to raise A1C, which is why bodybuilders joke that 'you have to be lean and healthy enough to take GH' [1]."
+          },
+          {
+            "id": "risks",
+            "title": "Risks",
+            "body": "The combined risks are real. Growth hormone is a growth factor — no one thinks it causes cancer, but the worry is that it could accelerate an existing, undetected one, and even with good imaging you cannot be certain [1]. GH-deficient models live longer, and the cardio-metabolic effects of excess GH are negative, so its longevity balance is debated [1]. Androgens carry their own cardiovascular and prostate considerations, and Huberman recounts that a sermorelin self-experiment spiked his PSA until he stopped [1]. None of these are casual additions, and Bakri stresses monitoring (for example, never running tesamorelin without checking IGF-1) [1]."
+          },
+          {
+            "id": "women",
+            "title": "The women's variant",
+            "body": "Bakri notes a parallel stack for women that pairs a growth-hormone secretagogue with a GLP-1 such as retatrutide, reflecting how large the female share of the peptide market has become [1]. As with the male version, the emphasis is on the lowest effective doses and proper monitoring rather than maximalist stacking [1]."
+          },
+          {
+            "id": "see-also",
+            "title": "See also",
+            "body": "[[tesamorelin|Tesamorelin]], [[mk-677|MK-677]], [[tirzepatide|Tirzepatide]], [[retatrutide|Retatrutide]]."
+          }
+        ],
+        "references": [
+          {
+            "id": 1,
+            "label": "Huberman Lab — Dr. Abud Bakri: Peptides, The Science, Uses & Safety",
+            "source": "huberman_bakri_peptides",
+            "url": "https://www.youtube.com/watch?v=_DfqnpSbMfE"
           }
         ]
       }
