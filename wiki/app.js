@@ -196,14 +196,14 @@
 
     sim.on("tick", () => {
       const byCat = d3.group(nodes, d => d.category);
-      const hulls = hullLayer.selectAll("path.bubble-hull").data(CATS, d => d.id);
+      const hulls = hullLayer.selectAll("path.bubble-hull").data(MAP_CATS, d => d.id);
       hulls.enter().append("path").attr("class", "bubble-hull")
         .attr("fill", d => d.color).attr("stroke", d => d.color)
         .merge(hulls)
         .attr("d", d => pathForHull(byCat.get(d.id) || []));
 
       // Category banner labels — placed above the hull
-      const labels = labelLayer.selectAll("text.bubble-label").data(CATS, d => d.id);
+      const labels = labelLayer.selectAll("text.bubble-label").data(MAP_CATS, d => d.id);
       const enterL = labels.enter().append("text").attr("class", "bubble-label").attr("text-anchor", "middle");
       enterL.merge(labels)
         .attr("x", d => CAT_LAYOUT[d.id].fx)
