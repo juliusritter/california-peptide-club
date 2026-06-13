@@ -90,7 +90,17 @@
   <section class="view active topology-only" id="view-topology">
     <div class="view-header">
       <h2>The Peptide Map</h2>
-      <p class="lede">Five islands. Thirty-one peptides. Click a vial to dig in, or drag the islands around.</p>
+      <p class="lede">Five islands. Click a vial to dig in, or drag the islands around.</p>
+      <div class="map-filter-bar">
+        <label for="map-receptor-filter">Filter by receptor:</label>
+        <select id="map-receptor-filter" class="receptor-filter">
+          <option value="all">All</option>
+          <option value="known">Known receptor</option>
+          <option value="contested">Receptor contested</option>
+          <option value="none">No known receptor</option>
+          <option value="na">Not receptor-mediated</option>
+        </select>
+      </div>
     </div>
     <div id="bubble-map-wrap"><svg id="bubble-map" preserveAspectRatio="xMidYMid meet"></svg></div>
     <div class="categories" id="categories"></div>
@@ -183,6 +193,13 @@
     <aside class="pedia-sidebar">
       <div class="pedia-search">
         <input type="search" id="pedia-search" placeholder="Search peptides..." autocomplete="off" />
+        <select id="pedia-receptor-filter" class="receptor-filter" title="Filter by receptor knowledge">
+          <option value="all">All receptor types</option>
+          <option value="known">Known receptor</option>
+          <option value="contested">Receptor contested</option>
+          <option value="none">No known receptor</option>
+          <option value="na">Not receptor-mediated</option>
+        </select>
       </div>
       <nav class="pedia-nav" id="pedia-nav"></nav>
     </aside>

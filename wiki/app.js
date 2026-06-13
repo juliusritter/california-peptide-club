@@ -35,6 +35,17 @@
   ];
 
   const GLP1_IDS = new Set(["semaglutide", "tirzepatide", "retatrutide"]);
+  // Receptor-knowledge classification (see data/sources/receptor_classify.py)
+  const RECEPTOR_META = {
+    known:     { label: "Known receptor",       color: "#1a8a05" },
+    contested: { label: "Receptor contested",   color: "#b8860b" },
+    none:      { label: "No known receptor",    color: "#c0392b" },
+    na:        { label: "Not receptor-mediated", color: "#6b7280" },
+  };
+  const receptorBadge = (cls) => {
+    const m = RECEPTOR_META[cls];
+    return m ? `<span class="receptor-badge" style="background:${m.color}1a;color:${m.color};border:1px solid ${m.color}55">${m.label}</span>` : "";
+  };
   const CHEAP_OZEMPIC_URL = "https://www.cremieux.xyz/p/how-to-get-cheap-ozempic";
 
   /* ================== MODE TOGGLE ================== */
@@ -137,7 +148,8 @@
       glp1:      { fx: W * 0.76, fy: H * 0.80 },
     };
 
-    const nodes = MAP_PEPTIDES.map((p) => {
+    const rf = byId("map-receptor-filter")?.value || "all";
+    const nodes = MAP_PEPTIDES.filter((p) => rf === "all" || p.receptorClass === rf).map((p) => {
       const cat = catById(p.category);
       const tier = p.tier || "C";
       const r = ({ S: 32, A: 28, B: 24, C: 20, D: 18, F: 16 }[tier] || 20);
@@ -236,8 +248,10 @@
 
   /* ================== CATEGORIES (rich detail below the map) ================== */
   function renderCategories() {
+    const rf = byId("map-receptor-filter")?.value || "all";
     const html = MAP_CATS.map((cat) => {
-      const peps = MAP_PEPTIDES.filter((p) => p.category === cat.id);
+      const peps = MAP_PEPTIDES.filter((p) => p.category === cat.id && (rf === "all" || p.receptorClass === rf));
+      if (rf !== "all" && !peps.length) return "";
       const vials = peps
         .map((p) => {
           const fill = p.scores && typeof p.scores.humanResearch === "number"
@@ -578,7 +592,11 @@ ${transcripts ? `<div class="modal-section"><div class="modal-section-title">Tra
   function renderPediaSidebar(activeId) {
     const groups = CATS.map((c) => ({ ...c, items: PEPTIDES.filter((p) => p.category === c.id).sort((a,b) => a.name.localeCompare(b.name)) }));
     const search = (byId("pedia-search")?.value || "").toLowerCase().trim();
-    const filtered = (peps) => search ? peps.filter((p) => (p.name + " " + (p.aliases||[]).join(" ")).toLowerCase().includes(search)) : peps;
+    const rfilter = byId("pedia-receptor-filter")?.value || "all";
+    const filtered = (peps) => peps.filter((p) =>
+      (rfilter === "all" || p.receptorClass === rfilter) &&
+      (!search || (p.name + " " + (p.aliases||[]).join(" ")).toLowerCase().includes(search))
+    );
     const legend = `<div class="pedia-nav-legend"><span class="nonpeptide-dot"></span> not technically a peptide</div>`;
     byId("pedia-nav").innerHTML = legend + groups.map((g) => {
       const items = filtered(g.items);
@@ -652,6 +670,7 @@ ${items.map((p) => `<a class="pedia-nav-link${p.id === activeId ? ' active' : ''
   ${p.aliases && p.aliases.length ? `<div class="pedia-infobox-row"><div class="pedia-infobox-label">Also known as</div><div class="pedia-infobox-value">${p.aliases.join(", ")}</div></div>` : ""}
   ${p.brandNames && p.brandNames.length ? `<div class="pedia-infobox-row"><div class="pedia-infobox-label">Brand names</div><div class="pedia-infobox-value">${p.brandNames.join(", ")}</div></div>` : ""}
   <div class="pedia-infobox-row"><div class="pedia-infobox-label">Class</div><div class="pedia-infobox-value">${cat.name}</div></div>
+  ${p.receptorTarget ? `<div class="pedia-infobox-row"><div class="pedia-infobox-label">Receptor</div><div class="pedia-infobox-value">${receptorBadge(p.receptorClass)}<div class="receptor-target">${p.receptorTarget}</div></div></div>` : ""}
   ${p.isPeptide === false ? `<div class="pedia-infobox-row"><div class="pedia-infobox-label">Note</div><div class="pedia-infobox-value"><span class="nonpeptide-dot"></span> Not technically a peptide — small molecule / non-peptide commonly grouped with peptides.</div></div>` : ""}
   ${p.molecularStructure ? `<div class="pedia-infobox-row"><div class="pedia-infobox-label">Structure</div><div class="pedia-infobox-value">${p.molecularStructure}</div></div>` : ""}
   ${p.moleculeWeight ? `<div class="pedia-infobox-row"><div class="pedia-infobox-label">Mol. weight</div><div class="pedia-infobox-value">${p.moleculeWeight} Da</div></div>` : ""}
@@ -728,6 +747,14 @@ ${stub}
   // Search wiring
   byId("pedia-search").addEventListener("input", () => {
     renderPediaSidebar((location.hash.replace(/^#\/pedia\//, "") || PEPTIDES[0].id));
+  });
+  byId("pedia-receptor-filter")?.addEventListener("change", () => {
+    renderPediaSidebar((location.hash.replace(/^#\/pedia\//, "") || PEPTIDES[0].id));
+  });
+  // Topology map receptor filter
+  byId("map-receptor-filter")?.addEventListener("change", () => {
+    renderCategories();
+    renderBubbleMap();
   });
 
   // Hash routing

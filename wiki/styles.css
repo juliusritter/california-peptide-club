@@ -713,3 +713,38 @@ body[data-mode="talk"].talk-fullscreen .talk-shell { min-height: 100vh; padding-
   .legend-toggle { padding: 12px 20px; }
   .legend-body { padding: 0 20px 20px; }
 }
+
+/* ===== Receptor classification: filters + badges (Huberman/Bakri receptor framework) ===== */
+.receptor-filter {
+  width: 100%;
+  margin-top: 8px;
+  padding: 7px 9px;
+  font: 12px/1.2 'JetBrains Mono', monospace;
+  color: var(--ink, #1a1d2e);
+  background: #fff;
+  border: 1px solid #cdd3e3;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.map-filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  font: 12px/1.2 'JetBrains Mono', monospace;
+}
+.map-filter-bar label { color: #5b6472; }
+.map-filter-bar .receptor-filter { width: auto; margin-top: 0; }
+.receptor-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font: 600 11px/1.4 'JetBrains Mono', monospace;
+  white-space: nowrap;
+}
+.receptor-target {
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 1.35;
+  color: #5b6472;
+}

@@ -379,7 +379,9 @@ window.PEPTIDE_DATA = {
           }
         ]
       },
-      "isPeptide": true
+      "isPeptide": true,
+      "receptorClass": "none",
+      "receptorTarget": "No receptor identified; VEGFR2 / nitric-oxide pathways implicated downstream"
     },
     {
       "id": "tb-500",
@@ -535,7 +537,9 @@ window.PEPTIDE_DATA = {
           }
         ]
       },
-      "isPeptide": true
+      "isPeptide": true,
+      "receptorClass": "none",
+      "receptorTarget": "Sequesters G-actin (cytoskeleton); no cell-surface receptor"
     },
     {
       "id": "ghk-cu",
@@ -686,7 +690,9 @@ window.PEPTIDE_DATA = {
           }
         ]
       },
-      "isPeptide": true
+      "isPeptide": true,
+      "receptorClass": "none",
+      "receptorTarget": "Copper delivery + broad gene-expression modulation; no single receptor"
     },
     {
       "id": "kpv",
@@ -812,7 +818,9 @@ window.PEPTIDE_DATA = {
           }
         ]
       },
-      "isPeptide": true
+      "isPeptide": true,
+      "receptorClass": "contested",
+      "receptorTarget": "α-MSH(11–13) fragment; melanocortin-dependent & -independent; PepT1 uptake"
     },
     {
       "id": "cjc-1295",
@@ -966,7 +974,9 @@ window.PEPTIDE_DATA = {
           }
         ]
       },
-      "isPeptide": true
+      "isPeptide": true,
+      "receptorClass": "known",
+      "receptorTarget": "GHRH receptor (GHRHR)"
     },
     {
       "id": "ipamorelin",
@@ -1132,7 +1142,9 @@ window.PEPTIDE_DATA = {
           }
         ]
       },
-      "isPeptide": true
+      "isPeptide": true,
+      "receptorClass": "known",
+      "receptorTarget": "Ghrelin receptor (GHS-R1a)"
     },
     {
       "id": "mk-677",
@@ -1271,7 +1283,9 @@ window.PEPTIDE_DATA = {
           }
         ]
       },
-      "isPeptide": false
+      "isPeptide": false,
+      "receptorClass": "known",
+      "receptorTarget": "Ghrelin receptor (GHS-R1a) — non-peptide"
     },
     {
       "id": "tesamorelin",
@@ -1409,7 +1423,9 @@ window.PEPTIDE_DATA = {
           }
         ]
       },
-      "isPeptide": true
+      "isPeptide": true,
+      "receptorClass": "known",
+      "receptorTarget": "GHRH receptor (GHRHR)"
     },
     {
       "id": "sermorelin",
@@ -1547,7 +1563,9 @@ window.PEPTIDE_DATA = {
           }
         ]
       },
-      "isPeptide": true
+      "isPeptide": true,
+      "receptorClass": "known",
+      "receptorTarget": "GHRH receptor (GHRHR)"
     },
     {
       "id": "igf-1-lr3",
@@ -1659,7 +1677,9 @@ window.PEPTIDE_DATA = {
           }
         ]
       },
-      "isPeptide": true
+      "isPeptide": true,
+      "receptorClass": "known",
+      "receptorTarget": "IGF-1 receptor (IGF-1R)"
     },
     {
       "id": "growth-hormone",
@@ -1791,7 +1811,9 @@ window.PEPTIDE_DATA = {
           }
         ]
       },
-      "isPeptide": true
+      "isPeptide": true,
+      "receptorClass": "known",
+      "receptorTarget": "Growth hormone receptor (GHR)"
     },
     {
       "id": "aod-9604",
@@ -1935,7 +1957,9 @@ window.PEPTIDE_DATA = {
           }
         ]
       },
-      "isPeptide": true
+      "isPeptide": true,
+      "receptorClass": "contested",
+      "receptorTarget": "GH(176–191) fragment; lipolytic, no defined receptor"
     },
     {
       "id": "peg-mgf",
@@ -2047,7 +2071,9 @@ window.PEPTIDE_DATA = {
           }
         ]
       },
-      "isPeptide": true
+      "isPeptide": true,
+      "receptorClass": "contested",
+      "receptorTarget": "MGF (IGF-1Ec splice variant); distinct receptor unconfirmed"
     },
     {
       "id": "epitalon",
@@ -2195,7 +2221,9 @@ window.PEPTIDE_DATA = {
           }
         ]
       },
-      "isPeptide": true
+      "isPeptide": true,
+      "receptorClass": "none",
+      "receptorTarget": "No receptor; proposed telomerase induction / epigenetic DNA-binding"
     },
     {
       "id": "mots-c",
@@ -2356,7 +2384,9 @@ window.PEPTIDE_DATA = {
           }
         ]
       },
-      "isPeptide": true
+      "isPeptide": true,
+      "receptorClass": "none",
+      "receptorTarget": "Mitochondrial-derived; acts via AMPK & nuclear translocation, no surface receptor"
     },
     {
       "id": "ss-31",
@@ -2518,7 +2548,9 @@ window.PEPTIDE_DATA = {
           }
         ]
       },
-      "isPeptide": true
+      "isPeptide": true,
+      "receptorClass": "none",
+      "receptorTarget": "Binds cardiolipin in inner mitochondrial membrane; no receptor"
     },
     {
       "id": "dsip",
@@ -2643,7 +2675,9 @@ window.PEPTIDE_DATA = {
           }
         ]
       },
-      "isPeptide": true
+      "isPeptide": true,
+      "receptorClass": "none",
+      "receptorTarget": "Mechanism unknown; no receptor identified"
     },
     {
       "id": "cerebrolysin",
@@ -2751,7 +2785,9 @@ window.PEPTIDE_DATA = {
           }
         ]
       },
-      "isPeptide": true
+      "isPeptide": true,
+      "receptorClass": "none",
+      "receptorTarget": "Neurotrophic peptide mixture; no single receptor"
     },
     {
       "id": "selank",
@@ -2899,7 +2935,9 @@ window.PEPTIDE_DATA = {
           }
         ]
       },
-      "isPeptide": true
+      "isPeptide": true,
+      "receptorClass": "contested",
+      "receptorTarget": "Tuftsin analog; modulates GABA/BDNF/enkephalins; no single receptor"
     },
     {
       "id": "semax",
@@ -3041,7 +3079,9 @@ window.PEPTIDE_DATA = {
           }
         ]
       },
-      "isPeptide": true
+      "isPeptide": true,
+      "receptorClass": "contested",
+      "receptorTarget": "ACTH(4–10) analog; acts via BDNF; receptor not cleanly established"
     },
     {
       "id": "dihexa",
@@ -3159,7 +3199,9 @@ window.PEPTIDE_DATA = {
           }
         ]
       },
-      "isPeptide": false
+      "isPeptide": false,
+      "receptorClass": "contested",
+      "receptorTarget": "Angiotensin-IV analog; HGF/c-Met augmentation proposed"
     },
     {
       "id": "thymosin-alpha-1",
@@ -3298,7 +3340,9 @@ window.PEPTIDE_DATA = {
           }
         ]
       },
-      "isPeptide": true
+      "isPeptide": true,
+      "receptorClass": "contested",
+      "receptorTarget": "Modulates Toll-like receptors (TLR2/TLR9) and T-cells; no single classic receptor"
     },
     {
       "id": "kisspeptin-10",
@@ -3411,7 +3455,9 @@ window.PEPTIDE_DATA = {
           }
         ]
       },
-      "isPeptide": true
+      "isPeptide": true,
+      "receptorClass": "known",
+      "receptorTarget": "Kisspeptin receptor (KISS1R / GPR54)"
     },
     {
       "id": "melanotan-ii",
@@ -3541,7 +3587,9 @@ window.PEPTIDE_DATA = {
           }
         ]
       },
-      "isPeptide": true
+      "isPeptide": true,
+      "receptorClass": "known",
+      "receptorTarget": "Melanocortin receptors (MC1R/MC3R/MC4R)"
     },
     {
       "id": "melanotan-i",
@@ -3636,7 +3684,9 @@ window.PEPTIDE_DATA = {
           }
         ]
       },
-      "isPeptide": true
+      "isPeptide": true,
+      "receptorClass": "known",
+      "receptorTarget": "Melanocortin-1 receptor (MC1R)"
     },
     {
       "id": "pt-141",
@@ -3775,7 +3825,9 @@ window.PEPTIDE_DATA = {
           }
         ]
       },
-      "isPeptide": true
+      "isPeptide": true,
+      "receptorClass": "known",
+      "receptorTarget": "Melanocortin receptors (MC4R/MC1R)"
     },
     {
       "id": "ll-37",
@@ -3894,7 +3946,9 @@ window.PEPTIDE_DATA = {
           }
         ]
       },
-      "isPeptide": true
+      "isPeptide": true,
+      "receptorClass": "contested",
+      "receptorTarget": "Multiple receptors (FPR2, P2X7, EGFR transactivation); pleiotropic"
     },
     {
       "id": "semaglutide",
@@ -4066,7 +4120,9 @@ window.PEPTIDE_DATA = {
           }
         ]
       },
-      "isPeptide": true
+      "isPeptide": true,
+      "receptorClass": "known",
+      "receptorTarget": "GLP-1 receptor (GLP-1R)"
     },
     {
       "id": "tirzepatide",
@@ -4241,7 +4297,9 @@ window.PEPTIDE_DATA = {
           }
         ]
       },
-      "isPeptide": true
+      "isPeptide": true,
+      "receptorClass": "known",
+      "receptorTarget": "GLP-1 + GIP receptors"
     },
     {
       "id": "retatrutide",
@@ -4406,7 +4464,9 @@ window.PEPTIDE_DATA = {
           }
         ]
       },
-      "isPeptide": true
+      "isPeptide": true,
+      "receptorClass": "known",
+      "receptorTarget": "GLP-1 + GIP + glucagon receptors"
     },
     {
       "id": "insulin",
@@ -4528,7 +4588,9 @@ window.PEPTIDE_DATA = {
           }
         ]
       },
-      "isPeptide": true
+      "isPeptide": true,
+      "receptorClass": "known",
+      "receptorTarget": "Insulin receptor (INSR)"
     },
     {
       "id": "methylene-blue",
@@ -4649,7 +4711,9 @@ window.PEPTIDE_DATA = {
           }
         ]
       },
-      "isPeptide": false
+      "isPeptide": false,
+      "receptorClass": "na",
+      "receptorTarget": "Small molecule; redox cycler, MAO-A / guanylate-cyclase inhibition (not receptor-mediated)"
     },
     {
       "id": "tesofensine",
@@ -4759,7 +4823,9 @@ window.PEPTIDE_DATA = {
             "url": "https://x.com/morellifit/status/2056409530821468627"
           }
         ]
-      }
+      },
+      "receptorClass": "na",
+      "receptorTarget": "Non-peptide; monoamine reuptake (DAT/NET/SERT) inhibitor — transporter target, not a receptor"
     },
     {
       "id": "slu-pp-332",
@@ -4866,7 +4932,9 @@ window.PEPTIDE_DATA = {
             "url": "https://x.com/morellifit/status/2056409530821468627"
           }
         ]
-      }
+      },
+      "receptorClass": "known",
+      "receptorTarget": "ERRα/β/γ nuclear-receptor agonist — non-peptide"
     },
     {
       "id": "5-amino-1mq",
@@ -4979,7 +5047,9 @@ window.PEPTIDE_DATA = {
             "url": "https://x.com/morellifit/status/2054989018769854762"
           }
         ]
-      }
+      },
+      "receptorClass": "na",
+      "receptorTarget": "Non-peptide; NNMT enzyme inhibitor (not receptor-mediated)"
     },
     {
       "id": "cagrilintide",
@@ -5083,7 +5153,9 @@ window.PEPTIDE_DATA = {
             "url": "https://x.com/morellifit/status/2056409530821468627"
           }
         ]
-      }
+      },
+      "receptorClass": "known",
+      "receptorTarget": "Amylin / calcitonin receptors (AMY)"
     },
     {
       "id": "humanin",
@@ -5186,7 +5258,9 @@ window.PEPTIDE_DATA = {
             "url": "https://x.com/morellifit/status/2056409530821468627"
           }
         ]
-      }
+      },
+      "receptorClass": "contested",
+      "receptorTarget": "Proposed receptors (FPRL1/FPR2; CNTFR–WSX1–gp130 trimer)"
     },
     {
       "id": "oxytocin",
@@ -5293,7 +5367,9 @@ window.PEPTIDE_DATA = {
             "url": "https://x.com/morellifit/status/2056409530821468627"
           }
         ]
-      }
+      },
+      "receptorClass": "known",
+      "receptorTarget": "Oxytocin receptor (OXTR)"
     },
     {
       "id": "setmelanotide",
@@ -5397,7 +5473,9 @@ window.PEPTIDE_DATA = {
             "url": "https://x.com/morellifit/status/2056409530821468627"
           }
         ]
-      }
+      },
+      "receptorClass": "known",
+      "receptorTarget": "Melanocortin-4 receptor (MC4R)"
     },
     {
       "id": "survodutide",
@@ -5498,7 +5576,9 @@ window.PEPTIDE_DATA = {
             "url": "https://x.com/morellifit/status/2056409530821468627"
           }
         ]
-      }
+      },
+      "receptorClass": "known",
+      "receptorTarget": "GLP-1 + glucagon receptors"
     },
     {
       "id": "mazdutide",
@@ -5600,7 +5680,9 @@ window.PEPTIDE_DATA = {
             "url": "https://x.com/morellifit/status/2056409530821468627"
           }
         ]
-      }
+      },
+      "receptorClass": "known",
+      "receptorTarget": "GLP-1 + glucagon receptors"
     },
     {
       "id": "cotadutide",
@@ -5700,7 +5782,9 @@ window.PEPTIDE_DATA = {
             "url": "https://x.com/morellifit/status/2056409530821468627"
           }
         ]
-      }
+      },
+      "receptorClass": "known",
+      "receptorTarget": "GLP-1 + glucagon receptors"
     },
     {
       "id": "ghrp-2",
@@ -5805,7 +5889,9 @@ window.PEPTIDE_DATA = {
             "url": "https://x.com/morellifit/status/2056409530821468627"
           }
         ]
-      }
+      },
+      "receptorClass": "known",
+      "receptorTarget": "Ghrelin receptor (GHS-R1a)"
     },
     {
       "id": "ghrp-6",
@@ -5907,7 +5993,9 @@ window.PEPTIDE_DATA = {
             "url": "https://x.com/morellifit/status/2056409530821468627"
           }
         ]
-      }
+      },
+      "receptorClass": "known",
+      "receptorTarget": "Ghrelin receptor (GHS-R1a)"
     },
     {
       "id": "hexarelin",
@@ -6010,7 +6098,9 @@ window.PEPTIDE_DATA = {
             "url": "https://x.com/morellifit/status/2056409530821468627"
           }
         ]
-      }
+      },
+      "receptorClass": "known",
+      "receptorTarget": "Ghrelin receptor (GHS-R1a); also CD36"
     },
     {
       "id": "ara-290",
@@ -6113,7 +6203,9 @@ window.PEPTIDE_DATA = {
             "url": "https://x.com/morellifit/status/2056409530821468627"
           }
         ]
-      }
+      },
+      "receptorClass": "contested",
+      "receptorTarget": "Innate repair receptor (EPOR–CD131 heteromer); proposed"
     },
     {
       "id": "lipo-c",
@@ -6221,7 +6313,9 @@ window.PEPTIDE_DATA = {
             "url": "https://x.com/morellifit/status/2056409530821468627"
           }
         ]
-      }
+      },
+      "receptorClass": "na",
+      "receptorTarget": "Lipotropic nutrient blend (MIC/B12); not a signaling molecule"
     },
     {
       "id": "nad-plus",
@@ -6328,7 +6422,9 @@ window.PEPTIDE_DATA = {
             "url": "https://x.com/morellifit/status/2056409530821468627"
           }
         ]
-      }
+      },
+      "receptorClass": "na",
+      "receptorTarget": "Coenzyme/substrate for sirtuins, PARPs, CD38; redox cofactor (not a receptor)"
     },
     {
       "id": "what-is-a-peptide",
