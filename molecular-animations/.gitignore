@@ -1,0 +1,4 @@
+out/
+.mn_cache/
+*.cif
+*.pdb
