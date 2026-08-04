@@ -123,9 +123,17 @@ def style_scene(mode):
     cmd.set("cartoon_highlight_color", "grey20")
     cmd.set("stick_radius", 0.16)
 
-    cmd.show("cartoon", "pep")
+    tiny = cmd.count_atoms("pep and name CA") < 6
+    if tiny:
+        # too short for secondary structure: ball-and-stick reads better
+        cmd.show("sticks", "pep")
+        cmd.show("spheres", "pep")
+        cmd.set("sphere_scale", 0.22, "pep")
+        cmd.set("stick_radius", 0.11)
+    else:
+        cmd.show("cartoon", "pep")
+        cmd.show("sticks", "pep and sidechain")
     cmd.spectrum("resv", "rainbow", "pep")  # N-terminus blue -> C-terminus red
-    cmd.show("sticks", "pep and sidechain")
     cmd.util.cnc("pep")  # keep the rainbow carbons, color N/O/S by element
 
     has_rest = "rest" in cmd.get_names() and cmd.count_atoms("rest") > 0
@@ -142,7 +150,7 @@ def style_scene(mode):
         if cmd.count_atoms("pep") < 1200:
             cmd.show("surface", "pep")
             cmd.set("surface_color", "grey80", "pep")
-            cmd.set("transparency", 0.72, "pep")
+            cmd.set("transparency", 0.85 if tiny else 0.72, "pep")
 
 
 def render(name, mode, frames, size, fps):
