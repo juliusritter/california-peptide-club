@@ -18,6 +18,9 @@ CAPTIONS = {
     "retatrutide_mn": ("Retatrutide complex, Blender", "PDB 8YW3, Cycles"),
     "tirzepatide_mn": ("Tirzepatide complex, Blender", "PDB 7FIM, Cycles"),
     "igf1_mn": ("IGF-1, Blender", "PDB 1IMX, Cycles"),
+    "retatrutide-highlight_mn": ("Retatrutide lit inside GLP-1R", "PDB 8YW3, Cycles"),
+    "tirzepatide-highlight_mn": ("Tirzepatide lit inside GLP-1R", "PDB 7FIM, Cycles"),
+    "retatrutide-gipr-highlight_mn": ("Retatrutide lit inside GIPR", "PDB 8YW4, Cycles"),
 }
 
 CSS = """

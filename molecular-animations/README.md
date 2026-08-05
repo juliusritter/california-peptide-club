@@ -39,6 +39,10 @@ pymol -cq render_peptide.py -- bpc157 --still --size 1200
 ANIM_DIR=$PWD /Applications/Blender.app/Contents/MacOS/Blender -b --python mn_render.py -- \
   8YW3 --name retatrutide --style cartoon --frames 90 --res 1000
 
+# same, but ghost the receptor so the drug itself is the subject
+ANIM_DIR=$PWD /Applications/Blender.app/Contents/MacOS/Blender -b --python mn_render.py -- \
+  8YW3 --name retatrutide-highlight --highlight
+
 ./render_all.sh    # the whole PyMOL set
 ./mn_all.sh        # the whole Blender set
 ```
@@ -61,4 +65,5 @@ brew install --cask blender
 - `mn.Canvas()` loads the Molecular Nodes template scene and wipes the file, so build the canvas before fetching a structure.
 - Molecular Nodes only accepts `common`, `plddt`, or the name of a color attribute for `color=`. Anything else silently renders black.
 - EEVEE renders black in headless mode on this machine; Cycles with the Metal GPU works, so that is the default.
+- Plain `--style cartoon` on a receptor complex renders the whole assembly, which buries the peptide inside the receptor. Use `--highlight` when the peptide is the subject: it picks the shortest chain, ghosts everything else, and lights the peptide with an emissive material.
 - The PyMOL script drops ambient occlusion and surface quality once a scene passes 5000 atoms, which is what keeps the receptor complexes from taking a minute per frame.
