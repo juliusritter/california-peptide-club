@@ -8,13 +8,13 @@ BLENDER=/Applications/Blender.app/Contents/MacOS/Blender
 run() {  # code name style
   echo "### $2 ($3)"
   "$BLENDER" -b --python mn_render.py -- "$1" --name "$2" --style "$3" \
-    --frames "${4:-90}" --res "${5:-800}" --samples "${6:-48}"
+    --frames "${4:-90}" --res "${5:-900}" --samples "${6:-32}"
 }
 
-highlight() {  # code name — ghosted receptor, lit-up peptide
+highlight() {  # code name: ghosted receptor, lit-up peptide
   echo "### $2 (highlight)"
   "$BLENDER" -b --python mn_render.py -- "$1" --name "$2" --highlight \
-    --frames "${3:-90}" --res "${4:-800}" --samples "${5:-48}"
+    --frames "${3:-90}" --res "${4:-900}" --samples "${5:-32}"
 }
 
 run 1IMX igf1 cartoon

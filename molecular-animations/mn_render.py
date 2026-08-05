@@ -99,9 +99,9 @@ def add_highlight_styles(mol):
     ghost = flat_material("Ghost receptor", (0.28, 0.32, 0.45, 0.18), roughness=0.5)
     glow = flat_material("Peptide glow", (1.0, 0.42, 0.12, 1.0), emission=1.2)
 
-    mol.add_style(mn.StyleCartoon(quality=3), color=None, material=ghost,
+    mol.add_style(mn.StyleCartoon(quality=2), color=None, material=ghost,
                   selection=mn.MoleculeSelector().not_chain_id(chain), name="receptor")
-    mol.add_style(mn.StyleBallAndStick(quality=3), color=None, material=glow,
+    mol.add_style(mn.StyleBallAndStick(quality=2), color=None, material=glow,
                   selection=mn.MoleculeSelector().chain_id(chain), name="peptide")
     return chain
 
@@ -167,6 +167,10 @@ def main():
         use_gpu(args.samples)
 
     mol = mn.Molecule.fetch(args.code, cache=CACHE)
+    # Deposited coordinates sit far from the origin. Without recentring, the
+    # turntable rotates the molecule around a point outside itself and it
+    # swings out of frame after a few degrees.
+    mol.centre_molecule()
     if args.highlight:
         add_highlight_styles(mol)
     else:
