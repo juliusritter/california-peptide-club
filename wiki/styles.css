@@ -712,6 +712,9 @@ body[data-mode="talk"].talk-fullscreen .talk-shell { min-height: 100vh; padding-
   #bubble-map { height: 500px; }
   .legend-toggle { padding: 12px 20px; }
   .legend-body { padding: 0 20px 20px; }
+  /* Stack name becomes a small heading with the purpose as a paragraph
+     beneath it — the 200px name column starves the description on phones. */
+  .cat-stack-row { grid-template-columns: 1fr; gap: 2px; }
 }
 
 /* ===== Receptor classification: filters + badges (Huberman/Bakri receptor framework) ===== */
