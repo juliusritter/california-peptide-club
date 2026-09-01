@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Supply Chain — diagram</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="vendor/xyflow-style-12.11.5.css">
+<link rel="stylesheet" href="poc-common.css">
+<style>
+/* Embed build: chrome-free, fully static (no pan, no zoom, no drag). */
+html,body{ height:100% }
+body{ overflow:hidden }
+header,footer,#fwnav{ display:none }
+#app{ position:relative; z-index:1; height:100%; width:100%; margin:0; padding:0 }
+.react-flow{ background:transparent }
+.react-flow__pane{ cursor:default !important }
+.react-flow__attribution{ background:transparent; font-family:'JetBrains Mono',monospace; font-size:9px; color:var(--ink-faint) }
+
+.pp-card{
+  background:var(--paper); border:1.2px solid var(--ink); border-radius:2px;
+  width:100%; height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center;
+  text-align:center; padding:8px 14px; position:relative; cursor:default; overflow:hidden;
+  transition:border-color .35s, box-shadow .35s;
+  animation:pp-in .7s ease-out backwards;
+}
+.pp-card:hover{ border-color:var(--orange); box-shadow:0 6px 14px rgba(26,24,23,.14) }
+.pp-card .tick{ position:absolute; top:-1px; right:-1px; width:18px; height:18px;
+  border-top:1.4px solid var(--orange); border-right:1.4px solid var(--orange); z-index:2 }
+.pp-title{ font-family:'Baskervville SC', Baskerville, serif; font-size:18px; line-height:1.25; position:relative; z-index:2 }
+.pp-sub{ font-size:11.5px; font-style:italic; color:var(--ink-soft); margin-top:4px; position:relative; z-index:2 }
+.pp-card.accent-red{ border-color:var(--red) } .pp-card.accent-red .pp-title{ color:var(--red) }
+.pp-card.accent-grey{ background:var(--wash) }
+.pp-flagbg{ position:absolute; inset:0; z-index:1 }
+.pp-flagbg svg{ width:100%; height:100%; display:block }
+.pp-flagbg::after{ content:""; position:absolute; inset:0; background:rgba(0,0,0,.22) }
+.pp-card.has-flag{ border-color:var(--red) }
+.pp-card.has-flag .pp-title{ color:#fff; text-shadow:0 1px 8px rgba(0,0,0,.55) }
+.pp-card.has-flag .pp-sub{ color:rgba(255,255,255,.9); text-shadow:0 1px 6px rgba(0,0,0,.5) }
+.pp-circle{
+  background:var(--wash); border:1.4px solid var(--orange); border-radius:50%;
+  width:100%; height:100%; display:flex; align-items:center; justify-content:center; cursor:default;
+  animation:pp-in .7s ease-out backwards;
+}
+.pp-circle .pp-title{ color:var(--orange); font-size:20px }
+.pp-hide{ opacity:0; pointer-events:none; width:1px; height:1px; min-width:0; min-height:0; border:0 }
+.react-flow__node{ font-family:'Libre Baskerville',serif }
+@keyframes pp-in{ from{opacity:0; transform:translateY(8px)} to{opacity:1; transform:none} }
+
+.react-flow__edge .react-flow__edge-path{ stroke:var(--ink-soft); stroke-width:1.6; transition:stroke .3s, stroke-width .3s }
+.react-flow__edge.pp-dotted .react-flow__edge-path{ stroke-dasharray:2 7; stroke-linecap:round }
+.react-flow__edge:hover .react-flow__edge-path,
+.react-flow__edge.selected .react-flow__edge-path{ stroke:var(--orange); stroke-width:2.6 }
+.pp-glow{ fill:none; stroke:var(--orange); stroke-width:8; opacity:0; filter:blur(6px); transition:opacity .4s; pointer-events:none }
+.react-flow__edge:hover .pp-glow, .react-flow__edge.selected .pp-glow{ opacity:.55 }
+.pp-traveler{ pointer-events:none }
+</style>
+</head>
+<body>
+<div id="app"></div>
+<div id="tooltip"></div>
+
+<script src="poc-common.js"></script>
+<script src="vendor/react-18.3.1.min.js"></script>
+<script src="vendor/react-dom-18.3.1.min.js"></script>
+<script>
+/* The @xyflow/react UMD build expects a `jsxRuntime` global (react/jsx-runtime),
+   which React's own UMD bundle does not provide — shim it from createElement. */
+(function(){
+  function jsx(type, props, key){
+    props = props || {};
+    var children = props.children, rest = {};
+    for (var k in props) if (k !== "children") rest[k] = props[k];
+    if (key !== undefined) rest.key = key;
+    if (Array.isArray(children)) return React.createElement.apply(React, [type, rest].concat(children));
+    if (children === undefined) return React.createElement(type, rest);
+    return React.createElement(type, rest, children);
+  }
+  window.jsxRuntime = { jsx: jsx, jsxs: jsx, Fragment: React.Fragment };
+})();
+</script>
+<script src="vendor/xyflow-react-12.11.5.umd.js"></script>
+<script>
+"use strict";
+const RF = window.ReactFlow;
+const h = React.createElement;
+const { ReactFlow: Flow, ReactFlowProvider, Handle, Position, BaseEdge, useInternalNode, MarkerType } = RF;
+
+function boxOf(internal, fallback){
+  const pos = internal.internals.positionAbsolute;
+  const w = (internal.measured && internal.measured.width)  || fallback.w;
+  const hh = (internal.measured && internal.measured.height) || fallback.h;
+  return { x:pos.x, y:pos.y, w, h:hh, shape:fallback.shape, anchor:fallback.anchor };
+}
+
+function CardNode({ data }){
+  const hidden = [
+    h(Handle,{key:"t", type:"target", position:Position.Top, className:"pp-hide", isConnectable:false}),
+    h(Handle,{key:"s", type:"source", position:Position.Bottom, className:"pp-hide", isConnectable:false})
+  ];
+  if(data.shape==="circle"){
+    return h("div",{className:"pp-circle", style:{animationDelay:data.delay}},
+      h("div",{className:"pp-title"}, data.title), hidden);
+  }
+  const cls = "pp-card" + (data.accent ? " accent-"+data.accent : "") + (data.flag ? " has-flag" : "");
+  return h("div",{className:cls, style:{animationDelay:data.delay}},
+    data.flag==="cn" ? h("div",{className:"pp-flagbg", dangerouslySetInnerHTML:{__html:flagCnSvg()}}) : null,
+    h("div",{className:"tick"}),
+    h("div",{className:"pp-title"}, data.title),
+    data.sub ? h("div",{className:"pp-sub"}, data.sub) : null,
+    hidden);
+}
+
+function FlowEdge({ id, source, target, data, markerEnd }){
+  const src = useInternalNode(source);
+  const tgt = useInternalNode(target);
+  if(!src || !tgt) return null;
+  const geo = edgeGeometry(boxOf(src, NODE_BY_ID[source]), boxOf(tgt, NODE_BY_ID[target]), data.curve);
+  const kids = [
+    h("path",{key:"glow", d:geo.d, className:"pp-glow"}),
+    h(BaseEdge,{key:"base", id, path:geo.d, markerEnd})
+  ];
+  const icons = data.icons || (data.icon ? [data.icon] : null);
+  if(icons){
+    const dur = Math.max(6, geo.length/SPEED);
+    const count = Math.max(icons.length, travelerCount(geo.length));
+    const fallbackHref = ICON_BASE + icons[0] + "_" + STYLE + ".png";
+    for(let j=0;j<count;j++){
+      const begin = (-(j/count)*dur).toFixed(2)+"s";
+      const href = ICON_BASE + icons[j % icons.length] + "_" + STYLE + ".png";
+      kids.push(h("image",{key:"tr"+j, href, xlinkHref:href,
+          width:ICON_SIZE, height:ICON_SIZE, x:-ICON_SIZE/2, y:-ICON_SIZE/2, className:"pp-traveler",
+          onError:(ev)=>{ if(ev.target.getAttribute("href")!==fallbackHref){
+            ev.target.setAttribute("href", fallbackHref);
+            ev.target.setAttribute("xlink:href", fallbackHref);
+          } else { ev.target.remove(); } }},
+        h("animateMotion",{dur:dur.toFixed(2)+"s", begin, repeatCount:"indefinite", path:geo.d, rotate:"0"}),
+        h("animate",{attributeName:"opacity", values:"0;1;1;0", keyTimes:"0;0.08;0.92;1",
+          dur:dur.toFixed(2)+"s", begin, repeatCount:"indefinite"})
+      ));
+    }
+  }
+  return h(React.Fragment, null, kids);
+}
+
+const nodeTypes = { card: CardNode };
+const edgeTypes = { flow: FlowEdge };
+const STYLE = DEFAULT_STYLE;
+
+function buildNodes(){
+  return GRAPH.nodes.map((n,i)=>({
+    id:n.id, type:"card", position:{x:n.x, y:n.y},
+    style:{ width:n.w, height:n.h },
+    data:{ title:n.title, sub:n.sub, accent:n.accent, shape:n.shape, flag:n.flag, w:n.w, h:n.h, delay:(i*90)+"ms" },
+    draggable:false, selectable:false, focusable:false
+  }));
+}
+function buildEdges(){
+  return GRAPH.edges.map(e=>({
+    id:e.id, source:e.from, target:e.to, type:"flow",
+    className:e.dotted ? "pp-dotted" : "",
+    markerEnd:{ type:MarkerType.ArrowClosed, color:"#57524b", width:20, height:20 },
+    data:{ icon:e.icon, icons:e.icons, curve:e.curve, flowId:e.data }
+  }));
+}
+
+loadFlows();
+document.body.addEventListener("click", hideTip);
+
+function App(){
+  const nodes = React.useMemo(buildNodes, []);
+  const edges = React.useMemo(buildEdges, []);
+  /* Completely static: nothing pans, zooms, or drags. fitView keeps it framed
+     and a resize observer re-fits when the iframe changes size. */
+  return h(Flow,{
+    nodes, edges, nodeTypes, edgeTypes,
+    fitView:true, fitViewOptions:{padding:0.05},
+    onInit:(inst)=>{
+      let t; window.addEventListener("resize", ()=>{
+        clearTimeout(t); t=setTimeout(()=>inst.fitView({padding:0.05}), 150);
+      });
+    },
+    panOnDrag:false, panOnScroll:false, panActivationKeyCode:null,
+    zoomOnScroll:false, zoomOnPinch:false, zoomOnDoubleClick:false,
+    preventScrolling:false,
+    nodesDraggable:false, nodesFocusable:false, elementsSelectable:false,
+    nodesConnectable:false, edgesFocusable:false, autoPanOnNodeDrag:false,
+    minZoom:0.1, maxZoom:4,
+    onEdgeMouseEnter:(e,edge)=>{
+      const gdef = GRAPH.edges.find(x=>x.id===edge.id);
+      if(gdef) showTip(gdef, e);
+    },
+    onEdgeMouseMove:(e)=>moveTip(e),
+    onEdgeMouseLeave:hideTip,
+    onEdgeClick:(e,edge)=>{
+      const gdef = GRAPH.edges.find(x=>x.id===edge.id);
+      if(gdef){ showTip(gdef, e); e.stopPropagation(); }
+    }
+  });
+}
+
+ReactDOM.createRoot(document.getElementById("app")).render(
+  h(ReactFlowProvider, null, h(App))
+);
+</script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "researched": "2026-09-01",
+    "note": "Annual USD flow per edge. Confidence based on trusted sources only (SEC, FDA, congressional records, IQVIA, Goldman Sachs, McKinsey, Morgan Stanley, Grand View Research, CNN, STAT, Medscape, Becker's, Healio, BioPharma Dive, Fierce Healthcare, US News, Pharmacy Times, Stanford Medicine, PSM, Contrary Research). Edge pharma-telehealth-consumer is a channel slice of pharma-consumer; china-compounding feeds compounding-prescription-consumer. Do not sum edges.",
+    "source_doc": "docs/market-research.md"
+  },
+  "edges": [
+    {
+      "id": "china-compounding",
+      "label": "Chinese API manufacturers → US compounding pharmacies",
+      "value2026": "~$150M",
+      "value2027": "~$80M",
+      "value2030": "~$30M",
+      "note": "Bulk semaglutide/tirzepatide API at ~$50-110K/kg; shrinking as FDA closes the 503B compounding pathway (estimate from shipment + transaction data, no official $ totals).",
+      "confidence": "low",
+      "sources": [
+        "https://www.safemedicines.org/2025/02/new-report-reveals-illegal-ingredients-for-knockoff-weight-loss-drugs-flooding-into-u-s-from-foreign-sources-endangering-patient-safety.html",
+        "https://www.congress.gov/119/meeting/house/118131/witnesses/HHRG-119-GO00-Wstate-SafdarS-20250409-SD001.pdf",
+        "https://www.usnews.com/news/top-news/articles/2024-10-31/how-asian-pharma-suppliers-cash-in-on-ozempic-copies",
+        "https://democrats-selectcommitteeontheccp.house.gov/media/press-releases/krishnamoorthi-sends-letters-chinese-biotech-firms-regarding-illicit-and"
+      ]
+    },
+    {
+      "id": "china-consumer",
+      "label": "Chinese manufacturers → US grey-market vendors / consumers direct",
+      "value2026": "~$75M",
+      "value2027": "~$100M",
+      "value2030": "~$200M",
+      "note": "Wholesale raw peptide flow behind the RUO vial trade, estimated at ~15% of grey-market retail; no trusted source sizes this leg directly (estimate).",
+      "confidence": "low",
+      "sources": [
+        "https://www.safemedicines.org/2025/02/new-report-reveals-illegal-ingredients-for-knockoff-weight-loss-drugs-flooding-into-u-s-from-foreign-sources-endangering-patient-safety.html",
+        "https://www.congress.gov/119/meeting/house/118131/witnesses/HHRG-119-GO00-Wstate-SafdarS-20250409-SD001.pdf"
+      ]
+    },
+    {
+      "id": "greymarket-consumer",
+      "label": "Grey-market 'research use only' vendors → consumers",
+      "value2026": "~$0.5B",
+      "value2027": "~$0.7B",
+      "value2030": "~$1.5B",
+      "note": "BPC-157, semaglutide RUO vials etc.; trusted reporting anchors a ~$100M floor (Becker's/Medscape) — center figures are extrapolations from surging demand signals.",
+      "confidence": "low",
+      "sources": [
+        "https://www.beckershospitalreview.com/glp-1s/the-100m-gray-market-of-peptides-5-notes/",
+        "https://www.medscape.com/viewarticle/gray-market-peptides-so-much-hype-so-little-data-2026a1000dzg"
+      ]
+    },
+    {
+      "id": "compounding-prescription-consumer",
+      "label": "Compounding pharmacies → prescription → consumer",
+      "value2026": "~$1.5B",
+      "value2027": "~$0.8B",
+      "value2030": "~$0.3B",
+      "note": "~$1B in 2024 at peak (~30% of GLP-1 patients per Gallup); decaying after FDA's May 2025 ban and April 2026 move to strike GLP-1s from the 503B bulks list.",
+      "confidence": "med",
+      "sources": [
+        "https://research.contrary.com/report/how-glp-1s-broke-healthcare-distribution",
+        "https://www.fda.gov/drugs/drug-alerts-and-statements/fda-clarifies-policies-compounders-national-glp-1-supply-begins-stabilize",
+        "https://www.cnn.com/2025/05/21/health/fda-compounded-semaglutide-tirzepatide-crackdown",
+        "https://www.pharmacytimes.com/view/fda-moves-to-permanently-close-the-door-on-compounded-glp-1s",
+        "https://www.healio.com/news/endocrinology/20260717/compounded-semaglutide-tirzepatide-continued-to-be-sold-after-shortages-ended",
+        "https://www.biopharmadive.com/news/compounders-glp1-issues-for-big-pharma-gallup/825627/",
+        "https://med.stanford.edu/news/insights/2026/07/glp1s-compounded-why-doctors-worry-about-safety.html"
+      ]
+    },
+    {
+      "id": "cpg-consumer",
+      "label": "CPG brands → consumer (peptide skincare, collagen, supplements)",
+      "value2026": "~$2.5B",
+      "value2027": "~$2.8B",
+      "value2030": "~$4B",
+      "note": "US share (~35-40%) of Grand View's global collagen peptides sizing ($2.32B 2023 → $4.90B 2030, 11.6% CAGR) plus an estimated peptide-skincare/functional-food slice.",
+      "confidence": "med",
+      "sources": [
+        "https://www.grandviewresearch.com/industry-analysis/collagen-peptides-market-report",
+        "https://www.grandviewresearch.com/industry-analysis/collagen-market"
+      ]
+    },
+    {
+      "id": "pharma-consumer",
+      "label": "Pharma (Lilly, Novo) → consumer via retail/insurance",
+      "value2026": "~$55B",
+      "value2027": "~$62B",
+      "value2030": "~$75B",
+      "note": "US share of ~$80B+ 2025 global GLP-1 net revenue (Lilly incretins $36.5B, Novo D&O ~$44B per SEC 6-K); 2030 in line with Goldman/McKinsey ~$95-100B global.",
+      "confidence": "high",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/353278/000035327826000006/caq42025.htm",
+        "https://www.iqvia.com/locations/emea/blogs/2026/04/the-outlook-for-obesity-from-2026-to-2030",
+        "https://www.goldmansachs.com/insights/articles/the-anti-obesity-drug-market-may-prove-smaller-than-expected",
+        "https://www.mckinsey.com/featured-insights/themes/glp1s-are-changing-obesity-care-what-comes-next",
+        "https://www.morganstanley.com/insights/articles/glp1-weight-loss-market-may-double-190-billion-2035"
+      ]
+    },
+    {
+      "id": "pharma-telehealth-consumer",
+      "label": "Pharma → telehealth + fulfillment pharmacies → consumer (DTC cash-pay)",
+      "value2026": "~$5B",
+      "value2027": "~$8B",
+      "value2030": "~$15B",
+      "note": "LillyDirect/NovoCare $349-499/mo vials + Hims ($725M weight-loss 2025), Ro, LifeMD; ~8-10% of branded volume today, channel share doubling by 2030 (subset of pharma-consumer).",
+      "confidence": "low",
+      "sources": [
+        "https://www.fiercehealthcare.com/health-tech/hims-hers-bullish-weight-loss-business-despite-glp-1-market-shift",
+        "https://www.fiercehealthcare.com/health-tech/hims-hers-posts-92m-loss-q1-it-shifts-branded-glp-1-medications",
+        "https://www.statnews.com/2026/02/23/him-hers-earnings-2026-outlook-compounded-semaglutide/",
+        "https://research.contrary.com/report/how-glp-1s-broke-healthcare-distribution"
+      ]
+    }
+  ]
+}
