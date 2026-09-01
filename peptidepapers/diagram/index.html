@@ -10,6 +10,12 @@
 <link rel="stylesheet" href="poc-common.css">
 <style>
 /* Embed build: chrome-free, fully static (no pan, no zoom, no drag). */
+/* Marble-black mood: mirror cpc-site's dark tokens; theme is inherited from
+   the parent page (same origin) so the diagram follows the site's mood toggle. */
+:root[data-theme="marble-black"]{
+  --paper:#000000; --ink:#ece5d8; --ink-soft:#b0a698; --ink-faint:#7c7365;
+  --rule:#222222; --rule-strong:#3a352d; --orange:#c9a227; --red:#c92a2a; --wash:#14120e;
+}
 html,body{ height:100% }
 body{ overflow:hidden }
 header,footer,#fwnav{ display:none }
@@ -61,6 +67,24 @@ header,footer,#fwnav{ display:none }
 <div id="app"></div>
 <div id="tooltip"></div>
 
+<script>
+/* Inherit the site mood from the embedding page (same-origin). A live toggle
+   reloads the frame so the SVG arrowhead colors re-render too. */
+(function(){
+  function parentTheme(){
+    try{ return window.parent.document.documentElement.dataset.theme || ""; }
+    catch(e){ return ""; }
+  }
+  var initial = parentTheme();
+  if(initial) document.documentElement.dataset.theme = initial;
+  window.__PP_DARK = initial === "marble-black";
+  try{
+    new MutationObserver(function(){
+      if(parentTheme() !== initial) document.location.reload();
+    }).observe(window.parent.document.documentElement, {attributes:true, attributeFilter:["data-theme"]});
+  }catch(e){}
+})();
+</script>
 <script src="poc-common.js"></script>
 <script src="vendor/react-18.3.1.min.js"></script>
 <script src="vendor/react-dom-18.3.1.min.js"></script>
@@ -160,7 +184,7 @@ function buildEdges(){
   return GRAPH.edges.map(e=>({
     id:e.id, source:e.from, target:e.to, type:"flow",
     className:e.dotted ? "pp-dotted" : "",
-    markerEnd:{ type:MarkerType.ArrowClosed, color:"#57524b", width:20, height:20 },
+    markerEnd:{ type:MarkerType.ArrowClosed, color:(window.__PP_DARK ? "#b0a698" : "#57524b"), width:20, height:20 },
     data:{ icon:e.icon, icons:e.icons, curve:e.curve, flowId:e.data }
   }));
 }
