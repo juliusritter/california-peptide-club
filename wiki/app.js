@@ -127,8 +127,24 @@
     svg.selectAll("*").remove();
     const wrap = byId("bubble-map-wrap");
     const W = wrap.clientWidth;
-    const H = 700;
+    // Match the rendered height (CSS #bubble-map) so the viewBox isn't stretched.
+    const narrow = W < 700;
+    const rf0 = byId("map-receptor-filter")?.value || "all";
+    const countByCat = d3.rollup(
+      MAP_PEPTIDES.filter((p) => rf0 === "all" || p.receptorClass === rf0),
+      (v) => v.length,
+      (p) => p.category,
+    );
+    // Phones: islands stack in one column, so the canvas grows with the content.
+    const ORDER = ["ghs", "tissue", "longevity", "immune", "glp1"];
+    const perRow = Math.max(2, Math.floor((W - 60) / 110));
+    const islandH = (id) => 80 + Math.ceil((countByCat.get(id) || 0) / perRow) * 74;
+    const H = narrow
+      ? ORDER.reduce((sum, id) => sum + islandH(id), 0) + 40
+      : Math.max(760, byId("bubble-map").clientHeight || 900);
     svg.attr("viewBox", `0 0 ${W} ${H}`);
+    svg.style("height", narrow ? `${H}px` : null);
+    const PAD_X = 30, PAD_TOP = 70, PAD_BOTTOM = 40; // room for island titles + edge labels
 
     // Defs: glow filter
     const defs = svg.append("defs");
@@ -140,19 +156,26 @@
     const nodeLayer = svg.append("g").attr("class", "node-layer");
 
     // Position category centers — spread out to give labels room
-    const CAT_LAYOUT = {
-      ghs:       { fx: W * 0.24, fy: H * 0.28 },
-      tissue:    { fx: W * 0.76, fy: H * 0.28 },
-      longevity: { fx: W * 0.5,  fy: H * 0.56 },
-      immune:    { fx: W * 0.24, fy: H * 0.80 },
-      glp1:      { fx: W * 0.76, fy: H * 0.80 },
+    const STACKED = {};
+    let acc = 30;
+    ORDER.forEach((id) => {
+      const h = islandH(id);
+      STACKED[id] = { fx: W / 2, fy: acc + 56 + (h - 80) / 2 };
+      acc += h;
+    });
+    const CAT_LAYOUT = narrow ? STACKED : {
+      ghs:       { fx: W * 0.23, fy: H * 0.30 },
+      tissue:    { fx: W * 0.77, fy: H * 0.24 },
+      longevity: { fx: W * 0.5,  fy: H * 0.52 },
+      immune:    { fx: W * 0.23, fy: H * 0.78 },
+      glp1:      { fx: W * 0.77, fy: H * 0.74 },
     };
 
     const rf = byId("map-receptor-filter")?.value || "all";
     const nodes = MAP_PEPTIDES.filter((p) => rf === "all" || p.receptorClass === rf).map((p) => {
       const cat = catById(p.category);
       const tier = p.tier || "C";
-      const r = ({ S: 32, A: 28, B: 24, C: 20, D: 18, F: 16 }[tier] || 20);
+      const r = ({ S: 32, A: 28, B: 24, C: 20, D: 18, F: 16 }[tier] || 20) * (narrow ? 0.8 : 1);
       return {
         id: p.id, name: p.name, color: cat.color, category: p.category, r,
         x: CAT_LAYOUT[p.category].fx + (Math.random() - 0.5) * 60,
@@ -161,9 +184,9 @@
     });
 
     const sim = d3.forceSimulation(nodes)
-      .force("x", d3.forceX((d) => CAT_LAYOUT[d.category].fx).strength(0.16))
-      .force("y", d3.forceY((d) => CAT_LAYOUT[d.category].fy).strength(0.16))
-      .force("collide", d3.forceCollide((d) => d.r + 26).strength(0.95))
+      .force("x", d3.forceX((d) => CAT_LAYOUT[d.category].fx).strength(narrow ? 0.05 : 0.16))
+      .force("y", d3.forceY((d) => CAT_LAYOUT[d.category].fy).strength(narrow ? 0.35 : 0.16))
+      .force("collide", d3.forceCollide((d) => Math.max(d.r + 24, d.name.length * 3.3 + 6)).strength(0.95))
       .force("charge", d3.forceManyBody().strength(-40))
       .alpha(1).alphaDecay(0.02);
 
@@ -173,13 +196,16 @@
       // expanded points: include points around each node accounting for its radius+label space
       const points = [];
       nodesInCat.forEach(n => {
-        const labelPad = 22; // space for label below circle
-        const r = n.r + 8;
-        // sample 8 points around each node, with extra clearance below for the label
-        for (let i = 0; i < 8; i++) {
-          const a = (i / 8) * Math.PI * 2;
-          const yPad = (Math.sin(a) > 0 ? labelPad : 0);
-          points.push([n.x + Math.cos(a) * r, n.y + Math.sin(a) * (r + yPad)]);
+        const labelPad = 24; // space for label below circle
+        const r = n.r + 10;
+        const labelHalf = n.name.length * 3.3 + 8; // half the label width, roughly
+        // sample 12 points around each node, with clearance below and to the sides for the label
+        for (let i = 0; i < 12; i++) {
+          const a = (i / 12) * Math.PI * 2;
+          const below = Math.sin(a) > 0.2;
+          const rx = below ? Math.max(r, labelHalf) : r;
+          const yPad = below ? labelPad : 0;
+          points.push([n.x + Math.cos(a) * rx, n.y + Math.sin(a) * (r + yPad)]);
         }
       });
       if (points.length < 3) {
@@ -195,6 +221,11 @@
     }
 
     sim.on("tick", () => {
+      nodes.forEach((n) => {
+        const half = Math.max(n.r, n.name.length * 3.3);
+        n.x = Math.max(PAD_X + half, Math.min(W - PAD_X - half, n.x));
+        n.y = Math.max(PAD_TOP + n.r, Math.min(H - PAD_BOTTOM - n.r - 18, n.y));
+      });
       const byCat = d3.group(nodes, d => d.category);
       const hulls = hullLayer.selectAll("path.bubble-hull").data(MAP_CATS, d => d.id);
       hulls.enter().append("path").attr("class", "bubble-hull")
@@ -206,12 +237,15 @@
       const labels = labelLayer.selectAll("text.bubble-label").data(MAP_CATS, d => d.id);
       const enterL = labels.enter().append("text").attr("class", "bubble-label").attr("text-anchor", "middle");
       enterL.merge(labels)
-        .attr("x", d => CAT_LAYOUT[d.id].fx)
+        .attr("x", d => {
+          const ns = byCat.get(d.id) || [];
+          return ns.length ? d3.mean(ns, n => n.x) : CAT_LAYOUT[d.id].fx;
+        })
         .attr("y", d => {
           const ns = byCat.get(d.id) || [];
           if (!ns.length) return CAT_LAYOUT[d.id].fy;
-          const minY = d3.min(ns, n => n.y - n.r);
-          return Math.max(24, minY - 22);
+          const minY = d3.min(ns, n => n.y - n.r - 10); // hull top
+          return Math.max(22, minY - 16);
         })
         .attr("fill", d => d.color)
         .text(d => d.name);
@@ -223,8 +257,7 @@
       enter.append("circle")
         .attr("r", d => d.r)
         .attr("fill", d => d.color).attr("fill-opacity", 0.2)
-        .attr("stroke", d => d.color).attr("stroke-width", 2)
-        .attr("filter", "url(#glow)");
+        .attr("stroke", d => d.color).attr("stroke-width", 2);
       enter.append("text")
         .attr("class", "bubble-node-label")
         .attr("text-anchor", "middle");
