@@ -602,7 +602,7 @@ ${transcripts ? `<div class="modal-section"><div class="modal-section-title">Tra
       const items = filtered(g.items);
       if (!items.length) return "";
       return `
-<div class="pedia-nav-cat" style="color:${g.color === '#FFB000' ? '#a25a00' : g.color === '#39FF14' ? '#1a8a05' : g.color === '#00E5FF' ? '#0090a8' : g.color === '#B26BFF' ? '#5b2ba0' : g.color === '#8B95A8' ? '#5b6472' : '#a01b4d'}">${g.name}</div>
+<div class="pedia-nav-cat" style="color:${g.color}">${g.name}</div>
 ${items.map((p) => `<a class="pedia-nav-link${p.id === activeId ? ' active' : ''}" href="#/pedia/${p.id}" data-id="${p.id}">${p.name}${p.isPeptide === false ? '<span class="nonpeptide-dot" title="Not technically a peptide (small molecule)"></span>' : ''}<span class="pedia-nav-tier">${p.tier || ""}</span></a>`).join("")}`;
     }).join("");
     document.querySelectorAll(".pedia-nav-link").forEach((a) => {

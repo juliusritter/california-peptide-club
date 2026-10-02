@@ -7,28 +7,29 @@
 <title>California Peptide Club — Peptide Topology</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&family=Linux+Libertine:wght@400;700&family=Source+Serif+Pro:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&family=Linux+Libertine:wght@400;700&family=Source+Serif+Pro:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Baskervville+SC&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css?v=20260613b" />
+<link rel="stylesheet" href="cpc-theme.css?v=20261001" />
 <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
 </head>
 <body data-mode="topology">
 
-<!-- TOPOLOGY MODE: dark futuristic -->
+<!-- TOPOLOGY MODE: CPC house style (cpc-theme.css) -->
 <div class="bg-grid"></div>
 <div class="bg-glow"></div>
 
 <header class="topbar">
-  <div class="brand">
+  <a class="brand" href="/" title="Back to californiapeptide.club">
     <div class="brand-mark">CPC</div>
     <div class="brand-text">
-      <div class="brand-line1">California Peptide Club</div>
-      <div class="brand-line2"><span class="title-topology">PEPTIDE&nbsp;TOPOLOGY</span><span class="title-pedia">PEPTIDE&nbsp;PEDIA</span></div>
+      <div class="brand-line1">The California Peptide Club</div>
+      <div class="brand-line2"><span class="title-topology">Peptide&nbsp;Topology</span><span class="title-pedia">Peptide&nbsp;Pedia</span></div>
     </div>
-  </div>
+  </a>
   <div class="mode-toggle">
-    <button class="mode-btn active" data-mode="topology" title="Interactive map">▼ Topology</button>
-    <button class="mode-btn" data-mode="pedia" title="Wikipedia-style entries">📖 Peptide Pedia</button>
-    <button class="mode-btn" data-mode="talk" title="Presentation mode">▶ Talk</button>
+    <button class="mode-btn active" data-mode="topology" title="Interactive map">Topology</button>
+    <button class="mode-btn" data-mode="pedia" title="Wikipedia-style entries">Peptide Pedia</button>
+    <button class="mode-btn" data-mode="talk" title="Presentation mode">Talk</button>
   </div>
   <nav class="tabs topology-only">
     <button class="tab active" data-view="topology">Map</button>
@@ -221,8 +222,8 @@
   <div class="foot-meta" id="foot-meta"></div>
 </footer>
 
-<script src="peptides.js?v=20260613b"></script>
+<script src="peptides.js?v=20261001"></script>
 <script src="slides.js?v=20260613b"></script>
-<script src="app.js?v=20260613b"></script>
+<script src="app.js?v=20261001"></script>
 </body>
 </html>

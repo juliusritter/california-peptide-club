@@ -1,0 +1,319 @@
+/* CPC house style for the Peptide Topology + shared top bar.
+   Layered after styles.css: white paper, Baskerville type, orange accent,
+   muted watercolor category colors (set in peptides.js). Talk mode keeps
+   its dark slides; only the bar is restyled there. */
+
+body[data-mode="topology"],
+body[data-mode="pedia"] {
+  --bg: #ffffff;
+  --bg-2: #fcfcfa;
+  --panel: #fcfcfa;
+  --panel-2: #f5f4f0;
+  --line: #e6e3dc;
+  --text: #1a1817;
+  --text-dim: #57524b;
+  --text-mute: #8a847b;
+  --accent: #e8590c;
+  --accent-2: #c92a2a;
+  --warn: #c48a14;
+  --danger: #c92a2a;
+  --good: #4f7a3a;
+  --cpc-heading: 'Baskervville SC', Baskerville, Georgia, serif;
+  --cpc-body: 'Libre Baskerville', Baskerville, Georgia, serif;
+}
+
+body[data-mode="topology"] {
+  background: #ffffff;
+  color: var(--text);
+  font-family: var(--cpc-body);
+}
+
+body[data-mode="topology"] .bg-grid,
+body[data-mode="topology"] .bg-glow { display: none; }
+
+/* ---------- shared top bar (all modes) ---------- */
+
+.topbar,
+body[data-mode="pedia"] .topbar {
+  background: #ffffff;
+  color: #1a1817;
+  border-bottom: 1px solid #e6e3dc;
+  backdrop-filter: none;
+  padding: 14px 36px;
+}
+
+.brand { text-decoration: none; color: inherit; }
+
+.brand-mark,
+body[data-mode="pedia"] .brand-mark {
+  font-family: 'Baskervville SC', Baskerville, Georgia, serif;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.08em;
+  color: #e8590c;
+  border: 1px solid #e8590c;
+  border-radius: 0;
+  padding: 5px 8px 6px;
+}
+
+.brand-line1,
+body[data-mode="pedia"] .brand-line1 {
+  font-family: 'Baskervville SC', Baskerville, Georgia, serif;
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  text-transform: none;
+  color: #8a847b;
+}
+
+.brand-line2,
+body[data-mode="pedia"] .brand-line2 {
+  font-family: 'Baskervville SC', Baskerville, Georgia, serif;
+  font-weight: 400;
+  font-size: 22px;
+  letter-spacing: 0.06em;
+  color: #1a1817;
+}
+
+body[data-mode="pedia"] .title-pedia { font-family: 'Baskervville SC', Baskerville, Georgia, serif; }
+
+/* mode switch: same boxed toggle as the homepage mood toggle */
+.mode-toggle {
+  background: transparent;
+  border: 1px solid #d6d2c9;
+  border-radius: 0;
+  padding: 2px;
+  gap: 2px;
+}
+
+.mode-btn,
+body[data-mode="pedia"] .mode-btn {
+  font-family: 'Libre Baskerville', Baskerville, Georgia, serif;
+  font-size: 13.5px;
+  color: #57524b;
+  border-radius: 0;
+  padding: 7px 16px;
+}
+
+.mode-btn:hover { color: #1a1817; }
+
+.mode-btn.active,
+body[data-mode="pedia"] .mode-btn.active {
+  background: #f3efe8;
+  color: #e8590c;
+}
+
+.tab {
+  font-family: 'Libre Baskerville', Baskerville, Georgia, serif;
+  font-size: 13.5px;
+  color: #57524b;
+  border-radius: 0;
+}
+
+.tab:hover { color: #1a1817; background: transparent; }
+
+.tab.active {
+  color: #1a1817;
+  background: transparent;
+  border-color: transparent;
+  box-shadow: inset 0 -1px 0 #e8590c;
+}
+
+/* ---------- topology body ---------- */
+
+body[data-mode="topology"] .legend-panel {
+  background: #fcfcfa;
+  border-bottom: 1px solid var(--line);
+}
+
+body[data-mode="topology"] .legend-toggle,
+body[data-mode="topology"] .legend-col h4,
+body[data-mode="topology"] .bubble-label,
+body[data-mode="topology"] .category-tag,
+body[data-mode="topology"] .cat-stacks-title,
+body[data-mode="topology"] .modal-section-title,
+body[data-mode="topology"] .tl-year,
+body[data-mode="topology"] .axis-controls label {
+  font-family: var(--cpc-heading);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+body[data-mode="topology"] .legend-col h4 { color: var(--accent); font-size: 12px; }
+body[data-mode="topology"] .legend-toggle { color: var(--text-mute); }
+body[data-mode="topology"] .legend-toggle:hover { color: var(--accent); }
+
+body[data-mode="topology"] .legend-disclaimer,
+body[data-mode="topology"] .marquee,
+body[data-mode="topology"] .vial-meta,
+body[data-mode="topology"] .modal-aliases,
+body[data-mode="topology"] .modal-quote-attr,
+body[data-mode="topology"] .stack-peptide-pill,
+body[data-mode="topology"] .stack-dosing,
+body[data-mode="topology"] .protocol-tag,
+body[data-mode="topology"] .dot-label,
+body[data-mode="topology"] .axis-text,
+body[data-mode="topology"] .modal-cat-pill {
+  font-family: var(--cpc-body);
+}
+
+body[data-mode="topology"] .legend-disclaimer {
+  border: 1px solid var(--line);
+  border-radius: 0;
+  font-style: italic;
+}
+
+body[data-mode="topology"] .marquee {
+  background: #fff;
+  color: var(--text-dim);
+  font-style: italic;
+  font-size: 14px;
+}
+
+body[data-mode="topology"] .view-header h2 {
+  font-family: var(--cpc-heading);
+  font-weight: 400;
+  font-size: 38px;
+  letter-spacing: 0.02em;
+}
+
+body[data-mode="topology"] .lede { color: var(--text-dim); }
+
+body[data-mode="topology"] select,
+body[data-mode="topology"] .receptor-filter {
+  font-family: var(--cpc-body);
+  background: #fff;
+  color: var(--text);
+  border: 1px solid #d6d2c9;
+  border-radius: 0;
+}
+
+/* map canvas */
+body[data-mode="topology"] #bubble-map-wrap,
+body[data-mode="topology"] .map-wrap {
+  background: #fcfcfa;
+  border: 1px solid var(--line);
+  border-radius: 0;
+}
+
+body[data-mode="topology"] .bubble-hull { fill-opacity: 0.07; stroke-opacity: 0.55; stroke-width: 1.4; }
+body[data-mode="topology"] .bubble-hull:hover { fill-opacity: 0.12; }
+body[data-mode="topology"] .bubble-node circle { fill-opacity: 0.22; }
+body[data-mode="topology"] .bubble-node:hover circle { filter: none; fill-opacity: 0.4; }
+
+body[data-mode="topology"] .bubble-node text.bubble-node-label {
+  fill: #1a1817;
+  font-family: var(--cpc-body);
+  font-weight: 400;
+  stroke: rgba(255, 255, 255, 0.92);
+}
+
+body[data-mode="topology"] .dot:hover { stroke: #1a1817; }
+
+/* category blocks + vials */
+body[data-mode="topology"] .category-block,
+body[data-mode="topology"] .stack-card,
+body[data-mode="topology"] .protocol-form,
+body[data-mode="topology"] .protocol-result-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 0;
+}
+
+body[data-mode="topology"] .category-name,
+body[data-mode="topology"] .stack-name,
+body[data-mode="topology"] .protocol-result h3,
+body[data-mode="topology"] .modal h2 {
+  font-family: var(--cpc-heading);
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+body[data-mode="topology"] .vial {
+  background: #fff;
+  border-color: var(--line);
+  border-radius: 0;
+}
+
+body[data-mode="topology"] .vial:hover {
+  border-color: var(--cat-color);
+  box-shadow: 0 10px 26px -12px rgba(26, 24, 23, 0.25);
+}
+
+body[data-mode="topology"] .vial-label { font-weight: 400; }
+body[data-mode="topology"] .cat-stack-row { border-bottom-color: var(--line); }
+
+/* tiers in muted CPC tones */
+body[data-mode="topology"] .tier-badge { border-radius: 0; font-family: var(--cpc-heading); font-weight: 400; }
+body[data-mode="topology"] .tier-S { background: #f7eedb; color: #9a6a08; border-color: #e3cf9f; }
+body[data-mode="topology"] .tier-A { background: #e9f0e3; color: #3f6a2c; border-color: #c4d6b5; }
+body[data-mode="topology"] .tier-B { background: #e3eef1; color: #1f6f86; border-color: #b6d2da; }
+body[data-mode="topology"] .tier-C { background: #eee8f4; color: #6b4c9a; border-color: #d0c3e0; }
+body[data-mode="topology"] .tier-D { background: #f6e5e5; color: #a32222; border-color: #e6bcbc; }
+body[data-mode="topology"] .tier-F { background: #f1dada; color: #8f1d1d; border-color: #dba9a9; }
+
+/* pills, chips, buttons */
+body[data-mode="topology"] .stack-peptide-pill,
+body[data-mode="topology"] .chip span,
+body[data-mode="topology"] .radio span,
+body[data-mode="topology"] .protocol-row,
+body[data-mode="topology"] .protocol-tag {
+  background: #fff;
+  border-radius: 0;
+}
+
+body[data-mode="topology"] .chip input:checked + span,
+body[data-mode="topology"] .radio input:checked + span {
+  background: #fdf1ea;
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+body[data-mode="topology"] .cta {
+  background: var(--accent);
+  color: #fff;
+  border-radius: 0;
+  font-family: var(--cpc-heading);
+  letter-spacing: 0.1em;
+  font-weight: 400;
+}
+
+body[data-mode="topology"] .cta:hover { box-shadow: 0 10px 24px -12px rgba(232, 89, 12, 0.6); }
+
+body[data-mode="topology"] .stack-card:hover { border-color: var(--accent); box-shadow: 0 10px 26px -14px rgba(26, 24, 23, 0.25); }
+
+body[data-mode="topology"] .tl-item::before { box-shadow: 0 0 0 4px rgba(232, 89, 12, 0.15); }
+
+body[data-mode="topology"] .protocol-disclaimer {
+  background: #fbf5e8;
+  border-color: #e3cf9f;
+  border-radius: 0;
+}
+
+/* detail modal */
+body[data-mode="topology"] .modal-backdrop { background: rgba(26, 24, 23, 0.35); backdrop-filter: blur(3px); }
+
+body[data-mode="topology"] .modal {
+  background: #fff;
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 0;
+  box-shadow: 0 24px 60px rgba(26, 24, 23, 0.18);
+}
+
+body[data-mode="topology"] .modal-close { border-radius: 0; background: #fff; color: var(--text-dim); border-color: var(--line); }
+body[data-mode="topology"] .modal-quote { background: #fbf8f2; }
+
+/* footer */
+body[data-mode="topology"] .foot {
+  background: #fff;
+  color: var(--text-mute);
+  border-top: 1px solid var(--line);
+  font-family: var(--cpc-body);
+}
+
+body[data-mode="topology"] .view label,
+body[data-mode="topology"] .receptor-filter-label {
+  font-family: var(--cpc-body);
+  font-style: italic;
+}

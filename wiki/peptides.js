@@ -3,7 +3,7 @@ window.PEPTIDE_DATA = {
     {
       "id": "concepts",
       "name": "Foundations & Frameworks",
-      "color": "#8B95A8",
+      "color": "#717c85",
       "description": "Conceptual explainer pages — what a peptide is, the U.S. regulatory and legal landscape, sourcing and quality, administration routes, and the major stack frameworks. Drawn primarily from the Huberman Lab episode with Dr. Abud Bakri.",
       "tatemGroup": "Foundations",
       "commonStacks": []
@@ -11,7 +11,7 @@ window.PEPTIDE_DATA = {
     {
       "id": "ghs",
       "name": "Growth Hormone & IGF-1 Axis",
-      "color": "#00E5FF",
+      "color": "#1f6f86",
       "description": "Anti-aging and muscle-building peptides that work on the somatotropic axis (GH/IGF-1).",
       "tatemGroup": "Group 1",
       "commonStacks": [
@@ -51,7 +51,7 @@ window.PEPTIDE_DATA = {
     {
       "id": "tissue",
       "name": "Tissue Repair & Regeneration",
-      "color": "#39FF14",
+      "color": "#4f7a3a",
       "description": "Healing peptides for tendons, gut, skin, and connective tissue.",
       "tatemGroup": "Group 2",
       "commonStacks": [
@@ -85,7 +85,7 @@ window.PEPTIDE_DATA = {
     {
       "id": "longevity",
       "name": "Longevity, Sleep & Nootropic",
-      "color": "#B26BFF",
+      "color": "#6b4c9a",
       "description": "Telomere, mitochondrial, sleep, and cognitive peptides.",
       "tatemGroup": "Group 3",
       "commonStacks": [
@@ -117,7 +117,7 @@ window.PEPTIDE_DATA = {
     {
       "id": "immune",
       "name": "Immune, GU & Alpha-MSH",
-      "color": "#FF3B7F",
+      "color": "#c92a2a",
       "description": "Anti-inflammatory, immune-modulating, sexual health, and melanocortin-family peptides.",
       "tatemGroup": "Group 4",
       "commonStacks": [
@@ -150,7 +150,7 @@ window.PEPTIDE_DATA = {
     {
       "id": "glp1",
       "name": "GLP-1 / Metabolic",
-      "color": "#FFB000",
+      "color": "#c48a14",
       "description": "Incretin-mimetic peptides driving the modern weight-loss revolution.",
       "tatemGroup": "GLP-1 (modern class)",
       "commonStacks": [
